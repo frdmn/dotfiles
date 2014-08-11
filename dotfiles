@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Check if bork repo exists
+if [ ! -d bork/.git ]; then
+    git clone https://github.com/mattly/bork.git
+fi
+
+if [ -z $1 ]; then
+    echo "No argument. Run ./dotfiles status or ./dotfiles satisfy"
+elif [[ "$1" != "status" && "$1" != "satisfy" ]]; then
+    echo "Wrong argument. Run ./dotfiles status or ./dotfiles satisfy"
+elif [ -z $2 ]; then
+    bork/bin/bork $1 bootstrap.sh
+else
+    bork/bin/bork $@
+fi
