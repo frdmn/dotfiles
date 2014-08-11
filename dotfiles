@@ -17,9 +17,18 @@ else
     BORKFILES=${@:2}
     # For each specified borkfile
     for BORK in ${BORKFILES}; do
-        # Expand to actual path of borkfile, append to $BORKFILESTRING
-        BORKFILESTRING+=" borkfiles/${BORK}.bork"
+        if [[ -f borkfiles/${BORK}.bork ]]; then
+            # Expand to actual path of borkfile, append to $BORKFILESTRING
+            BORKFILESTRING+=" borkfiles/${BORK}.bork"
+        else 
+            echo "Error: couldn't find borkfile \"borkfiles/${BORK}.bork\""
+        fi
     done
-    # Execute $BORKFILESTRING 
-    bork/bin/bork ${COMMAND} ${BORKFILESTRING}
+    # Check if we have found at least one valid borkfile
+    if [[ -z $BORKFILESTRING ]]; then
+        echo "Error: no valid borkfiles to process!"
+    else
+        # Execute $BORKFILESTRING 
+        bork/bin/bork ${COMMAND} ${BORKFILESTRING}
+    fi
 fi
