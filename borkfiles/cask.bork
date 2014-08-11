@@ -12,7 +12,6 @@ ok cask google-chrome-dev
 ok cask gpgtools
 ok cask hazel
 ok cask onepassword
-ok cask popcorn-time
 ok cask vagrant
 ok cask virtualbox
 ok cask vlc
