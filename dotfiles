@@ -5,10 +5,21 @@ if [ ! -d bork/.git ]; then
     git clone https://github.com/mattly/bork.git
 fi
 
-if [[ ( -z $1 ) || ( "$1" != "status" && "$1" != "satisfy" ) ]]; then
+# Check arguments
+if [[ ( -z ${1} ) || ( "${1}" != "status" && "${1}" != "satisfy" ) ]]; then
     echo "Wrong argument. Run ./dotfiles status or ./dotfiles satisfy"
-elif [ -z $2 ]; then
-    bork/bin/bork $1 borkfiles/bootstrap.bork
+elif [ -z ${2} ]; then
+    # If no 2nd argument => use bootstrap borkfile
+    echo bork/bin/bork ${1} borkfiles/bootstrap.bork
 else
-    bork/bin/bork $@
+    # Otherwise, install use the specific borkfile(s)
+    COMMAND=${1}
+    BORKFILES=${@:2}
+    # For each specified borkfile
+    for BORK in ${BORKFILES}; do
+        # Expand to actual path of borkfile, append to $BORKFILESTRING
+        BORKFILESTRING+=" borkfiles/${BORK}.bork"
+    done
+    # Execute $BORKFILESTRING 
+    bork/bin/bork ${COMMAND} ${BORKFILESTRING}
 fi
