@@ -14,5 +14,6 @@ case $OSTYPE in
     include brew.bork
     include cask.bork
     include osx.bork
+    # include atom.bork (@TODO)
     ;;
 esac
