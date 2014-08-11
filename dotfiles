@@ -10,7 +10,7 @@ if [[ ( -z ${1} ) || ( "${1}" != "status" && "${1}" != "satisfy" ) ]]; then
     echo "Wrong argument. Run ./dotfiles status or ./dotfiles satisfy"
 elif [ -z ${2} ]; then
     # If no 2nd argument => use bootstrap borkfile
-    echo bork/bin/bork ${1} borkfiles/bootstrap.bork
+    bork/bin/bork ${1} borkfiles/bootstrap.bork
 else
     # Otherwise, install use the specific borkfile(s)
     COMMAND=${1}
