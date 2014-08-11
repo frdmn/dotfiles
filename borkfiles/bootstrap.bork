@@ -4,4 +4,7 @@ destination $HOME/.dotfiles
 ok github mattly/bork
 
 # All UNIXes
-include configs.sh
+include configs.bork
+# include zsh.bork (@TODO)
+# include vim.bork (@TODO)
+    # include atom.bork (@TODO)
