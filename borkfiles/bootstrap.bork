@@ -16,6 +16,9 @@ case $OSTYPE in
     include osx.bork
     # include atom.bork (@TODO)
     ;;
+  linux*)
+    # include apt.bork (@TODO)
 esac
+
 # Dependant on above
 include npm.bork
