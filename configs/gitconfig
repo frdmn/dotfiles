@@ -1,0 +1,24 @@
+[core]
+    excludesfile = ~/.gitignore
+    editor = /usr/bin/vim
+
+    # Make `git rebase` safer on OS X
+    # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+    trustctime = false
+    
+[user]
+    name = Jonas Friedmann
+    email = j@frd.mn
+
+[merge]
+    log = true
+
+[push]
+    default = simple
+
+[difftool]
+    prompt = false
+    tool = vimdiff
+
+[mergetool]
+    prompt = false
