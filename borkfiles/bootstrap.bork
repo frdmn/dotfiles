@@ -12,5 +12,6 @@ include configs.bork
 case $OSTYPE in
   darwin*)
     include brew.bork
+    include cask.bork
     ;;
 esac
