@@ -2,3 +2,6 @@ destination $HOME/.dotfiles
 
 # Update Bork
 ok github mattly/bork
+
+# All UNIXes
+include configs.sh
