@@ -10,7 +10,7 @@ if [ -z $1 ]; then
 elif [[ "$1" != "status" && "$1" != "satisfy" ]]; then
     echo "Wrong argument. Run ./dotfiles status or ./dotfiles satisfy"
 elif [ -z $2 ]; then
-    bork/bin/bork $1 bootstrap.sh
+    bork/bin/bork $1 borkfiles/bootstrap.bork
 else
     bork/bin/bork $@
 fi
