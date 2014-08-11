@@ -7,4 +7,10 @@ ok github mattly/bork
 include configs.bork
 # include zsh.bork (@TODO)
 # include vim.bork (@TODO)
-    # include atom.bork (@TODO)
+
+# OS specfic
+case $OSTYPE in
+  darwin*)
+    include brew.bork
+    ;;
+esac

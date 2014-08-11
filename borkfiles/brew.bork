@@ -1,0 +1,19 @@
+# Install/update Homebrew
+ok brew
+
+# Taps
+bake brew tap homebrew/dupes
+
+# Install formulae
+ok brew git
+ok brew ack
+ok brew hub
+ok brew node
+ok brew vim
+ok brew pssh
+ok brew wget
+ok brew pv
+ok brew maven
+
+# Cleanup
+bake brew cleanup
