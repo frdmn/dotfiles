@@ -6,15 +6,11 @@ dotfiles
 ### Available commands
 
 ```sh
-$ ./dotfiles status [<files>]
-# Check the status of the assertions in a config script.
-# If no files are provided, all assertions will be checked.
-
-$ ./dotfiles satisfy [<files>]
+$ ./dotfiles [<files>]
 # Run the assertions of a config script.
 # If no files are provided, all assertions will be run.
 ```
 
 ### Credits
 
-* [Kasperisager](https://github.com/kasperisager), for his [dotfiles](https://github.com/kasperisager/dotfiles)
+* [Kasperisager](https://github.com/kasperisager), for his [dotfiles](https://github.com/kasperisager/dotfiles) 
