@@ -6,10 +6,18 @@ else
     echo "ok: shell ZSH"
 fi
 
-# Check for ~/.zsh folder
-ok directory ${HOME}/.zsh
+# Check if symlink for ZSH extras exists
+if [[ ! -h ${HOME}/.zsh ]]; then
+    echo "missing: symlink ~/.zsh"
+    ln -sf ${HOME}/.dotfiles/zsh ${HOME}/.zsh
+else
+    echo "ok: symlink ~/.zsh"
+fi
+
+# Check for ~/.zsh/plugins folder
 ok directory ${HOME}/.zsh/plugins
 
+# Check for zsh-syntax-highlighting
 destination ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
 destination $HOME/.dotfiles
