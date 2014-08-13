@@ -13,4 +13,4 @@ $ ./dotfiles [<files>]
 
 ### Credits
 
-* [Kasperisager](https://github.com/kasperisager), for his [dotfiles](https://github.com/kasperisager/dotfiles) 
+* [Kasperisager](https://github.com/kasperisager), for the idea with Bork
