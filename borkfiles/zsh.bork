@@ -3,5 +3,13 @@ if [[ ${SHELL} == *bash ]]; then
     echo "missing: shell ZSH"
     chsh -s /bin/zsh
 else
-    echo "missing: shell ZSH"
+    echo "ok: shell ZSH"
 fi
+
+# Check for ~/.zsh folder
+ok directory ${HOME}/.zsh
+ok directory ${HOME}/.zsh/plugins
+
+destination ${HOME}/.zsh/plugins
+ok github zsh-users/zsh-syntax-highlighting
+destination $HOME/.dotfiles
