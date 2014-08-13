@@ -1,23 +1,7 @@
-# Check if we already use ZSH
+# Check if ZSH is currently in use
 if [[ ${SHELL} == *bash ]]; then
     echo "missing: shell ZSH"
     chsh -s /bin/zsh
 else
     echo "missing: shell ZSH"
-fi
-
-# Check if oh-my-zsh is installed
-if [[ ! -d ${HOME}/.oh-my-zsh ]]; then
-    echo "missing: oh-my-sh"
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
-else
-    echo "ok: oh-my-sh"
-fi
-
-# Check if zsh-syntax-highlighting is installed
-if [[ ! -d ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]]; then
-    echo "missing: zsh-plugin zsh-syntax-highlighting"
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-else
-    echo "ok: zsh-plugin zsh-syntax-highlighting"
 fi
