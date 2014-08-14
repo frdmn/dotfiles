@@ -13,7 +13,7 @@ case $OSTYPE in
     include brew.bork
     include cask.bork
     include osx.bork
-    # include atom.bork (@TODO)
+    include atom.bork
     ;;
   linux*)
     # include apt.bork (@TODO)
