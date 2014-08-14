@@ -58,7 +58,10 @@ export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
 source /usr/local/src/dev-sh/dev.sh
 
 ###
-### Export $PATH
+### $PATH
 ###
+
+# php-fpm
+export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
