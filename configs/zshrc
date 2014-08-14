@@ -28,7 +28,9 @@ setopt multios
 # Enable colors
 autoload -U colors && colors
 
-# Load Robby Russell's theme/prompt
+# Load Robby Russell's theme/prompt and dependencies
+source ${HOME}/.zsh/git.zsh
+source ${HOME}/.zsh/appearance.zsh
 source ${HOME}/.zsh/prompts/robbyrussell.zsh
 
 # Load zsh-syntax-highlighting plugin
