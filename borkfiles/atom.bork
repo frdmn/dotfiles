@@ -1,4 +1,7 @@
-# Check if symlink for ZSH extras exists
+# Check if Atom directory exists
+ok directory ${HOME}/.atom
+
+# Check if symlink for Atom config exists
 if [[ ! -h ${HOME}/.atom/config.cson ]]; then
     echo "missing: symlink ~/.atom/config.cson"
     rm $HOME/.atom/config.cson &> /dev/null
@@ -8,6 +11,38 @@ else
     echo "ok: symlink ~/.atom/config.cson"
 fi
 
+#
 # Install packages in Atomfile
-apm install --packages-file ${HOME}/.dotfiles/opt/Atomfile
-echo "ok: Atomfile ~/.dotfiles/atom_Atomfile"
+#
+
+# Store packages out of Atomfile in variable
+pkgs=$(cat ${HOME}/.dotfiles/opt/Atomfile)
+# As well as the currently installed packages in Atom
+installedPkgs=$(apm ls --color false | # list all packages
+awk '/Users/,/^$/' | # Extract user installed packages
+tail -n +2 | # remove first line
+awk 'NR>1{print buf}{buf = $0}' | # remove last line
+cut -c 5- | # remove first 4 characters in each line
+sed 's/@[0-9\.]*//g') # remove "@0.1.6" version pattern
+
+# For each package in Atomfile
+for pkg in $pkgs; do
+  # Reset matcher
+  match=false
+  # For each installed package
+  for installedPkg in $installedPkgs; do
+    if [[ $installedPkg == $pkg ]]; then
+      # Set matcher to true, if package is already installed
+      match=true
+    fi
+  done
+  # If matcher true, package is installed
+  # Otherwise, install package via apm 
+  if [[ $match == true ]]; then
+    echo "ok: apm $pkg"
+  else
+    echo "missing: apm $pkg"
+    apm install $pkg
+    echo "ok: apm $pkg"
+  fi
+done
