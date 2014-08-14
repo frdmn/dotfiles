@@ -24,6 +24,15 @@ unsetopt correct_all
 setopt correct
 setopt prompt_subst 
 setopt multios 
+
+# Enable colors
+autoload -U colors && colors
+
+# Load Robby Russell's theme/prompt
+source ${HOME}/.zsh/prompts/robbyrussell.zsh-theme
+
+# Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Export $PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
