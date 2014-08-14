@@ -20,4 +20,10 @@ ok directory ${HOME}/.zsh/plugins
 # Check for zsh-syntax-highlighting
 destination ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
+
+# Check for dev-sh search tool
+ok directory /usr/local/src
+destination /usr/local/src
+ok github frdmn/dev-sh
+
 destination $HOME/.dotfiles
