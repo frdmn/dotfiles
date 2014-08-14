@@ -8,3 +8,5 @@ color-picker
 highlight-line
 atom-lint
 linter-php
+hex
+script
