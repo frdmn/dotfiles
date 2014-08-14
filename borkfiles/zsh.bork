@@ -2,6 +2,7 @@
 if [[ ${SHELL} == *bash ]]; then
     echo "missing: shell ZSH"
     chsh -s /bin/zsh
+    echo "ok: shell ZSH"
 else
     echo "ok: shell ZSH"
 fi
@@ -10,6 +11,7 @@ fi
 if [[ ! -h ${HOME}/.zsh ]]; then
     echo "missing: symlink ~/.zsh"
     ln -sf ${HOME}/.dotfiles/zsh ${HOME}/.zsh
+    echo "ok: symlink ~/.zsh"
 else
     echo "ok: symlink ~/.zsh"
 fi
