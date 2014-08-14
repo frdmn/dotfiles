@@ -9,3 +9,5 @@
     'spacegray-dark-ui'
     'spacegray-dark-syntax'
   ]
+'editor':
+  'tabLength': 4
