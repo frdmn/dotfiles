@@ -1,9 +1,9 @@
 # Check if symlink for ZSH extras exists
 if [[ ! -h ${HOME}/.atom/config.cson ]]; then
-    echo "missing: symlink ~/.zsh"
+    echo "missing: symlink ~/.atom/config.cson"
     rm $HOME/.atom/config.cson &> /dev/null
     ln -sf ${HOME}/.dotfiles/opt/config.cson ${HOME}/.atom/config.cson
-    echo "ok: symlink ~/.zsh"
+    echo "ok: symlink ~/.atom/config.cson"
 else
     echo "ok: symlink ~/.atom/config.cson"
 fi
