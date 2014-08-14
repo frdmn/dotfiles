@@ -29,7 +29,7 @@ setopt multios
 autoload -U colors && colors
 
 # Load Robby Russell's theme/prompt
-source ${HOME}/.zsh/prompts/robbyrussell.zsh-theme
+source ${HOME}/.zsh/prompts/robbyrussell.zsh
 
 # Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
