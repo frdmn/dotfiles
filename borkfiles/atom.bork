@@ -9,5 +9,5 @@ else
 fi
 
 # Install packages in Atomfile
-apm install --packages-file ${HOME}/.dotfiles/opt/Atomfile > /dev/null
+apm install --packages-file ${HOME}/.dotfiles/opt/Atomfile
 echo "ok: Atomfile ~/.dotfiles/atom_Atomfile"
