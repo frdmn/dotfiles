@@ -1,2 +1,11 @@
+# Check if symlink for ZSH extras exists
+if [[ ! -h ${HOME}/.atom/config.cson ]]; then
+    echo "missing: symlink ~/.zsh"
+    rm $HOME/.atom/config.cson &> /dev/null
+    ln -sf ${HOME}/.dotfiles/atom_config.cson ${HOME}/.atom/config.cson
+else
+    echo "ok: symlink ~/.atom/config.cson"
+fi
+
 # Install packages in Atomfile
-apm install --packages-file ${HOME}/.dotfiles/Atomfile
+apm install --packages-file ${HOME}/.dotfiles/atom_Atomfile
