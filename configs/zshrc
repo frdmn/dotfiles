@@ -55,7 +55,7 @@ source ~/.bash_functions
 
 # Load dev.sh (https://github.com/frdmn/dev-sh) search tool
 export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
-source /usr/src/dev-sh/dev.sh
+source /usr/local/src/dev-sh/dev.sh
 
 ###
 ### Export $PATH
