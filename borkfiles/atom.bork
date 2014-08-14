@@ -1,1 +1,2 @@
+# Install packages in Atomfile
 apm install --packages-file ${HOME}/.dotfiles/Atomfile
