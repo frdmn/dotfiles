@@ -1,10 +1,25 @@
-# User configuration
+###
+### User configuration
+###
+
+# General
 setopt no_beep
 setopt interactive_comments
 setopt auto_cd
 setopt cdablevars
 setopt pushd_ignore_dups
 setopt extended_glob
+setopt always_to_end    
+setopt auto_menu
+setopt auto_name_dirs
+setopt complete_in_word
+unsetopt menu_complete 
+unsetopt correct_all
+setopt correct
+setopt prompt_subst 
+setopt multios 
+
+# History
 setopt append_history
 setopt extended_history
 setopt inc_append_history
@@ -15,15 +30,13 @@ setopt hist_find_no_dups
 setopt hist_reduce_blanks
 setopt hist_verify
 setopt share_history
-setopt always_to_end    
-setopt auto_menu
-setopt auto_name_dirs
-setopt complete_in_word
-unsetopt menu_complete 
-unsetopt correct_all
-setopt correct
-setopt prompt_subst 
-setopt multios 
+
+SAVEHIST=5000
+HISTFILE=~/.zsh_history
+
+###
+### Plugins and prompt
+###
 
 # Enable colors
 autoload -U colors && colors
@@ -36,5 +49,8 @@ source ${HOME}/.zsh/prompts/robbyrussell.zsh
 # Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Export $PATH
+###
+### Export $PATH
+###
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
