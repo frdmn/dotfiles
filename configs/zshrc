@@ -49,6 +49,10 @@ source ${HOME}/.zsh/prompts/robbyrussell.zsh
 # Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Load bash aliases and functions
+source ~/.bash_aliases
+source ~/.bash_functions
+
 ###
 ### Export $PATH
 ###
