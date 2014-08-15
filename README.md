@@ -6,6 +6,7 @@ dotfiles
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
 * Commented configuration options, so you know what is actually going on
 * Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
+* Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
 
 ### Installation
 
@@ -30,18 +31,18 @@ Explanation of the directories:
 ```
 ./bork
 └── This folder includes the bork git repository which gets updated as
-    soon as you update the the dotfiles 
+    soon as you update the the dotfiles
 ./borkfiles
-└── Includes the actual bork files, seperated to allow a condition based 
-    installation (system architecture, OS type) 
+└── Includes the actual bork files, seperated to allow a condition based
+    installation (system architecture, OS type)
 ./borkfiles/bootstrap.bork
 └── This is the bootstrapping one, which applies the other Borkfiles in
-    the same folder 
+    the same folder
 ./configs
-└── Contains all of your configuration files which gets symlinked into $HOME 
+└── Contains all of your configuration files which gets symlinked into $HOME
     as ".$FILE". So basically, your actual dotfiles (zshrc, vimrc, gitconfig)
 ./opt
-└── Specific files which gets symlinked into non-$HOME folders. Used by 
+└── Specific files which gets symlinked into non-$HOME folders. Used by
     atom.bork
 ./zsh
 └── ZSH dependencies and plugins like the prompt, the zsh-syntax-highlighting.
