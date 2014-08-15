@@ -73,3 +73,6 @@ alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyad
 
 # Force to use Atom instead of Sublime Text
 alias subl="atom"
+
+# Kill all tmux sessions
+alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
