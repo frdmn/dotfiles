@@ -53,6 +53,9 @@ source /usr/local/src/dev-sh/dev.sh
 # Load tmuxinator completion
 source ${HOME}/.zsh/tmuxinator.zsh
 
+# Load dotfiles ZSH function to use without being in $PATH
+source ${HOME}/.zsh/dotfiles.zsh
+
 ###
 ### General
 ###
