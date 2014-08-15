@@ -46,16 +46,27 @@ source ${HOME}/.zsh/prompts/robbyrussell.zsh
 # Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Load bash aliases and functions
-source ~/.bash_aliases
-source ~/.bash_functions
-
 # Load dev.sh (https://github.com/frdmn/dev-sh) search tool
 export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
 source /usr/local/src/dev-sh/dev.sh
 
 # Load tmuxinator completion
 source ${HOME}/.zsh/tmuxinator.zsh
+
+###
+### General
+###
+
+# Enable colors
+autoload -U colors && colors
+
+# Use proper completion
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+
+# Load bash aliases and functions
+source ~/.bash_aliases
+source ~/.bash_functions
 
 ###
 ### $PATH
