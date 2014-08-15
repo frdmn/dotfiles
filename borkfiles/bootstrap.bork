@@ -5,7 +5,7 @@ ok github mattly/bork
 
 # All UNIXes
 include configs.bork
-# include vim.bork (@TODO)
+include vim.bork #@TODO
 
 # OS specfic
 case $OSTYPE in
