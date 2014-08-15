@@ -9,15 +9,15 @@ setopt auto_cd
 setopt cdablevars
 setopt pushd_ignore_dups
 setopt extended_glob
-setopt always_to_end    
+setopt always_to_end
 setopt auto_menu
 setopt auto_name_dirs
 setopt complete_in_word
-unsetopt menu_complete 
+unsetopt menu_complete
 unsetopt correct_all
 setopt correct
-setopt prompt_subst 
-setopt multios 
+setopt prompt_subst
+setopt multios
 
 # History
 setopt append_history
@@ -40,6 +40,10 @@ HISTFILE=~/.zsh_history
 
 # Enable colors
 autoload -U colors && colors
+
+# Use proper completion
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
 
 # Load Robby Russell's theme/prompt and dependencies
 source ${HOME}/.zsh/git.zsh
