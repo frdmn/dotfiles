@@ -7,6 +7,7 @@ dotfiles
 * Commented configuration options, so you know what is actually going on
 * Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
 * Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
+* [Powerline](https://github.com/Lokaltog/powerline) in Vim and Tmux
 
 ### Installation
 
