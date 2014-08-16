@@ -1,0 +1,10 @@
+# Install packages
+ok apt git
+ok apt ack
+ok apt node
+ok apt vim
+ok apt pssh
+ok apt wget
+ok apt pv
+ok apt maven
+ok apt python
