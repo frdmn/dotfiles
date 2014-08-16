@@ -8,3 +8,4 @@ ok apt wget
 ok apt pv
 ok apt maven
 ok apt python
+ok apt zsh
