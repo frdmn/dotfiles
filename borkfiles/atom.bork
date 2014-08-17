@@ -37,7 +37,7 @@ for pkg in $pkgs; do
     fi
   done
   # If matcher true, package is installed
-  # Otherwise, install package via apm 
+  # Otherwise, install package via apm
   if [[ $match == true ]]; then
     echo "ok: apm $pkg"
   else
