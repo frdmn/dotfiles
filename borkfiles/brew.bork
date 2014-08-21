@@ -15,6 +15,7 @@ ok brew wget
 ok brew pv
 ok brew maven
 ok brew python
+ok brew youtube-dl
 
 # Cleanup
 bake brew cleanup
