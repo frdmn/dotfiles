@@ -11,6 +11,7 @@ ok cask github
 ok cask google-chrome-dev
 ok cask gpgtools
 ok cask hazel
+ok cask macdown
 ok cask onepassword
 ok cask vagrant
 ok cask virtualbox
