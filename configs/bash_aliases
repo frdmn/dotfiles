@@ -74,5 +74,8 @@ alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyad
 # Force to use Atom instead of Sublime Text
 alias subl="atom"
 
+# Function to use dotfile wrapper in any directory
+function dotfiles(){cd ~/.dotfiles; ./dotfiles $1; cd -}
+
 # Kill all tmux sessions
 alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
