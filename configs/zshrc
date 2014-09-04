@@ -72,6 +72,21 @@ source ~/.bash_aliases
 source ~/.bash_functions
 
 ###
+### Key bindings
+###
+
+# Skip forward/back a word with opt-arrow
+bindkey '[D' backward-word
+bindkey '[C' forward-word
+
+# Skip to start/end of line with cmd-arrow
+bindkey '^[[1;10D' beginning-of-line
+bindkey '^[[1;10C' end-of-line
+
+# Delete key
+bindkey "^[[3~" delete-char
+
+###
 ### $PATH
 ###
 
