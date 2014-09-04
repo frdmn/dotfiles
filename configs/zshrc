@@ -73,18 +73,22 @@ source ~/.bash_functions
 
 ###
 ### Key bindings
+### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
 ###
 
 # Skip forward/back a word with opt-arrow
 bindkey '[D' backward-word
 bindkey '[C' forward-word
 
-# Skip to start/end of line with cmd-arrow
+# Skip to start/end of line with opt-shift-arrow
 bindkey '^[[1;10D' beginning-of-line
 bindkey '^[[1;10C' end-of-line
 
-# Delete key
+# Make the delete key (or Fn + Delete on the Mac) work instead of outputting a ~
+bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
+bindkey "^[3;5~" delete-char
+bindkey "\e[3~" delete-char
 
 ###
 ### $PATH
