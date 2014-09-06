@@ -9,9 +9,13 @@ COMMAND="satisfy"
 
 # Check arguments
 if [ -z ${1} ]; then
+    # Make sure dotfile repo is up to date
+    git pull
     # If no 2nd argument => use bootstrap borkfile
     bork/bin/bork ${COMMAND} borkfiles/bootstrap.bork
 else
+    # Make sure dotfile repo is up to date
+    git pull
     # Otherwise, install use the specific borkfile(s)
     BORKFILES=${@:1}
     # For each specified borkfile
