@@ -97,4 +97,4 @@ bindkey "\e[3~" delete-char
 # php-fpm
 export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
