@@ -91,10 +91,14 @@ bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
 
 ###
-### $PATH
+### Exports (php-fpm, maven and $PATH)
 ###
 
 # php-fpm
 export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
+# Maven
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# $PATH
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
