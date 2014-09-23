@@ -16,6 +16,9 @@ ok brew pv
 ok brew maven
 ok brew python
 ok brew youtube-dl
+ok brew heroku-toolbelt
+ok brew tmux
+ok brew terminal-notifier
 
 # Cleanup
 bake brew cleanup
