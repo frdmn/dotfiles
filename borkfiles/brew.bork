@@ -19,6 +19,7 @@ ok brew youtube-dl
 ok brew heroku-toolbelt
 ok brew tmux
 ok brew terminal-notifier
+ok brew wine
 
 # Cleanup
 bake brew cleanup
