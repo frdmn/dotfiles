@@ -100,5 +100,9 @@ export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 # Maven
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# Go
+export GOPATH=$HOME/.go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
 # $PATH
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
