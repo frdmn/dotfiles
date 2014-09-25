@@ -20,6 +20,7 @@ ok brew heroku-toolbelt
 ok brew tmux
 ok brew terminal-notifier
 ok brew wine
+ok brew go
 
 # Cleanup
 bake brew cleanup
