@@ -60,6 +60,10 @@ source ${HOME}/.zsh/dotfiles.zsh
 ### General
 ###
 
+# Enable bash completion
+autoload bashcompinit
+bashcompinit
+
 # Enable colors
 autoload -U colors && colors
 
