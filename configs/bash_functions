@@ -1,14 +1,15 @@
 # Function to comfortably use different configuration files for pssh => Psshfiles
 psshrun (){
-    configfile=${1}
-    shift
-    cmd=${*}
-
     # Check for arguments
-    if [[ -z "${configfile}" || -z "${cmd}" ]]; then
+    if [ $# -ne 2 ]; then
         echo "Error: not enough arguments given"
         return 1
     fi
+
+    # Store and sort arguments
+    configfile=${1}
+    shift
+    cmd=${*}
 
     # Check configuration variable
     if [ ! ${psshrun_configpath} ]; then
