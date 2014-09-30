@@ -104,5 +104,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
+# Set pssh configuration directory
+export psshrun_configpath="${HOME}/.pssh"
+
 # $PATH
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
