@@ -19,7 +19,7 @@ psshrun (){
 
     # Check if directory exists
     if [ ! -d ${psshrun_configpath} ]; then
-        echo "Error: ${psshrun_configpath} doesn't exist"
+        echo "Error: Folder ${psshrun_configpath} doesn't exist"
         return 1
     fi
 
