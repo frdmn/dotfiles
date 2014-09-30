@@ -38,7 +38,7 @@ _psshrun()
 {
     local configfiles
     cur=${COMP_WORDS[COMP_CWORD]}
-    local configfiles=$(for x in `find ${psshrun_configpath} -type f -exec basename {} \;`; do echo ${x}; done)
+    local configfiles="$(for x in `find ${psshrun_configpath} -type f -exec basename {} \;`; do echo ${x}; done)"
     COMPREPLY=( $( compgen -W "${configfiles}" -- ${cur} ) )
     return 0
 }
