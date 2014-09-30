@@ -1,0 +1,33 @@
+# Function to comfortably use different configuration files for pssh => Psshfiles
+psshrun (){
+    configfile=${1}
+    shift
+    cmd=${*}
+
+    # Check for arguments
+    if [[ -z "${configfile}" || -z "${cmd}" ]]; then
+        echo "Error: not enough arguments given"
+        return 1
+    fi
+
+    # Check configuration variable
+    if [ ! ${psshrun_configpath} ]; then
+        echo "Error: \$psshrun_configpath not set"
+        return 1
+    fi
+
+    # Check if directory exists
+    if [ ! -d ${psshrun_configpath} ]; then
+        echo "Error: ${psshrun_configpath} doesn't exist"
+        return 1
+    fi
+
+    # Check if specific configuration file
+    if [ ! -f ${psshrun_configpath}/"${configfile}" ]; then
+        echo "Error: Configuration file \"${configfile}\" doesn't exist"
+        return 1
+    fi
+
+    pssh -h ${psshrun_configpath}/"${configfile}" "${cmd}"
+    return 0
+}
