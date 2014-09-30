@@ -19,10 +19,10 @@ dotfiles
 
 ```sh
 # Install/update the dotfiles
-$ ./dotfiles
+$ dotfiles
 
 # Install/update one specific borkfile, located in borkfiles/
-$ ./dotfiles <borkfile>
+$ dotfiles <borkfile>
 ```
 
 ### Informations
