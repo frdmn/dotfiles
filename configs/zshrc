@@ -35,6 +35,27 @@ SAVEHIST=5000
 HISTFILE=~/.zsh_history
 
 ###
+### General
+###
+
+# Enable bash completion
+autoload bashcompinit
+bashcompinit
+
+# Enable colors
+autoload -U colors && colors
+
+# Use proper completion
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+
+# Load bash aliases and functions
+source ~/.bash_aliases
+source ~/.bash_functions
+
+complete -o nospace -o filenames -F dev
+
+###
 ### Plugins and prompt
 ###
 
@@ -55,25 +76,6 @@ source ${HOME}/.zsh/tmuxinator.zsh
 
 # Load dotfiles ZSH function to use without being in $PATH
 source ${HOME}/.zsh/dotfiles.zsh
-
-###
-### General
-###
-
-# Enable bash completion
-autoload bashcompinit
-bashcompinit
-
-# Enable colors
-autoload -U colors && colors
-
-# Use proper completion
-autoload -U compinit && compinit
-zstyle ':completion:*' menu select
-
-# Load bash aliases and functions
-source ~/.bash_aliases
-source ~/.bash_functions
 
 ###
 ### Key bindings
