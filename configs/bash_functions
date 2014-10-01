@@ -1,48 +1,5 @@
 # Load dev.sh (https://github.com/frdmn/dev-sh) search tool
 . /usr/local/src/dev-sh/dev.sh
 
-# Function to comfortably use different configuration files for pssh => Psshfiles
-psshrun (){
-    # Check for arguments
-    if [ $# -ne 2 ]; then
-        echo "Error: not enough arguments given"
-        return 1
-    fi
-
-    # Store and sort arguments
-    configfile=${1}
-    shift
-    cmd=${*}
-
-    # Check configuration variable
-    if [ ! ${psshrun_configpath} ]; then
-        echo "Error: \$psshrun_configpath not set"
-        return 1
-    fi
-
-    # Check if directory exists
-    if [ ! -d ${psshrun_configpath} ]; then
-        echo "Error: Folder ${psshrun_configpath} doesn't exist"
-        return 1
-    fi
-
-    # Check if specific configuration file
-    if [ ! -f ${psshrun_configpath}/"${configfile}" ]; then
-        echo "Error: Configuration file \"${configfile}\" doesn't exist"
-        return 1
-    fi
-
-    pssh -h ${psshrun_configpath}/"${configfile}" "${cmd}"
-    return 0
-}
-
-# Bash completion function
-_psshrun()
-{
-    local configfiles
-    cur=${COMP_WORDS[COMP_CWORD]}
-    local configfiles="$(for x in `find ${psshrun_configpath} -type f -exec basename {} \;`; do echo ${x}; done)"
-    COMPREPLY=( $( compgen -W "${configfiles}" -- ${cur} ) )
-    return 0
-}
-complete -F _psshrun psshrun
+# psshrun (https://github.com/frdmn/psshrun) autocompletion
+. /usr/local/src/psshrun/bash_completion.d/psshrun
