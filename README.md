@@ -33,18 +33,23 @@ Explanation of the directories:
 ./bork
 └── This folder includes the bork git repository which gets updated as
     soon as you update the the dotfiles
+
 ./borkfiles
 └── Includes the actual bork files, seperated to allow a condition based
     installation (system architecture, OS type)
+
 ./borkfiles/bootstrap.bork
 └── This is the bootstrapping one, which applies the other Borkfiles in
     the same folder
+
 ./configs
 └── Contains all of your configuration files which gets symlinked into $HOME
     as ".$FILE". So basically, your actual dotfiles (zshrc, vimrc, gitconfig)
+
 ./opt
 └── Specific files which gets symlinked into non-$HOME folders. Used by
     atom.bork
+
 ./zsh
 └── ZSH dependencies and plugins like the prompt, the zsh-syntax-highlighting.
     This folder gets symlinked into $HOME/.zsh and is used in ./configs/zshrc
