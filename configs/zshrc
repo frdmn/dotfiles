@@ -39,8 +39,7 @@ HISTFILE=~/.zsh_history
 ###
 
 # Enable bash completion
-autoload bashcompinit
-bashcompinit
+autoload bashcompinit && bashcompinit
 
 # Enable colors
 autoload -U colors && colors
