@@ -49,8 +49,8 @@ autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
 # Load bash aliases and functions
-source ~/.bash_aliases
-source ~/.bash_functions
+. ~/.bash_aliases
+. ~/.bash_functions
 
 complete -o nospace -o filenames -F dev
 
@@ -59,18 +59,18 @@ complete -o nospace -o filenames -F dev
 ###
 
 # Load Robby Russell's theme/prompt and dependencies
-source ${HOME}/.zsh/git.zsh
-source ${HOME}/.zsh/appearance.zsh
-source ${HOME}/.zsh/prompts/robbyrussell.zsh
+. ${HOME}/.zsh/git.zsh
+. ${HOME}/.zsh/appearance.zsh
+. ${HOME}/.zsh/prompts/robbyrussell.zsh
 
 # Load zsh-syntax-highlighting plugin
-source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load tmuxinator completion
-source ${HOME}/.zsh/tmuxinator.zsh
+. ${HOME}/.zsh/tmuxinator.zsh
 
 # Load dotfiles ZSH function to use without being in $PATH
-source ${HOME}/.zsh/dotfiles.zsh
+. ${HOME}/.zsh/dotfiles.zsh
 
 ###
 ### Key bindings
