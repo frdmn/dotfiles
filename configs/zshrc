@@ -66,10 +66,6 @@ source ${HOME}/.zsh/prompts/robbyrussell.zsh
 # Load zsh-syntax-highlighting plugin
 source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Load dev.sh (https://github.com/frdmn/dev-sh) search tool
-export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
-source /usr/local/src/dev-sh/dev.sh
-
 # Load tmuxinator completion
 source ${HOME}/.zsh/tmuxinator.zsh
 
@@ -108,6 +104,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Go
 export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# Set dev.sh (https://github.com/frdmn/dev-sh) project path
+export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
 
 # Set pssh configuration directory
 export psshrun_configpath="${HOME}/.pssh"
