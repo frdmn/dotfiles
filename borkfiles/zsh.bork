@@ -27,5 +27,6 @@ ok github zsh-users/zsh-syntax-highlighting
 ok directory /usr/local/src
 destination /usr/local/src
 ok github frdmn/dev-sh
+ok github frdmn/psshrun
 
 destination $HOME/.dotfiles
