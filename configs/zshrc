@@ -48,10 +48,6 @@ autoload -U colors && colors
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
-# Load bash aliases and zsh functions
-. ~/.bash_aliases
-. ~/.zsh_functions
-
 complete -o nospace -o filenames -F dev
 
 ###
@@ -74,6 +70,14 @@ complete -o nospace -o filenames -F dev
 
 # Load dotfiles ZSH function to use without being in $PATH
 . ${HOME}/.zsh/dotfiles.zsh
+
+###
+### Aliases and functions
+###
+
+# Load bash aliases and zsh functions
+. ~/.bash_aliases
+. ~/.zsh_functions
 
 ###
 ### Key bindings
