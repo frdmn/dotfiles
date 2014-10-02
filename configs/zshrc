@@ -71,6 +71,12 @@ complete -o nospace -o filenames -F dev
 # Load dotfiles ZSH function to use without being in $PATH
 . ${HOME}/.zsh/dotfiles.zsh
 
+# Load dev.sh (https://github.com/frdmn/dev-sh) search tool
+. /usr/local/src/dev-sh/dev.sh
+
+# psshrun (https://github.com/frdmn/psshrun) autocompletion
+. /usr/local/src/psshrun/bash_completion.d/psshrun
+
 ###
 ### Aliases and functions
 ###
@@ -84,6 +90,7 @@ complete -o nospace -o filenames -F dev
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
 ###
 
+## General
 # Skip forward/back a word with opt-arrow
 bindkey '[D' backward-word
 bindkey '[C' forward-word
@@ -97,6 +104,10 @@ bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
 bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
+
+## zsh-autosuggestions
+# use ctrl+t to toggle autosuggestions
+bindkey '^T' autosuggest-toggle
 
 ###
 ### Exports (php-fpm, maven and $PATH)
