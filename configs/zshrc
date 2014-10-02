@@ -65,6 +65,9 @@ complete -o nospace -o filenames -F dev
 # Load zsh-autosuggestions plugin
 . /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
 
+# Load zsh-history-substring-search
+. /usr/local/src/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 # Load tmuxinator completion
 . ${HOME}/.zsh/tmuxinator.zsh
 
@@ -108,6 +111,23 @@ bindkey "\e[3~" delete-char
 ## zsh-autosuggestions
 # use ctrl+t to toggle autosuggestions
 bindkey '^T' autosuggest-toggle
+
+# solarized-dark compatible selection color
+export AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=3"
+
+## zsh-history-substring-search
+# bind UP and DOWN arrow keys
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# bind P and N for EMACS mode
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
+# bind k and j for VI mode
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 ###
 ### Exports (php-fpm, maven and $PATH)

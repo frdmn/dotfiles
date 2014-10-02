@@ -9,6 +9,7 @@ dotfiles
 * Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
 * [Powerline](https://github.com/Lokaltog/powerline) in Vim and Tmux
 * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) ZSH plugin
+* [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) ZSH plugin
 
 ### Installation
 
