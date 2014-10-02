@@ -1,0 +1,6 @@
+## Load dev.sh (https://github.com/frdmn/dev-sh) search tool
+. /usr/local/src/dev-sh/dev.sh
+
+## psshrun (https://github.com/frdmn/psshrun) autocompletion
+. /usr/local/src/psshrun/bash_completion.d/psshrun
+
