@@ -28,5 +28,6 @@ ok directory /usr/local/src
 destination /usr/local/src
 ok github frdmn/dev-sh
 ok github frdmn/psshrun
+ok github tarruda/zsh-autosuggestions 
 
 destination $HOME/.dotfiles

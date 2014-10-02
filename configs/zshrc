@@ -66,6 +66,9 @@ complete -o nospace -o filenames -F dev
 # Load zsh-syntax-highlighting plugin
 . ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Load zsh-autosuggestions plugin
+. /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
+
 # Load tmuxinator completion
 . ${HOME}/.zsh/tmuxinator.zsh
 
