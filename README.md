@@ -27,7 +27,7 @@ $ dotfiles
 $ dotfiles <borkfile>
 ```
 
-### Informations
+### Information
 
 Explanation of the directories:
 
