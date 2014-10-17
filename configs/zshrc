@@ -3,21 +3,16 @@
 ###
 
 # General
-setopt no_beep
-setopt interactive_comments
-setopt auto_cd
-setopt cdablevars
-setopt pushd_ignore_dups
-setopt extended_glob
-setopt always_to_end
-setopt auto_menu
-setopt auto_name_dirs
-setopt complete_in_word
-unsetopt menu_complete
-unsetopt correct_all
-setopt correct
-setopt prompt_subst
-setopt multios
+setopt interactivecomments 		# Comments in interactive shell
+setopt auto_cd					# Just typing the directory name cd's into it
+setopt auto_menu 				# Use menu completion after the second completion request
+setopt complete_in_word 		# Only complete when completion is confirmed
+setopt correct 					# Try to autocorrect command
+setopt prompt_subst 			# Enable parameter expansion, command substitution, etc.
+setopt multios					# Allow multiple input/output redirection
+unsetopt menu_complete 			# Dont insert completion results immedietly
+unsetopt beep 					# Don't beep
+unsetopt correct_all 			# Don't try to autocorrect all arguments
 
 # History
 setopt append_history
@@ -80,7 +75,6 @@ complete -o nospace -o filenames -F dev
 # Load zsh-autosuggestions plugin
 . /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
 
-
 ###
 ### Aliases and functions
 ###
@@ -112,9 +106,6 @@ bindkey "\e[3~" delete-char
 ## zsh-autosuggestions
 # use ctrl+t to toggle autosuggestions
 bindkey '^T' autosuggest-toggle
-
-# solarized-dark compatible selection color
-export AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=3"
 
 ## zsh-history-substring-search
 # bind UP and DOWN arrow keys
