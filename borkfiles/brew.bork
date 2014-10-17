@@ -2,7 +2,7 @@
 ok brew
 
 # Taps
-bake brew tap homebrew/dupes
+bake brew tap homebrew/dupes 2>/dev/null
 
 # Install formulae
 ok brew git
