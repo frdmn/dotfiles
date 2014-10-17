@@ -20,9 +20,10 @@ dotfiles
 
 ### Installation
 
-1. `git clone https://github.com/frdmn/dotfiles $HOME/.dotfiles`
-2. `cd $HOME/.dotfiles`
-3. `./dotfiles`
+1. Fork this repository
+2. `git clone https://github.com/<GitHub-user>/dotfiles $HOME/.dotfiles`
+3. `cd $HOME/.dotfiles`
+4. `./dotfiles`
 
 ### Available commands
 
