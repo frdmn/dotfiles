@@ -6,6 +6,7 @@ bake brew tap caskroom/versions
 ok brew brew-cask
 
 # Install desktop apps
+ok cask alfred
 ok cask atom
 ok cask github
 ok cask google-chrome-dev
