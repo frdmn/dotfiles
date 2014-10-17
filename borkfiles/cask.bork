@@ -16,6 +16,16 @@ ok cask onepassword
 ok cask vagrant
 ok cask virtualbox
 ok cask vlc
+# Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
+ok cask qlcolorcode
+ok cask qlstephen
+ok cask qlmarkdown
+ok cask quicklook-json
+ok cask qlprettypatch
+ok cask quicklook-csv
+ok cask betterzipql
+ok cask webp-quicklook
+ok cask suspicious-package
 
 # Cleanup
 bake brew cleanup
