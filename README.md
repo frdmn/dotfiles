@@ -1,13 +1,19 @@
 dotfiles
 ========
 
-[Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems.
+[Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems which is really simple and easy to understand.
+
+### Features
 
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
+* Brew and Cask package check
+* Mac App Store app check
+* `npm` (Node Package Manager) package check
+* `apt-get` package check
 * Commented configuration options, so you know what is actually going on
 * Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
 * Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
-* Per hostname feature 
+* Dotfiles per hostname
 * [Powerline](https://github.com/Lokaltog/powerline) in Vim and Tmux
 * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) ZSH plugin
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) ZSH plugin
