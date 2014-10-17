@@ -3,3 +3,6 @@ bork
 
 # zsh plugins
 zsh/plugins
+
+# Mac meta
+.DS_Store
