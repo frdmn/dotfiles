@@ -3,28 +3,27 @@
 ###
 
 # General
-setopt interactivecomments 		# Comments in interactive shell
-setopt auto_cd					# Just typing the directory name cd's into it
-setopt auto_menu 				# Use menu completion after the second completion request
-setopt complete_in_word 		# Only complete when completion is confirmed
-setopt correct 					# Try to autocorrect command
-setopt prompt_subst 			# Enable parameter expansion, command substitution, etc.
-setopt multios					# Allow multiple input/output redirection
-unsetopt menu_complete 			# Dont insert completion results immedietly
-unsetopt beep 					# Don't beep
-unsetopt correct_all 			# Don't try to autocorrect all arguments
+setopt interactivecomments     # Comments in interactive shell
+setopt auto_cd                 # Just typing the directory name cd's into it
+setopt auto_menu               # Use menu completion after the second completion request
+setopt complete_in_word        # Only complete when completion is confirmed
+setopt correct                 # Try to autocorrect command
+setopt multios                 # Allow multiple input/output redirection
+setopt autopushd               # Makes cd, pushd (cd +1, cd -1)
+setopt prompt_subst            # Enable parameter expansion, command substitution, etc.
+setopt prompt_cr               # prompt always at beginning of line
+unsetopt menu_complete         # Dont insert completion results immedietly
+unsetopt beep                  # Don't beep
+unsetopt correct_all           # Don't try to autocorrect all arguments
 
 # History
-setopt append_history
-setopt extended_history
-setopt inc_append_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_ignore_space
-setopt hist_find_no_dups
-setopt hist_reduce_blanks
-setopt hist_verify
-setopt share_history
+setopt append_history          # Append history to existing file
+setopt extended_history        # Store timestamp and runtime
+setopt hist_expire_dups_first  # Expire duplicate history entries first
+setopt hist_ignore_dups        # Don't save entries if they are dupes of the previous event
+setopt hist_ignore_space       # If command starts with a space, don't append to history
+setopt hist_find_no_dups       # Don't cycle through dupes
+setopt hist_reduce_blanks      # Trim multiple blanks in history
 
 SAVEHIST=5000
 HISTFILE=~/.zsh_history
