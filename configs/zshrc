@@ -62,9 +62,6 @@ complete -o nospace -o filenames -F dev
 # Load zsh-syntax-highlighting plugin
 . ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Load zsh-autosuggestions plugin
-. /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
-
 # Load zsh-history-substring-search
 . /usr/local/src/zsh-history-substring-search/zsh-history-substring-search.zsh
 
@@ -79,6 +76,10 @@ complete -o nospace -o filenames -F dev
 
 # psshrun (https://github.com/frdmn/psshrun) autocompletion
 . /usr/local/src/psshrun/bash_completion.d/psshrun
+
+# Load zsh-autosuggestions plugin
+. /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
+
 
 ###
 ### Aliases and functions
@@ -128,6 +129,10 @@ bindkey -M emacs '^N' history-substring-search-down
 # bind k and j for VI mode
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+# OS X support
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 ###
 ### Per hostname
