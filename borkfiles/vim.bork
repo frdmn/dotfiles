@@ -3,7 +3,7 @@ package="git+git://github.com/Lokaltog/powerline"
 if pip list | grep "Powerline" &> /dev/null; then
 	echo "ok: pip ${package}";
 else
-	echo "missing: pip ${package}";
-	bake pip install git+git://github.com/Lokaltog/powerline	
-	echo "ok: pip ${package}";
+	echo "missing: pip ${package}"
+	bake pip install git+git://github.com/Lokaltog/powerline >/dev/null
+	echo "ok: pip ${package}"
 fi
