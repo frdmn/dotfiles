@@ -130,6 +130,14 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 ###
+### Per hostname
+###
+
+if [ -f ${HOME}/.dotfiles/hostnames/${HOST} ]; then
+  . ${HOME}/.dotfiles/hostnames/${HOST}
+fi
+
+###
 ### Exports (php-fpm, maven and $PATH)
 ###
 

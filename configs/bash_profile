@@ -1,0 +1,7 @@
+###
+### Per hostname
+###
+
+if [ -f ${HOME}/.dotfiles/hostnames/${HOSTNAME} ]; then
+  . ${HOME}/.dotfiles/hostnames/${HOSTNAME}
+fi
