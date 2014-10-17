@@ -73,3 +73,7 @@ Explanation of the directories:
 
 * [Kasperisager](https://github.com/kasperisager), for the idea with Bork
 * [Robby Russell](https://github.com/robbyrussell), for oh-my-zsh's theme support
+
+### License
+
+[WTFPL](LICENSE)
