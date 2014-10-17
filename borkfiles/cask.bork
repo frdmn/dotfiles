@@ -28,5 +28,5 @@ ok cask webp-quicklook
 ok cask suspicious-package
 
 # Cleanup
-bake brew cleanup
-bake brew cask cleanup
+bake "brew cleanup >/dev/null && echo ok: brew cleanup"
+bake "brew cask cleanup >/dev/null && echo ok: cask cleanup"
