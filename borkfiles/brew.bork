@@ -22,7 +22,7 @@ ok brew terminal-notifier
 ok brew wine
 ok brew go
 ok brew ffmpeg
-ok brew convert
+ok brew imagemagick
 
 # Cleanup
 bake brew cleanup
