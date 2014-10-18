@@ -5,7 +5,6 @@ ok github mattly/bork
 
 # All UNIXes
 include configs.bork
-include vim.bork #@TODO
 
 # OS specfic
 case $OSTYPE in
@@ -20,6 +19,7 @@ case $OSTYPE in
     include apt.bork
 esac
 
-# Dependant on above
+# Depending on above
 include zsh.bork
 include npm.bork
+include vim.bork #@TODO
