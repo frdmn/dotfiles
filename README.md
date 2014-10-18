@@ -56,6 +56,9 @@ Explanation of the directories:
 └── Contains all of your configuration files which gets symlinked into $HOME
     as ".$FILE". So basically, your actual dotfiles (zshrc, vimrc, gitconfig)
 
+./configs/bash_vault
+└── Secret stuff that you rather don't track in the git repo
+
 ./hostnames
 └── This folder could contain hostname specific (per host) dotfiles which get
     sourced by your Bash/ZSH shell only if there is a file that matches our
