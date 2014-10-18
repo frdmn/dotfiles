@@ -9,7 +9,7 @@ done
 
 # Check for host specific sources/includes
 FULLHOST=$(hostname -f)
-if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/configs)" ]; then
+if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/configs 2> /dev/null)" ]; then
   for file in ${HOME}/.dotfiles/hostnames/${FULLHOST}/configs/*; do
     echo "info: found host-specific source/include for \"${FULLHOST}\""
 	# Check if file exist, if file is not the current one, unlink first

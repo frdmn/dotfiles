@@ -21,7 +21,7 @@ if [ -z ${1} ]; then
     ${CURRENTDIR}/bork/bin/bork ${COMMAND} borkfiles/bootstrap.bork
 
     # Host specific
-    if [ "$(ls ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles)" ]; then
+    if [ "$(ls ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles 2> /dev/null)" ]; then
       # Change into the host specific borkfile folder. Hack to avoid bork appending the fullpath a second time
       echo "info: found host-specific bork files for \"${FULLHOST}\""
       cd ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles
