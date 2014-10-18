@@ -65,12 +65,6 @@ complete -o nospace -o filenames -F dev
 # Load dotfiles ZSH function to use without being in $PATH
 . ${HOME}/.zsh/dotfiles.zsh
 
-# Load dev.sh (https://github.com/frdmn/dev-sh) search tool
-. /usr/local/src/dev-sh/dev.sh
-
-# psshrun (https://github.com/frdmn/psshrun) autocompletion
-. /usr/local/src/psshrun/bash_completion.d/psshrun
-
 # Load zsh-autosuggestions plugin
 . /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
 
@@ -78,8 +72,11 @@ complete -o nospace -o filenames -F dev
 ### Aliases and functions
 ###
 
-# Load bash aliases and zsh functions
-. ~/.bash_aliases
+# Load bash/zsh shared aliases and functions
+. ~/.sh_aliases
+. ~/.sh_functions
+
+# Load zsh specific functions
 . ~/.zsh_functions
 
 if [ -f ${HOME}/.bash_vault ]; then
