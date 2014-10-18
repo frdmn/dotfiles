@@ -6,10 +6,4 @@ if [ -f ${HOME}/.dotfiles/hostnames/${HOSTNAME} ]; then
   . ${HOME}/.dotfiles/hostnames/${HOSTNAME}
 fi
 
-###
-### Vault (not included in git repo)
-###
-
-if [ -f ${HOME}/.bash_vault ]; then
-  . ${HOME}/.bash_vault
-fi
+# @TODO !!!

@@ -82,6 +82,10 @@ complete -o nospace -o filenames -F dev
 . ~/.bash_aliases
 . ~/.zsh_functions
 
+if [ -f ${HOME}/.bash_vault ]; then
+  . ${HOME}/.bash_vault
+fi
+
 ###
 ### Key bindings
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
