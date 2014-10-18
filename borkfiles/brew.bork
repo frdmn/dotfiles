@@ -21,6 +21,8 @@ ok brew tmux
 ok brew terminal-notifier
 ok brew wine
 ok brew go
+ok brew ffmpeg
+ok brew convert
 
 # Cleanup
 bake brew cleanup
