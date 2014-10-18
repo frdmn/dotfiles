@@ -26,6 +26,7 @@ ok cask quicklook-csv
 ok cask betterzipql
 ok cask webp-quicklook
 ok cask suspicious-package
+ok cask virtualbox
 
 # Cleanup
 bake "brew cleanup >/dev/null && echo ok: brew cleanup || echo error: brew cleanup => run 'brew cleanup' for stdout and stderr" 
