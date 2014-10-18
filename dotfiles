@@ -1,21 +1,38 @@
 #!/usr/bin/env bash
 
+COMMAND="satisfy"
+FULLHOST=$(hostname -f)
+CURRENTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Check if bork repo exists
-if [ ! -d bork/.git ]; then
-    git clone https://github.com/mattly/bork.git
+if [ ! -d ${CURRENTDIR}/bork/.git ]; then
+    echo "missing: bork"
+    git clone https://github.com/mattly/bork.git ${CURRENTDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
+else
+    echo "ok: bork"
 fi
 
-COMMAND="satisfy"
+# Make sure dotfile repo is up to date
+git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
 
 # Check arguments
 if [ -z ${1} ]; then
-    # Make sure dotfile repo is up to date
-    git pull
     # If no 2nd argument => use bootstrap borkfile
-    bork/bin/bork ${COMMAND} borkfiles/bootstrap.bork
+    ${CURRENTDIR}/bork/bin/bork ${COMMAND} borkfiles/bootstrap.bork
+
+    # Host specific
+    if [ "$(ls ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles)" ]; then
+      # Change into the host specific borkfile folder. Hack to avoid bork appending the fullpath a second time
+      echo "info: found host-specific bork files for \"${FULLHOST}\""
+      cd ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles
+      for file in *; do
+        # Execute without location paths
+        ${CURRENTDIR}/bork/bin/bork ${COMMAND} "${file}"
+      done
+      # Change back into previous directory
+      cd - >/dev/null
+    fi
 else
-    # Make sure dotfile repo is up to date
-    git pull
     # Otherwise, install use the specific borkfile(s)
     BORKFILES=${@:1}
     # For each specified borkfile
@@ -23,15 +40,18 @@ else
         if [[ -f borkfiles/${BORK}.bork ]]; then
             # Expand to actual path of borkfile, append to $BORKFILESTRING
             BORKFILESTRING+=" borkfiles/${BORK}.bork"
+        # If host specific, use that one instead
+        elif [[ -f ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles/${BORK}.bork ]]; then
+            # Expand to actual path of borkfile, append to $BORKFILESTRING
+            echo "info: found host-specific bork files for \"${FULLHOST}\""
+            BORKFILESTRING+=" hostnames/${FULLHOST}/borkfiles/${BORK}.bork"
         else 
-            echo "Error: couldn't find borkfile \"borkfiles/${BORK}.bork\""
+            echo "Error: couldn't find borkfile \"${BORK}.bork\" :("
         fi
     done
     # Check if we have found at least one valid borkfile
-    if [[ -z ${BORKFILESTRING} ]]; then
-        echo "Error: no valid borkfiles to process!"
-    else
+    if [[ ! -z ${BORKFILESTRING} ]]; then
         # Execute $BORKFILESTRING 
-        bork/bin/bork ${COMMAND} ${BORKFILESTRING}
+        ${CURRENTDIR}/bork/bin/bork ${COMMAND} ${BORKFILESTRING}
     fi
 fi

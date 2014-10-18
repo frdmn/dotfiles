@@ -60,9 +60,19 @@ Explanation of the directories:
 └── Secret stuff that you rather don't track in the git repo
 
 ./hostnames
-└── This folder could contain hostname specific (per host) dotfiles which get
-    sourced by your Bash/ZSH shell only if there is a file that matches our
-    current full (`$HOSTNAME`) hostname.
+└── This folder could contain hostname specific (per host) configurations
+    which gets processed during the execution of `dotfiles` if there is a
+    folder that matches the current full (`hostname -f`) hostname.
+./hostnames/example.hostna.me/borkfiles
+└── If this folder contains brokfiles (files ending in ".bork"), they are
+    getting executed during the `dotfiles` process.
+./hostnames/example.hostna.me/configs
+└── This folder could contain custom dotfile configurations that you only
+    need on one specific host. A custom `.vimrc`? Just drop a file called 
+    `vimrc` in here and you are good to go. (If there is already a global one
+    from ./configs with the same name, it will overwrite the global one)
+./hostnames/example.hostna.me/includes
+└── Dotfiles which get sourced by your Bash/ZSH shell on each login
 
 ./opt
 └── Specific files which gets symlinked into non-$HOME folders. Used by

@@ -2,8 +2,12 @@
 ### Per hostname
 ###
 
-if [ -f ${HOME}/.dotfiles/hostnames/${HOSTNAME} ]; then
-  . ${HOME}/.dotfiles/hostnames/${HOSTNAME}
+# Check for host specific sources/includes
+FULLHOST=$(hostname -f)
+if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes)" ]; then
+  for file in ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes/*; do
+    . "${file}"
+  done
 fi
 
 # @TODO !!!
