@@ -81,3 +81,7 @@ Explanation of the directories:
 ### License
 
 [WTFPL](LICENSE)
+
+### Version
+
+1.0
