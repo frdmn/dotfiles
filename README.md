@@ -42,22 +42,22 @@ Explanation of the directories:
 ```
 ./bork
 └── This folder includes the bork git repository which gets updated as
-    soon as you update the the dotfiles
+    soon as you update the the dotfiles.
 
 ./borkfiles
 └── Includes the actual bork files, seperated to allow a condition based
-    installation (system architecture, OS type)
+    installation (system architecture, OS type).
 
 ./borkfiles/bootstrap.bork
 └── This is the bootstrapping one, which applies the other Borkfiles in
-    the same folder
+    the same folder.
 
 ./configs
 └── Contains all of your configuration files which gets symlinked into $HOME
-    as ".$FILE". So basically, your actual dotfiles (zshrc, vimrc, gitconfig)
+    as ".$FILE". So basically, your actual dotfiles (zshrc, vimrc, gitconfig).
 
 ./configs/bash_vault
-└── Secret stuff that you rather don't track in the git repo
+└── Secret stuff that you rather don't track in the git repo.
 
 ./hostnames
 └── This folder could contain hostname specific (per host) configurations
@@ -70,17 +70,17 @@ Explanation of the directories:
 └── This folder could contain custom dotfile configurations that you only
     need on one specific host. A custom `.vimrc`? Just drop a file called 
     `vimrc` in here and you are good to go. (If there is already a global one
-    from ./configs with the same name, it will overwrite the global one)
+    from ./configs with the same name, it will overwrite the global one).
 ./hostnames/example.hostna.me/includes
-└── Dotfiles which get sourced by your Bash/ZSH shell on each login
+└── Dotfiles which get sourced by your Bash/ZSH shell on each login.
 
 ./opt
 └── Specific files which gets symlinked into non-$HOME folders. Used by
-    atom.bork
+    atom.bork.
 
 ./zsh
 └── ZSH dependencies and plugins like the prompt, the zsh-syntax-highlighting.
-    This folder gets symlinked into $HOME/.zsh and is used in ./configs/zshrc
+    This folder gets symlinked into $HOME/.zsh and is used in ./configs/zshrc.
 ```
 
 ### Credits
