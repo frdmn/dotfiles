@@ -79,3 +79,6 @@ alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
 
 # Update locatedb
 alias updatedb="sudo /usr/libexec/locate.updatedb"
+
+# Bork alias
+alias bork="~/.dotfiles/bork/bin/bork"
