@@ -37,6 +37,7 @@ ok cask private-internet-access $appdir
 ok cask sequel-pro $appdir
 ok cask shortcat $appdir
 ok cask skype $appdir
+ok cask sublime-text3 $appdir
 ok cask teamviewer $appdir
 ok cask transmit $appdir
 #ok cask tunnelblick $appdir# because this version 3 4 0_r3007 it's not Yosemite ready yet
