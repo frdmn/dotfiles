@@ -7,7 +7,7 @@ CURRENTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Check if bork repo exists
 if [ ! -d ${CURRENTDIR}/bork/.git ]; then
     echo "missing: bork"
-    git clone https://github.com/mattly/bork.git ${CURRENTDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
+    git clone https://github.com/frdmn/bork.git ${CURRENTDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
 else
     echo "ok: bork"
 fi
