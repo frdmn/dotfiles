@@ -1,3 +1,6 @@
+# I want my appliction symlinks in ~/Applications
+appdir="--appdir=/Applications"
+
 # Taps
 bake brew tap caskroom/cask 2>/dev/null
 bake brew tap caskroom/versions 2>/dev/null
@@ -5,42 +8,42 @@ bake brew tap caskroom/versions 2>/dev/null
 # Install Homebrew Cask
 ok brew brew-cask
 
-# Install desktop apps
-ok cask a-better-finder-rename
-ok cask adium-beta
-ok cask alfred
-ok cask appcleaner
-ok cask atext
-ok cask atom
-ok cask chicken
-ok cask dropbox
-ok cask gas-mask
-ok cask github
-ok cask google-chrome-beta
+# Install desktop apps $appdir
+ok cask a-better-finder-rename $appdir
+ok cask adium-beta $appdir
+ok cask alfred $appdir
+ok cask appcleaner $appdir
+ok cask atext $appdir
+ok cask atom $appdir
+ok cask chicken $appdir
+ok cask dropbox $appdir
+ok cask gas-mask $appdir
+ok cask github $appdir
+ok cask google-chrome-beta $appdir
 ok cask gpgtools
-ok cask handbrake
-ok cask hazel
-ok cask hex-fiend
-ok cask iterm2-nightly
-ok cask jdownloader
-ok cask keka
-ok cask macdown
-ok cask macpass
-ok cask minecraft
-ok cask multibit
-ok cask nvalt
-ok cask onepassword
-ok cask private-internet-access
-ok cask sequel-pro
-ok cask shortcat
-ok cask skype
-ok cask teamviewer
-ok cask transmit
-#ok cask tunnelblick # because this version 3 4 0_r3007 it's not Yosemite ready yet
-ok cask vagrant
-ok cask virtualbox
-ok cask vlc
-ok cask wireshark
+ok cask handbrake $appdir
+ok cask hazel $appdir
+ok cask hex-fiend $appdir
+ok cask iterm2-nightly $appdir
+ok cask jdownloader $appdir
+ok cask keka $appdir
+ok cask macdown $appdir
+ok cask macpass $appdir
+ok cask minecraft $appdir
+ok cask multibit $appdir
+ok cask nvalt $appdir
+ok cask onepassword $appdir
+ok cask private-internet-access $appdir
+ok cask sequel-pro $appdir
+ok cask shortcat $appdir
+ok cask skype $appdir
+ok cask teamviewer $appdir
+ok cask transmit $appdir
+#ok cask tunnelblick $appdir# because this version 3 4 0_r3007 it's not Yosemite ready yet
+ok cask vagrant $appdir
+ok cask virtualbox $appdir
+ok cask vlc $appdir
+ok cask wireshark $appdir
 ok cask xquartz
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
