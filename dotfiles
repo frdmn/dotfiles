@@ -9,7 +9,16 @@ if [ ! -d ${CURRENTDIR}/bork/.git ]; then
     echo "missing: bork"
     git clone https://github.com/frdmn/bork.git ${CURRENTDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
 else
-    echo "ok: bork"
+    # Check if bork is up to date
+    REMOTEHEAD=$(git --git-dir=${CURRENTDIR}/bork/.git --work-tree=${CURRENTDIR}/bork ls-remote origin -h refs/heads/master | awk '{ print $1 }')
+    LOCALHEAD=$(git --git-dir=${CURRENTDIR}/bork/.git --work-tree=${CURRENTDIR}/bork rev-parse HEAD)
+    if [[ $REMOTEHEAD == $LOCALHEAD ]]; then
+        echo "ok: bork"
+    else
+        echo "outdated: bork"
+        git --git-dir=${CURRENTDIR}/bork/.git --work-tree=${CURRENTDIR}/bork git pull
+        echo "ok: bork"
+    fi
 fi
 
 # Make sure dotfile repo is up to date
