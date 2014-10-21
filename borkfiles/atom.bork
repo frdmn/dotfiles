@@ -4,7 +4,6 @@ ok directory ${HOME}/.atom
 # Check if symlink for Atom config exists
 if [[ ! -h ${HOME}/.atom/config.cson ]]; then
     echo "missing: symlink ~/.atom/config.cson"
-    rm $HOME/.atom/config.cson &> /dev/null
     ln -sf ${HOME}/.dotfiles/opt/config.cson ${HOME}/.atom/config.cson
     echo "ok: symlink ~/.atom/config.cson"
 else
