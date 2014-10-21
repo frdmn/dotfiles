@@ -106,3 +106,13 @@ ok defaults com.apple.mail AddressesIncludeNameOnPasteboard bool false
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 ok defaults com.apple.TimeMachine DoNotOfferNewDisksForBackup bool true
+
+###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+
+# Enable custom preferences folder
+ok defaults com.googlecode.iterm2 LoadPrefsFromCustomFolder bool true
+
+# Load preferences from dotfiles repo
+ok defaults com.googlecode.iterm2 PrefsCustomFolder string '~/.dotfiles/opt'
