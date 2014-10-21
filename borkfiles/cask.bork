@@ -1,5 +1,13 @@
-# I want my appliction symlinks in ~/Applications
-appdir="--appdir=/Applications"
+# Load settings file
+. ~/.dotfiles/settings.conf
+
+# I want some my appliction symlinks in ${CASK_APPLICATION_FOLDER}
+# instead of ~/Applications. If set, generate argument string
+if [[ -n ${CASK_APPLICATION_FOLDER} ]]; then
+    appdir="--appdir=${CASK_APPLICATION_FOLDER}"
+else
+    appdir=""
+fi
 
 # Taps
 bake brew tap caskroom/cask 2>/dev/null

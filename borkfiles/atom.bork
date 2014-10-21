@@ -1,13 +1,16 @@
+# Load settings file
+. ~/.dotfiles/settings.conf
+
 # Check if Atom directory exists
-ok directory ${HOME}/.atom
+ok directory ${ATOM_CONFIG_FOLDER}
 
 # Check if symlink for Atom config exists
-if [[ ! -h ${HOME}/.atom/config.cson ]]; then
-    echo "missing: symlink ~/.atom/config.cson"
-    ln -sf ${HOME}/.dotfiles/opt/config.cson ${HOME}/.atom/config.cson
-    echo "ok: symlink ~/.atom/config.cson"
+if [[ ! -h ${ATOM_CONFIG_FOLDER}/config.cson ]]; then
+    echo "missing: symlink ${ATOM_CONFIG_FOLDER}/config.cson"
+    ln -sf ${HOME}/.dotfiles/opt/config.cson ${ATOM_CONFIG_FOLDER}/config.cson
+    echo "ok: symlink ${ATOM_CONFIG_FOLDER}/config.cson"
 else
-    echo "ok: symlink ~/.atom/config.cson"
+    echo "ok: symlink ${ATOM_CONFIG_FOLDER}/config.cson"
 fi
 
 #
