@@ -9,3 +9,6 @@ ok apt pv
 ok apt maven
 ok apt python
 ok apt zsh
+ok apt iftop
+ok apt iotop
+ok apt htop
