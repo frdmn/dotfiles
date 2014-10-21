@@ -139,6 +139,7 @@ fi
 ###
 
 # php-fpm
+export PHP_AUTOCONF="/usr/local/bin/autoconf"
 export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
 # Maven
