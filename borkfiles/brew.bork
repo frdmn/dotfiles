@@ -23,6 +23,7 @@ ok brew wine
 ok brew go
 ok brew ffmpeg
 ok brew imagemagick
+ok brew bats
 
 # Cleanup
 bake brew cleanup
