@@ -13,13 +13,19 @@ case $OSTYPE in
     include cask.bork
     include macstore.bork
     include osx.bork
-    include atom.bork
-    ;;
+    include atom.bork ;;
   linux*)
-    include apt.bork
+    include apt.bork ;;
+esac
+
+# Shell specfic
+case $SHELL in
+  *zsh*)
+    include zsh.bork ;;
+  *bash*)
+    include bash.bork ;;
 esac
 
 # Depending on above
-include zsh.bork
 include npm.bork
 include vim.bork #@TODO

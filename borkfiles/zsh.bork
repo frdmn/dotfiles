@@ -1,12 +1,3 @@
-# Check if ZSH is currently in use
-if [[ ${SHELL} == *bash ]]; then
-    echo "missing: shell ZSH"
-    chsh -s /bin/zsh
-    echo "ok: shell ZSH"
-else
-    echo "ok: shell ZSH"
-fi
-
 # Check if symlink for ZSH extras exists
 if [[ ! -h ${HOME}/.zsh ]]; then
     echo "missing: symlink ~/.zsh"
