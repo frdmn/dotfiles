@@ -13,7 +13,8 @@ case $OSTYPE in
     include cask.bork
     include macstore.bork
     include osx.bork
-    include atom.bork ;;
+    include atom.bork
+    include sublimetext3.bork ;;
   linux*)
     include apt.bork ;;
 esac

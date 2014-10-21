@@ -1,0 +1,22 @@
+{
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"EasyDiff",
+		"Emmet",
+		"Expand Tabs on Save",
+		"FileDiffs",
+		"JSHint",
+		"MarkdownEditing",
+		"Nodejs",
+		"PlainTasks",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"Theme - Spacegray"
+	]
+}
