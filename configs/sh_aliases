@@ -82,3 +82,6 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 
 # Bork alias
 alias bork="~/.dotfiles/bork/bin/bork"
+
+# Recursive search using grep
+search() { grep -R "${*}" . }
