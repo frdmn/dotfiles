@@ -72,7 +72,7 @@ alias nginx.logs.phpmyadmin.error='tail -250f /usr/local/etc/nginx/logs/phpmyadm
 alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.access.log'
 
 # Function to use dotfile wrapper in any directory
-function dotfiles(){cd ~/.dotfiles; ./dotfiles $1; cd - > /dev/null}
+dotfiles(){cd ~/.dotfiles; ./dotfiles $1; cd - > /dev/null}
 
 # Kill all tmux sessions
 alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
