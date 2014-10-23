@@ -2,11 +2,14 @@
 ok directory /usr/local/src
 destination /usr/local/src
 ok github frdmn/dev-sh
+ok github frdmn/ssltools
 
 # Check for psshrun script
 ok github frdmn/psshrun
 # Link executable into $PATH
 destination /usr/local/bin
 ok symlink "psshrun" "/usr/local/src/psshrun/psshrun"
+ok symlink "sslhost" "/usr/local/src/ssltools/sslhost"
+ok symlink "sslcsr" "/usr/local/src/ssltools/sslcsr"
 
 destination $HOME/.dotfiles
