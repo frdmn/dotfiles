@@ -11,3 +11,5 @@ if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes)" ]; then
 fi
 
 # @TODO !!!
+PATH=/usr/local/bin:/usr/local/sbin:/Users/friedmann/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/opt/php55/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/local/opt/go/libexec/bin
+PATH=/usr/local/opt/ruby193/bin:/usr/local/bin:/usr/local/sbin:/Users/friedmann/.bin:/usr/local/sbin:/usr/local/bin:/usr/local/opt/php55/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/local/opt/go/libexec/bin
