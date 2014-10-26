@@ -24,6 +24,8 @@ ok brew go
 ok brew ffmpeg
 ok brew imagemagick
 ok brew bats
+ok brew boot2docker
+ok brew docker
 
 # Cleanup
 bake brew cleanup
