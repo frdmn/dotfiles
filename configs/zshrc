@@ -150,7 +150,6 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # boot2docker
-export DOCKER_HOST=tcp://192.168.59.104:2376
 export DOCKER_CERT_PATH=/Users/jfr/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
