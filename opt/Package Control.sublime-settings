@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"BracketHighlighter",
+		"Color Highlighter",
 		"EasyDiff",
 		"Emmet",
 		"Expand Tabs on Save",
