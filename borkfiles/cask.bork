@@ -19,6 +19,7 @@ ok cask atext $appdir
 ok cask atom $appdir
 ok cask bartender $appdir
 ok cask chicken $appdir
+ok cask daisydisk $appdir
 ok cask dropbox $appdir
 ok cask gas-mask $appdir
 ok cask github $appdir
