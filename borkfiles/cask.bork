@@ -17,6 +17,7 @@ ok cask alfred $appdir
 ok cask appcleaner $appdir
 ok cask atext $appdir
 ok cask atom $appdir
+ok cask bartender $appdir
 ok cask chicken $appdir
 ok cask dropbox $appdir
 ok cask gas-mask $appdir
@@ -61,5 +62,5 @@ ok cask webp-quicklook
 ok cask suspicious-package
 
 # Cleanup
-bake "brew cleanup >/dev/null && echo ok: brew cleanup || echo error: brew cleanup => run 'brew cleanup' for stdout and stderr" 
+bake "brew cleanup >/dev/null && echo ok: brew cleanup || echo error: brew cleanup => run 'brew cleanup' for stdout and stderr"
 bake "brew cask cleanup >/dev/null && echo ok: cask cleanup || echo error: cask cleanup => run 'brew cleanup' for stdout and stderr"
