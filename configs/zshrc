@@ -62,6 +62,9 @@ complete -o nospace -o filenames -F dev
 # Load tmuxinator completion
 . ${HOME}/.zsh/tmuxinator.zsh
 
+# Complete known SSH hosts
+. ${HOME}/.zsh/ssh-hosts.zsh
+
 # Load zsh-autosuggestions plugin
 . /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
 
