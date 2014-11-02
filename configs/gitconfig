@@ -5,13 +5,14 @@
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
-    
+
 [user]
     name = Jonas Friedmann
     email = j@frd.mn
 
 [merge]
     log = true
+    tool = sublime
 
 [push]
     default = simple
@@ -22,10 +23,16 @@
 
 [mergetool]
     prompt = false
+
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
+
 [alias]
-	s = status
-	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    s = status
+    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[mergetool "sublime"]
+    cmd = subl -w $MERGED
+    trustExitCode = false
