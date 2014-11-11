@@ -21,6 +21,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"SublimeLinter-phplint",
 		"Theme - Spacegray"
 	]
 }
