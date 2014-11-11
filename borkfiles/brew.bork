@@ -26,6 +26,7 @@ ok brew imagemagick
 ok brew bats
 ok brew boot2docker
 ok brew docker
+ok brew phantomjs
 
 # Cleanup
 bake brew cleanup
