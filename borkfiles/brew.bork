@@ -27,6 +27,7 @@ ok brew bats
 ok brew boot2docker
 ok brew docker
 ok brew phantomjs
+ok brew git-extras
 
 # Cleanup
 bake brew cleanup
