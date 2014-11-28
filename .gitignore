@@ -9,3 +9,6 @@ zsh/plugins
 
 # Bash vault
 configs/bash_vault
+
+# Brew stderr file
+run
