@@ -10,3 +10,5 @@ ok npm prettyjson
 ok npm localtunnel
 ok npm hackertalk
 ok npm json
+ok npm livedown
+ok npm awm
