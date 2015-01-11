@@ -28,6 +28,7 @@ ok brew boot2docker
 ok brew docker
 ok brew phantomjs
 ok brew git-extras
+ok brew mitmproxy
 
 # Cleanup
 bake brew cleanup
