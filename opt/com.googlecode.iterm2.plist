@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabs</key>
+	<true/>
+	<key>AboutToPasteTabs_selection</key>
+	<integer>0</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
@@ -407,12 +411,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/opt</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 508}</string>
+	<string>~/Desktop</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -436,24 +436,29 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1169 78 445 270 0 0 1680 1028 </string>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>2</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>746 616 796 475 0 0 1920 1177 </string>
+	<string>282 497 597 519 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>554 365 570 402 0 0 1920 1177 </string>
+	<string>538 151 1375 664 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>415 509 570 402 0 0 1920 1177 </string>
+	<string>180 117 1620 709 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>905 422 570 402 0 0 1920 1177 </string>
+	<string>-1359 633 570 402 -1680 150 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>177 154 570 401 0 0 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>338 776 570 401 0 0 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>359 766 570 401 0 0 1920 1177 </string>
+	<string>401 726 570 451 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1228,9 +1233,9 @@
 			<string>/Users/jfr</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1280,7 +1285,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/jfr/.dotfiles/opt</string>
+	<string>~/.dotfiles/opt</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1302,11 +1307,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-20T18:55:03Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
-	<key>SUSkippedVersion</key>
-	<string>1.0.0.20140518</string>
+	<date>2015-01-02T07:13:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1332,7 +1333,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1410109952</real>
+	<real>1416388096</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1356,6 +1357,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20141016-nightly</string>
+	<string>2.9.20150101-nightly</string>
 </dict>
 </plist>
