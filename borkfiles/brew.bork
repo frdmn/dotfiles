@@ -29,6 +29,7 @@ ok brew docker
 ok brew phantomjs
 ok brew git-extras
 ok brew mitmproxy
+ok brew nmap
 
 # Cleanup
 bake brew cleanup
