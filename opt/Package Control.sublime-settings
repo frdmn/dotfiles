@@ -23,6 +23,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-php",
 		"SublimeLinter-phplint",
+		"Terminality",
 		"Theme - Spacegray"
 	]
 }
