@@ -6,7 +6,6 @@ ok macstore "Color Maker" 561995913
 ok macstore Dash 458034879
 ok macstore Fantastical 435003921
 ok macstore KarmaBox 559766937
-ok macstore Linkinus 402390998
 ok macstore "Microsoft Remote Desktop" 715768417
 ok macstore Minutes 406827163
 ok macstore Money 402410845
@@ -16,3 +15,4 @@ ok macstore Parcel 639968404
 ok macstore SiteSucker 442168834
 ok macstore Tweetbot 557168941
 #ok macstore Xcode 497799835 # disabled until 6.1 is available in MAS in Germany
+ok macstore "Textual 5" 896450579
