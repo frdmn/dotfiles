@@ -44,6 +44,9 @@ zstyle ':completion:*' menu select
 
 complete -o nospace -o filenames -F dev
 
+# Add autocomplete for git-extras
+zstyle ':completion:::git:*' script /usr/local/etc/bash_completion.d/git-completion.bash
+
 ###
 ### Plugins and prompt
 ###
