@@ -72,8 +72,9 @@ zstyle ':completion:*' insert-tab false
 ###
 
 # Load Robby Russell's theme/prompt and dependencies
-. ${HOME}/.zsh/git.zsh
 . ${HOME}/.zsh/appearance.zsh
+. ${HOME}/.zsh/git.zsh
+. ${HOME}/.zsh/git-extras.zsh
 . ${HOME}/.zsh/prompts/robbyrussell.zsh
 
 # Load zsh-syntax-highlighting plugin
