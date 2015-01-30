@@ -23,6 +23,7 @@ ok github frdmn/dev-sh
 ok github frdmn/psshrun
 ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
+ok github marzocchi/zsh-notify
 
 # Go back into dotfile directory
 destination $HOME/.dotfiles
