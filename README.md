@@ -1,23 +1,26 @@
 dotfiles
 ========
 
-[Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems which is really simple and easy to understand.
+[Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems that is really simple and easy to understand.
 
 ### Features
 
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
-* Brew and Cask package check
-* Mac App Store app check
+* Brew and Cask package check ensures that your packages are installed
+* Mac App Store app check ensures that your OS X apps are installed
 * `npm` (Node Package Manager) package check
-* `apt-get` package check
-* Sublime Text 3 package check
+* Ruby `gem`'s check
+* `apt-get` package check for Linux systems
+* Sublime Text 3 package check (via [Package Control](packagecontrol.io))
 * Commented code, so you know what is actually going on
 * Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
 * Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
-* Hostname specific processing
-* [Powerline](https://github.com/Lokaltog/powerline) in Vim and Tmux
-* [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) ZSH plugin
-* [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) ZSH plugin
+* Hostname specific processing and customizations
+* ZSH tab/auto completion
+* [Powerline](https://github.com/Lokaltog/powerline) in `vi` and `tmux`
+* [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
+* [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
+* [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
 
 ### Installation
 
