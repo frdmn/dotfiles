@@ -71,6 +71,10 @@ zstyle ':completion:::git:*' script /usr/local/etc/bash_completion.d/git-complet
 # Load zsh-autosuggestions plugin
 . /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
 
+# Load zsh-notify plugin
+# (tmp disabled because bugged with iTerm nightlies)
+#. /usr/local/src/zsh-notify/notify.plugin.zsh
+
 ###
 ### Aliases and functions
 ###
