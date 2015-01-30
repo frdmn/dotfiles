@@ -64,6 +64,9 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
         operator pcap postfix postgres privoxy pulse pvm quagga radvd \
         rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs
 
+# Disable tab character insertion
+zstyle ':completion:*' insert-tab false
+
 ###
 ### Plugins and prompt
 ###
