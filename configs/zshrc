@@ -17,8 +17,11 @@ unsetopt beep                  # Don't beep
 unsetopt correct_all           # Don't try to autocorrect all arguments
 
 # History
+
 setopt append_history          # Append history to existing file
+setopt inc_append_history      # Append every single command to $HISTFILE immediately after hitting ENTER
 setopt extended_history        # Store timestamp and runtime
+setopt share_history           # Always import new commands from $HISTFILE
 setopt hist_expire_dups_first  # Expire duplicate history entries first
 setopt hist_ignore_dups        # Don't save entries if they are dupes of the previous event
 setopt hist_ignore_space       # If command starts with a space, don't append to history
