@@ -36,7 +36,7 @@ ok cask macpass $appdir
 ok cask minecraft $appdir
 ok cask multibit $appdir
 ok cask nvalt $appdir
-ok cask onepassword $appdir
+ok cask 1password-beta $appdir
 ok cask private-internet-access $appdir
 ok cask sequel-pro $appdir
 ok cask shortcat $appdir
