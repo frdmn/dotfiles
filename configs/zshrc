@@ -14,6 +14,7 @@ setopt prompt_subst            # Enable parameter expansion, command substitutio
 setopt prompt_cr               # prompt always at beginning of line
 setopt auto_param_slash        # If a parameter is completed whose content is the name of a directory, then add a trailing slash
 setopt mail_warning            # Print a warning message if a mail file has been accessed since the shell last checked
+setopt nonomatch               # Escape URL's special chars (eg.: ?)
 setopt no_list_beep            # Don't beep on an ambiguous completion
 unsetopt menu_complete         # Dont insert completion results immedietly
 unsetopt beep                  # Don't beep
@@ -40,7 +41,6 @@ HISTFILE=~/.zsh_history
 
 # Enable colors
 autoload -U colors && colors
-
 
 # Auto/tab-completions
 
