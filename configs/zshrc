@@ -38,11 +38,14 @@ HISTFILE=~/.zsh_history
 ### General
 ###
 
-# Enable bash completion
-autoload bashcompinit && bashcompinit
-
 # Enable colors
 autoload -U colors && colors
+
+
+# Auto/tab-completions
+
+# Enable bash completion
+autoload bashcompinit && bashcompinit
 
 # Use proper completion
 autoload -U compinit && compinit
