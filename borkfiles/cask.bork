@@ -59,7 +59,7 @@ ok cask quicklook-json
 ok cask qlprettypatch
 ok cask quicklook-csv
 ok cask betterzipql
-ok cask webp-quicklook
+ok cask webpquicklook
 ok cask suspicious-package
 
 # Cleanup
