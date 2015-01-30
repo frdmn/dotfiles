@@ -14,12 +14,15 @@ ok directory ${HOME}/.zsh/plugins
 destination ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
 
-# Check for dev-sh search tool
+# Make sure source-folder exists
 ok directory /usr/local/src
 destination /usr/local/src
+
+# Clone into ZSH plugins and functions
 ok github frdmn/dev-sh
 ok github frdmn/psshrun
-ok github tarruda/zsh-autosuggestions 
+ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
 
+# Go back into dotfile directory
 destination $HOME/.dotfiles
