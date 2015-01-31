@@ -2,14 +2,14 @@
 . ${HOME}/.dotfiles/opt/dotfiles_functions
 
 # Check if necessary Sublime Text 3 folder exists
-check_directory "${HOME}/Library/Application Support/Sublime Text 3/Installed Packages"
-check_directory "${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
+ok directory "${HOME}/Library/Application Support/Sublime Text 3/Installed Packages"
+ok directory "${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
 
 # Check if Package Control is installed
 check_curl "https://sublime.wbond.net/Package%20Control.sublime-package" "${HOME}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" "Package Control"
 
 # Check if symlink for Package Control's package list exists
-check_symlink "${HOME}/.dotfiles/opt/Package Control.sublime-settings" "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings" "Package Control configuration"
+ok symlink "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings" "${HOME}/.dotfiles/opt/Package Control.sublime-settings"
 
 # Check if symlink for Sublime Text 3 preferences file exists
-check_symlink "${HOME}/.dotfiles/opt/Preferences.sublime-settings" "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings" "Sublime Text 3 preferences file"
+ok symlink "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings" "${HOME}/.dotfiles/opt/Preferences.sublime-settings"

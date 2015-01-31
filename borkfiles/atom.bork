@@ -1,11 +1,8 @@
-# Import dotfile functions
-. ${HOME}/.dotfiles/opt/dotfiles_functions
-
 # Check if Atom directory exists
 ok directory "${HOME}/.atom"
 
 # Check if symlink for Atom config exists
-check_symlink "${HOME}/.dotfiles/opt/config.cson" "${HOME}/.atom/config.cson" "Atom config"
+ok symlink "${HOME}/.atom/config.cson" "${HOME}/.dotfiles/opt/config.cson"
 
 #
 # Install packages in Atomfile

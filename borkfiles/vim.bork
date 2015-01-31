@@ -1,8 +1,5 @@
-# Import dotfile functions
-. ${HOME}/.dotfiles/opt/dotfiles_functions
-
 # Check if symlink for .vim exists
-check_symlink "${HOME}/.dotfiles/configs/vim" "${HOME}/.vim"
+ok symlink "${HOME}/.vim" "${HOME}/.dotfiles/configs/vim"
 
 # Check if bundle folder exsits
 ok directory ${HOME}/.vim/bundle
