@@ -44,3 +44,25 @@ function check_directory(){
         echo "ok: ${label} ${folder}"
     fi
 }
+
+function check_curl(){
+    url="$1"
+    to="$2"
+    label="$3"
+
+    # If no label is passed, use "symlink" as default
+    if [[ -z ${label} ]]; then
+        label="cURL"
+    else
+        label="cURL ${label}"
+    fi
+
+    # Check if file exists, if not => curl download
+    if [[ ! -f "${to}" ]]; then
+        echo "missing: ${label} ${to}"
+        curl "${url}" -o "${to}" 2>/dev/null
+        echo "ok: ${label} ${url} -> ${to}"
+    else
+        echo "ok: ${label} ${url} -> ${to}"
+    fi
+}
