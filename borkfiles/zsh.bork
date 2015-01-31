@@ -1,4 +1,4 @@
-# Check if symlink for ZSH extras exists
+# Check if symlink for ZSH exists
 if [[ ! -h ${HOME}/.zsh ]]; then
     echo "missing: symlink ~/.zsh"
     ln -sf ${HOME}/.dotfiles/configs/zsh ${HOME}/.zsh
