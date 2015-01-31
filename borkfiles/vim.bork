@@ -10,9 +10,12 @@ fi
 # Check if bundle folder exsits
 ok directory ${HOME}/.vim/bundle
 
-# Check if Vundle.vim is installed
+# Check if Vundle.vim (plugin manager) is installed
 destination ${HOME}/.vim/bundle
 ok github gmarik/Vundle.vim
+
+# Install Vundle plugins
+bake vi +PluginInstall +qall
 
 # Go back into dotfile directory
 destination $HOME/.dotfiles
