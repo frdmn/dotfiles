@@ -192,4 +192,4 @@ export psshrun_configpath="${HOME}/.pssh"
 
 # $PATH
 export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH
-export EDITOR="vi"
+export EDITOR="vim"
