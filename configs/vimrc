@@ -25,6 +25,8 @@ Plugin 'Syntastic'
 Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
 " SuperTab (https://github.com/ervandew/supertab)
 Plugin 'SuperTab'
+" vim-markdown (https://github.com/tpope/vim-markdown)
+Plugin 'tpope/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
