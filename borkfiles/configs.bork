@@ -1,6 +1,6 @@
 destination $HOME
 
-for file in $HOME/.dotfiles/configs/*; do
+for file in $(find $HOME/.dotfiles/configs -maxdepth 1 -type f); do
   # Check if file or symlink exist, if file is not the current one, unlink first
   [[ -f ${HOME}/".$(basename ${file})" || -h ${HOME}/".$(basename ${file})" ]] && [ "$(diff ${HOME}/".$(basename ${file})" ${file})" != "" ] && unlink ${HOME}/".$(basename ${file})" &>/dev/null
   # Symlink file
@@ -12,9 +12,9 @@ FULLHOST=$(hostname -f)
 if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/configs 2> /dev/null)" ]; then
   for file in ${HOME}/.dotfiles/hostnames/${FULLHOST}/configs/*; do
     echo "info: found host-specific source/include for \"${FULLHOST}\""
-	# Check if file exist, if file is not the current one, unlink first
+    # Check if file exist, if file is not the current one, unlink first
     [[ -f ${HOME}/".$(basename ${file})" || -h ${HOME}/".$(basename ${file})" ]] && [ "$(diff ${HOME}/".$(basename ${file})" ${file})" != "" ] && unlink ${HOME}/".$(basename ${file})" &>/dev/null
-	# Symlink file
+    # Symlink file
     ok symlink ".$(basename ${file})" ${file}
   done
 fi
