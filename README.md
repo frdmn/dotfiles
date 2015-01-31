@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-![http://up.frd.mn/GztEi.png]
+![](http://up.frd.mn/J36C7.png)
 
 [Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems that is really simple and easy to understand.
 
