@@ -15,7 +15,8 @@ destination ${HOME}/.vim/bundle
 ok github gmarik/Vundle.vim
 
 # Install Vundle plugins
-bake vi +PluginInstall +qall
+bake vim +PluginInstall +qall
+echo "ok: installed Vunlde plugins"
 
 # Go back into dotfile directory
 destination $HOME/.dotfiles
