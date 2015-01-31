@@ -1,3 +1,6 @@
+# Import dotfile functions
+. ${HOME}/.dotfiles/opt/dotfiles_functions
+
 # Check if Atom directory exists
 ok directory "${HOME}/.atom"
 
