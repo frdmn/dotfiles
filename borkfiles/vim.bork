@@ -16,3 +16,12 @@ else
   bake pip install git+git://github.com/Lokaltog/powerline >/dev/null
   echo "ok: pip ${package}"
 fi
+# Check if bundle folder exsits
+ok directory ${HOME}/.vim/bundle
+
+# Check if Vundle.vim is installed
+destination ${HOME}/.vim/bundle
+ok github gmarik/Vundle.vim
+
+# Go back into dotfile directory
+destination $HOME/.dotfiles
