@@ -23,8 +23,8 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Syntastic'
 " Tomorrow theme
 Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
-" SuperTab (https://github.com/ervandew/supertab)
-Plugin 'SuperTab'
+" YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
+Plugin 'Valloric/YouCompleteMe'
 " vim-markdown (https://github.com/tpope/vim-markdown)
 Plugin 'tpope/vim-markdown'
 
