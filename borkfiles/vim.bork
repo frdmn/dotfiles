@@ -1,11 +1,8 @@
+# Import dotfile functions
+. ${HOME}/.dotfiles/opt/dotfiles_functions
+
 # Check if symlink for .vim exists
-if [[ ! -h ${HOME}/.vim ]]; then
-  echo "missing: symlink ~/.vim"
-  ln -sf ${HOME}/.dotfiles/configs/vim ${HOME}/.vim
-  echo "ok: symlink ~/.vim"
-else
-  echo "ok: symlink ~/.vim"
-fi
+check_symlink "${HOME}/.dotfiles/configs/vim" "${HOME}/.vim"
 
 # Check if bundle folder exsits
 ok directory ${HOME}/.vim/bundle
