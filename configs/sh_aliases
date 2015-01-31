@@ -1,7 +1,7 @@
 # Be nice
 alias please="sudo"
 
-# Easier navigation: .., ..., ...., ..... and --
+# Easier navigation: .., ..., ....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -85,3 +85,5 @@ alias bork="~/.dotfiles/bork/bin/bork"
 
 # Recursive search using grep
 search() { grep -R "${*}" . }
+
+alias vi="vim"
