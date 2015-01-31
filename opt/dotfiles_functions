@@ -25,3 +25,22 @@ function check_symlink(){
         fi
     fi
 }
+
+function check_directory(){
+    folder="$1"
+    label="$2"
+
+    # If no label is passed, use "symlink" as default
+    if [[ -z ${label} ]]; then
+        label="directory"
+    fi
+
+    # Check if symlink exists, if not => recreate
+    if [[ ! -d "${folder}" ]]; then
+        echo "missing: ${label} ${folder}"
+        mkdir -p "${folder}"
+        echo "ok: ${label} ${folder}"
+    else
+        echo "ok: ${label} ${folder}"
+    fi
+}
