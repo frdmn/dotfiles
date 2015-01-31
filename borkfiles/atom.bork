@@ -17,12 +17,12 @@ fi
 # Store packages out of Atomfile in variable
 pkgs=$(cat ${HOME}/.dotfiles/opt/Atomfile)
 # As well as the currently installed packages in Atom
-installedPkgs=$(apm ls --color false | # list all packages
-awk '/Users/,/^$/' | # Extract user installed packages
-tail -n +2 | # remove first line
-awk 'NR>1{print buf}{buf = $0}' | # remove last line
-cut -c 5- | # remove first 4 characters in each line
-sed 's/@[0-9\.]*//g') # remove "@0.1.6" version pattern
+installedPkgs=$(apm ls --color false |  # list all packages
+awk '/Users/,/^$/' |                    # extract user installed packages
+tail -n +2 |                            # remove first line
+awk 'NR>1{print buf}{buf = $0}' |       # remove last line
+cut -c 5- |                             # remove first 4 characters in each line
+sed 's/@[0-9\.]*//g')                   # remove "@0.1.6" version pattern
 
 # For each package in Atomfile
 for pkg in $pkgs; do
