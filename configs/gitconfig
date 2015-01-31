@@ -1,6 +1,6 @@
 [core]
     excludesfile = ~/.gitignore
-    editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
