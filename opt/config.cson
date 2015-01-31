@@ -12,4 +12,6 @@
     ]
   'editor':
     'tabLength': 4
-    'invisibles': {}
+  'highlight-line':
+    'underline':
+      'solid': false
