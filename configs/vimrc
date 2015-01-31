@@ -23,6 +23,8 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Syntastic'
 " Tomorrow theme
 Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
+" SuperTab (https://github.com/ervandew/supertab)
+Plugin 'SuperTab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
