@@ -14,8 +14,12 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 
-" Add powerline
+" Powerline (https://github.com/powerline/powerline)
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Syntax checker (https://github.com/scrooloose/syntastic)
+Plugin 'Syntastic'
+" Tomorrow theme
+Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -38,5 +42,14 @@ filetype plugin indent on
 " [Powerline] Always show powerline
 set laststatus=2
 
-"  [Powerline] Use 256 colours
+" [Powerline] Use 256 colours
 set t_Co=256
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
