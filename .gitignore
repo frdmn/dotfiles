@@ -12,3 +12,6 @@ configs/bash_vault
 
 # Brew stderr file
 run
+
+# VIm temp files
+configs/vim/.netrwhist
