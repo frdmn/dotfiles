@@ -7,15 +7,6 @@ else
   echo "ok: symlink ~/.vim"
 fi
 
-# Check if powerline is installed
-package="git+git://github.com/Lokaltog/powerline"
-if pip list | egrep "[pP]owerline" &> /dev/null; then
-  echo "ok: pip ${package}";
-else
-  echo "missing: pip ${package}"
-  bake pip install git+git://github.com/Lokaltog/powerline >/dev/null
-  echo "ok: pip ${package}"
-fi
 # Check if bundle folder exsits
 ok directory ${HOME}/.vim/bundle
 

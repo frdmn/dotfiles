@@ -1,21 +1,28 @@
-" be iMproved, required
+" be iMproved
 set nocompatible
-" required
 filetype off
+
+"""
+" Vundle
+"""
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
-" let Vundle manage Vundle, required
+" let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
+
+" Add powerline
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
 
-" Brief help
+" Brief Vundle help
+
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
@@ -24,11 +31,12 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Load powerline
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
+"""
+" Plugin settings
+"""
 
-" Always show powerline
+" [Powerline] Always show powerline
 set laststatus=2
 
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+"  [Powerline] Use 256 colours
 set t_Co=256
