@@ -9,18 +9,18 @@ function check_symlink(){
     fi
 
     # Check if symlink exists, if not => recreate
-    if [[ ! -h ${to} ]]; then
+    if [[ ! -h "${to}" ]]; then
         echo "missing: ${label} ${to}"
-        ln -sf ${from} ${to}
+        ln -sf "${from}" "${to}"
         echo "ok: ${label} ${to} -> ${from}"
     # Otherwise, check if the actual origin of the symlink still matches desired one
     else
-        origin=$(readlink ${to})
-        if [[ ${from} == ${origin} ]]; then
+        origin=$(readlink "${to}")
+        if [[ "${from}" == "${origin}" ]]; then
             echo "ok: ${label} ${to} -> ${from}"
         else
             echo "wrong: ${label} ${to} -> ${origin}"
-            ln -sf ${from} ${to}
+            ln -sf "${from}" "${to}"
             echo "ok: ${label} ${to} -> ${from}"
         fi
     fi
