@@ -22,7 +22,7 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Syntax checker (https://github.com/scrooloose/syntastic)
 Plugin 'Syntastic'
 " Tomorrow theme
-Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
+Plugin 'chriskempson/vim-tomorrow-theme'
 " YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
 Plugin 'Valloric/YouCompleteMe'
 " vim-markdown (https://github.com/tpope/vim-markdown)
