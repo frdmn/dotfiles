@@ -3,3 +3,20 @@
 
 ## psshrun (https://github.com/frdmn/psshrun) autocompletion
 . /usr/local/src/psshrun/bash_completion.d/psshrun
+
+## dotfiles' Borkfile autocomplete
+_dotfiles()
+{
+    case ${COMP_CWORD} in
+    1)
+        local configfiles
+        cur=${COMP_WORDS[COMP_CWORD]}
+        local configfiles="$(for x in `find ${HOME}/.dotfiles/borkfiles -type f -exec basename {} \;`; do echo ${x/.bork/}; done)"
+        COMPREPLY=( $( compgen -W "${configfiles}" -- ${cur} ) )
+        ;;
+    *)
+        COMPREPLY=()
+        ;;
+    esac
+}
+complete -F _dotfiles dotfiles
