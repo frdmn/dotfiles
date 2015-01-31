@@ -18,5 +18,14 @@ ok github gmarik/Vundle.vim
 bake vim +PluginInstall +qall
 echo "ok: installed Vunlde plugins"
 
+# Check if YouCompleteMe libs are compiled
+if [[ ! -f ${HOME}/.vim/bundle/YouCompleteMe/third_party/ycmd/ycm_client_support.so ]]; then
+  echo "missing: compiled YouCompleteMe libs"
+  bake ${HOME}/.vim/bundle/YouCompleteMe/install.sh
+  echo "ok: compiled YouCompleteMe libs"
+else
+  echo "ok: compiled YouCompleteMe libs"
+fi
+
 # Go back into dotfile directory
 destination $HOME/.dotfiles
