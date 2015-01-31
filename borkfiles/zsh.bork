@@ -13,7 +13,7 @@ destination ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
 ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
-ok github marzocchi/zsh-notify
+ok github marzocchi/zsh-notify --branch=next-iterm
 
 # Clone into shell plugins
 ok directory /usr/local/src
