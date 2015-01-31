@@ -81,7 +81,7 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load zsh-history-substring-search
-. /usr/local/src/zsh-history-substring-search/zsh-history-substring-search.zsh
+. ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Load tmuxinator completion
 . ${HOME}/.zsh/tmuxinator.zsh
@@ -90,11 +90,11 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/ssh-hosts.zsh
 
 # Load zsh-autosuggestions plugin
-. /usr/local/src/zsh-autosuggestions/autosuggestions.zsh
+. ${HOME}/.zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
 
 # Load zsh-notify plugin
 # (tmp disabled because bugged with iTerm nightlies)
-#. /usr/local/src/zsh-notify/notify.plugin.zsh
+#. ${HOME}/.zsh/plugins/zsh-notify/notify.plugin.zsh
 
 ###
 ### Aliases and functions

@@ -7,23 +7,19 @@ else
     echo "ok: symlink ~/.zsh"
 fi
 
-# Check for ~/.zsh/plugins folder
+# Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
-
-# Check for zsh-syntax-highlighting
 destination ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
-
-# Make sure source-folder exists
-ok directory /usr/local/src
-destination /usr/local/src
-
-# Clone into ZSH plugins and functions
-ok github frdmn/dev-sh
-ok github frdmn/psshrun
 ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
 ok github marzocchi/zsh-notify
+
+# Clone into shell plugins
+ok directory /usr/local/src
+destination /usr/local/src
+ok github frdmn/dev-sh
+ok github frdmn/psshrun
 
 # Go back into dotfile directory
 destination $HOME/.dotfiles
