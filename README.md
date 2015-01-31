@@ -1,6 +1,8 @@
 dotfiles
 ========
 
+![http://up.frd.mn/GztEi.png]
+
 [Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems that is really simple and easy to understand.
 
 ### Features
