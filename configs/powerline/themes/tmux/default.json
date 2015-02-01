@@ -6,6 +6,10 @@
 				"priority": 50
 			},
 			{
+				"function": "powerline.segments.common.sys.system_load",
+				"priority": 50
+			},
+			{
 				"function": "powerline.segments.common.wthr.weather",
 				"priority": 50,
 				"args": {
