@@ -6,18 +6,11 @@
 				"priority": 50
 			},
 			{
-				"function": "powerline.segments.common.sys.system_load",
-				"priority": 50
-			},
-			{
-				"function": "powerline.segments.common.time.date"
-			},
-			{
-				"function": "powerline.segments.common.time.date",
-				"name": "time",
+				"function": "powerline.segments.common.wthr.weather",
+				"priority": 50,
 				"args": {
-					"format": "%H:%M",
-					"istime": true
+					"unit": "C",
+					"location_query": "Wuerzburg, Germany"
 				}
 			},
 			{
