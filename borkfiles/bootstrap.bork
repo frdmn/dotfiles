@@ -22,7 +22,8 @@ esac
 # Shell specfic
 case $SHELL in
   *zsh*)
-    include zsh.bork ;;
+    include zsh.bork
+    include bash.bork ;;
   *bash*)
     include bash.bork ;;
 esac

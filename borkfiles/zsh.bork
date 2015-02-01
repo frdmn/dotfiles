@@ -15,11 +15,5 @@ ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
 ok github marzocchi/zsh-notify --branch=next-iterm
 
-# Clone into shell plugins
-ok directory /usr/local/src
-destination /usr/local/src
-ok github frdmn/dev-sh
-ok github frdmn/psshrun
-
 # Go back into dotfile directory
 destination $HOME/.dotfiles
