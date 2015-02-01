@@ -9,11 +9,11 @@ include configs.bork
 # OS specfic
 case $OSTYPE in
   darwin*)
+    include atom.bork
     include brew.bork
     include cask.bork
     include macstore.bork
     include osx.bork
-    include atom.bork
     include sublimetext3.bork ;;
   linux*)
     include apt.bork ;;
@@ -22,12 +22,12 @@ esac
 # Shell specfic
 case $SHELL in
   *zsh*)
-    include zsh.bork
-    include bash.bork ;;
-  *bash*)
-    include bash.bork ;;
+    include zsh.bork ;;
 esac
 
 # Depending on above
+include bash.bork
+include gem.bork
 include npm.bork
+include powerline.bork
 include vim.bork
