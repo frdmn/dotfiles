@@ -34,6 +34,7 @@ ok brew zlib
 #ok brew nginx
 #ok brew mysql
 #ok brew php55
+ok brew rainbarf
 
 # Cleanup
 bake brew cleanup
