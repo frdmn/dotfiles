@@ -74,6 +74,9 @@ alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyad
 # Function to use dotfile wrapper in any directory
 dotfiles(){cd ~/.dotfiles; ./dotfiles $1; cd - > /dev/null}
 
+# Force tmux to use 256 color terminal
+alias tmux="tmux -2"
+
 # Kill all tmux sessions
 alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
 
