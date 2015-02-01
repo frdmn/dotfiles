@@ -1,11 +1,5 @@
 # Check if symlink for ZSH exists
-if [[ ! -h ${HOME}/.zsh ]]; then
-    echo "missing: symlink ~/.zsh"
-    ln -sf ${HOME}/.dotfiles/configs/zsh ${HOME}/.zsh
-    echo "ok: symlink ~/.zsh"
-else
-    echo "ok: symlink ~/.zsh"
-fi
+ok symlink "${HOME}/.zsh" "${HOME}/.dotfiles/configs/zsh"
 
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
