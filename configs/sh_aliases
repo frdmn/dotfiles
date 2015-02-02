@@ -91,3 +91,6 @@ search() { grep -R "${*}" . }
 
 # Always use vim instead of vi
 alias vi="vim"
+
+# Always return full history
+alias history="history 1"
