@@ -2,8 +2,31 @@
 set nocompatible
 filetype off
 
-" Enable syntax highlighting
-syntax enable
+"""
+" General
+"""
+
+syntax enable                     " Enable syntax highlighting
+set clipboard=unnamed             " Use OS X clipboard
+set autoread                      " Auro reload on local changes
+set nowritebackup                 " Disable backups
+set noswapfile                    " Disable swap files
+set history=999                   " Set history
+
+set backspace=indent,eol,start    " Usual backspace behaviour
+
+set shortmess+=I                  " Disable splash screen
+set ruler                         " Show cursor position (if powerline is not loaded)
+set cursorline                    " Highlight current line
+set noerrorbells                  " Disable possible error messages
+set ttyfast                       " Fast terminal connection
+set hlsearch                      " Highlight search results
+set ignorecase                    " Ignore cases ...
+set smartcase                     " ... unless there is a capital letter
+set incsearch                     " Display incremental searches
+set relativenumber                " Relative line numbers
+set numberwidth=4                 " Four columns for line numbers
+
 
 """
 " Vundle
