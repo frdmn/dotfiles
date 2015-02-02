@@ -77,7 +77,21 @@
 		"solarized:violet": [13, "6c71c4"],
 		"solarized:blue": [4, "268bd2"],
 		"solarized:cyan": [6, "2aa198"],
-		"solarized:green": [2, "859900"]
+		"solarized:green": [2, "859900"],
+
+		"tomorrow-night-eighties:background": [236, "2d2d2d"],
+		"tomorrow-night-eighties:currentline": [59, "393939"],
+		"tomorrow-night-eighties:selection": [246, "515151"],
+		"tomorrow-night-eighties:foreground": [188, "cccccc"],
+		"tomorrow-night-eighties:comment": [102, "999999"],
+		"tomorrow-night-eighties:red": [1, "f2777a"],
+		"tomorrow-night-eighties:orange": [9, "f99157"],
+		"tomorrow-night-eighties:yellow": [3, "ffcc66"],
+		"tomorrow-night-eighties:green": [2, "99cc99"],
+		"tomorrow-night-eighties:auqa": [13, "66cccc"],
+		"tomorrow-night-eighties:blue": [4, "6699cc"],
+		"tomorrow-night-eighties:purple": [5, "cc99cc"]
+
 	},
 	"gradients": {
 		"dark_GREEN_Orange_red": [
