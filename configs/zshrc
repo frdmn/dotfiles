@@ -44,7 +44,12 @@ HISTFILE=~/.zsh_history
 # Enable colors
 autoload -U colors && colors
 
-# Auto/tab-completions
+# Add functions folder in $fpath array
+fpath=( $fpath $HOME/.zsh/functions )
+
+###
+### Auto/tab-completions
+###
 
 # Enable bash completion
 autoload bashcompinit && bashcompinit

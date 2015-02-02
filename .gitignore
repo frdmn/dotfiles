@@ -1,20 +1,24 @@
 # bork
 bork
 
+# zsh functions
+configs/zsh/functions/*
+!configs/zsh/functions/.gitkeep
+
 # zsh plugins
 configs/zsh/plugins
 
-# Mac meta
-.DS_Store
-
 # Bash vault
 configs/bash_vault
-
-# Brew stderr file
-run
 
 # VIm temp files
 configs/vim/.netrwhist
 
 # VIm bundles
 configs/vim/bundle
+
+# Brew stderr file
+run
+
+# Mac meta
+.DS_Store
