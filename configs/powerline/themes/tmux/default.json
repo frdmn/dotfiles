@@ -2,20 +2,12 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.sys.uptime",
-				"priority": 50
-			},
-			{
 				"function": "powerline.segments.common.sys.system_load",
 				"priority": 50
 			},
 			{
-				"function": "powerline.segments.common.time.date",
-				"name": "time",
-				"args": {
-					"format": "%H:%M",
-					"istime": true
-				}
+				"function": "powerline.segments.common.sys.uptime",
+				"priority": 50
 			},
 			{
 				"function": "powerline.segments.common.wthr.weather",
@@ -29,6 +21,14 @@
 				"function": "powerline.segments.common.bat.battery",
 				"args": {
 					"gamify": true
+				}
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
 				}
 			}
 		]
