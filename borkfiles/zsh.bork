@@ -1,8 +1,11 @@
+# Import dotfile functions
+. ${HOME}/.dotfiles/opt/dotfiles_functions
+
 # Check if symlink for ZSH exists
 ok symlink "${HOME}/.zsh" "${HOME}/.dotfiles/configs/zsh"
 
 # Check brew autocomplete function, chmod 755
-ok file "${HOME}/.zsh/functions/_brew" "/usr/local/Library/Contributions/brew_zsh_completion.zsh" --permissions=755
+check_curl "https://gist.githubusercontent.com/mbgearhead/7187772/raw/b537daddfe7019426d2163bf0d64f6f1147509bd/_brew" "${HOME}/.zsh/functions/_brew" "Brew & Cask zsh functions"
 
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
