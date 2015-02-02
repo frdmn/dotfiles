@@ -17,6 +17,9 @@ configs/vim/.netrwhist
 # VIm bundles
 configs/vim/bundle
 
+# VIm color schemes
+configs/vim/colors
+
 # Brew stderr file
 run
 

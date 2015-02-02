@@ -21,8 +21,6 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Syntax checker (https://github.com/scrooloose/syntastic)
 Plugin 'Syntastic'
-" Tomorrow theme
-Plugin 'chriskempson/vim-tomorrow-theme'
 " YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
 Plugin 'Valloric/YouCompleteMe'
 " vim-markdown (https://github.com/tpope/vim-markdown)
@@ -61,7 +59,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" Tomorrow theme
-if filereadable( expand("$HOME/.vim/bundle/vim-tomorrow-theme/colors/Tomorrow-Night.vim") )
-    colorscheme Tomorrow-Night
-endif
+" Tomorrow-Night-Eighties theme
+colorscheme Tomorrow-Night-Eighties
