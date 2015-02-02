@@ -1,6 +1,9 @@
 # Check if symlink for ZSH exists
 ok symlink "${HOME}/.zsh" "${HOME}/.dotfiles/configs/zsh"
 
+# Check brew autocomplete function, chmod 755
+ok file "${HOME}/.zsh/functions/_brew" "/usr/local/Library/Contributions/brew_zsh_completion.zsh" --permissions=755
+
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
 destination ${HOME}/.zsh/plugins
