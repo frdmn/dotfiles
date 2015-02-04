@@ -11,8 +11,8 @@
 	],
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"tab_size": 2,
 	"theme": "Spacegray.sublime-theme",
