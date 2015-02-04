@@ -50,6 +50,7 @@ ok cask virtualbox $appdir
 ok cask vlc $appdir
 ok cask wireshark $appdir
 ok cask xquartz
+ok cask beardedspice
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
 ok cask qlcolorcode
