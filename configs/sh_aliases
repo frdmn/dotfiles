@@ -87,7 +87,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias bork="~/.dotfiles/bork/bin/bork"
 
 # Recursive search using grep
-search() { grep -R "${*}" . }
+search() { grep -R "${*}" . | grep -v "/.git/" }
 
 # Always use vim instead of vi
 alias vi="vim"
