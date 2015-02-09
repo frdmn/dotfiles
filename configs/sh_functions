@@ -24,7 +24,7 @@ complete -F _dotfiles dotfiles
 ## Rename SSH tabs in tmux
 ssh() {
     if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
-            emoji="🚨"
+            emoji="🔑"
             hostlabel=${*}                  # Pass hostname to $hostlabel
             hostlabel=${hostlabel%%.*}      # Remove possible TLD
             hostlabel=${hostlabel##*@}      # Remove possible <user>@
