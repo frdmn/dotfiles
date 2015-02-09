@@ -20,3 +20,18 @@ _dotfiles()
     esac
 }
 complete -F _dotfiles dotfiles
+
+## Rename SSH tabs in tmux
+ssh() {
+    if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
+            emoji="🚨"
+            hostlabel=${*}                  # Pass hostname to $hostlabel
+            hostlabel=${hostlabel%%.*}      # Remove possible TLD
+            hostlabel=${hostlabel##*@}      # Remove possible <user>@
+            tmux rename-window "${emoji}  ${${*%%.*}##*@}"
+            command ssh "$@"
+            tmux set-window-option automatic-rename "on" 1>/dev/null
+    else
+            command ssh "$@"
+    fi
+}
