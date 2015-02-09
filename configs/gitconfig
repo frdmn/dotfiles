@@ -36,3 +36,7 @@
 [mergetool "sublime"]
     cmd = subl -w $MERGED
     trustExitCode = false
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
