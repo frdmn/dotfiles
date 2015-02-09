@@ -41,6 +41,9 @@ HISTFILE=~/.zsh_history
 ### General
 ###
 
+# Use emacs mode
+bindkey -e
+
 # Enable colors
 autoload -U colors && colors
 
