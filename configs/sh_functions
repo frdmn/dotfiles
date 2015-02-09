@@ -27,8 +27,8 @@ ssh() {
             emoji="🔑"
             hostlabel=${*}                  # Pass hostname to $hostlabel
             hostlabel=${hostlabel%%.*}      # Remove possible TLD
-            hostlabel=${hostlabel##*@}      # Remove possible <user>@
-            tmux rename-window "${emoji}  ${${*%%.*}##*@}"
+            #hostlabel=${hostlabel##*@}     # Remove possible <user>@
+            tmux rename-window "${emoji}  ${hostlabel}"
             command ssh "$@"
             tmux set-window-option automatic-rename "on" 1>/dev/null
     else
