@@ -16,20 +16,6 @@
 					"unit": "C",
 					"location_query": "Wuerzburg, Germany"
 				}
-			},
-			{
-				"function": "powerline.segments.common.bat.battery",
-				"args": {
-					"gamify": true
-				}
-			},
-			{
-				"function": "powerline.segments.common.time.date",
-				"name": "time",
-				"args": {
-					"format": "%H:%M",
-					"istime": true
-				}
 			}
 		]
 	}
