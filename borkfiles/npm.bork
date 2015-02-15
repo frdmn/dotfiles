@@ -12,3 +12,5 @@ ok npm hackertalk
 ok npm json
 ok npm livedown
 ok npm awm
+ok npm git-stats
+ok npm ghcal
