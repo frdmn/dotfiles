@@ -9,7 +9,6 @@
 		".sass-cache",
 		"node_modules"
 	],
-	"font_size": 16,
 	"ignored_packages":
 	[
 		"Markdown",
