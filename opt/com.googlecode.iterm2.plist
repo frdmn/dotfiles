@@ -1710,17 +1710,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>814 294 740 94 0 0 1920 1177 </string>
+	<string>698 177 856 287 0 0 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>985 387 796 475 0 0 1920 1177 </string>
+	<string>986 408 918 464 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>266 447 1480 664 0 0 1920 1177 </string>
+	<string>356 267 787 391 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>197 336 773 456 0 0 1920 1177 </string>
+	<string>410 493 1046 508 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>767 407 570 402 0 0 1920 1177 </string>
+	<string>243 276 1291 664 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>401 726 570 451 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -2320,7 +2320,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoForPowerline 11</string>
+			<string>DroidSansMonoForPowerline 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2579,7 +2579,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-11T07:16:32Z</date>
+	<date>2015-02-13T07:16:33Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2629,6 +2629,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20150206-nightly</string>
+	<string>2.9.20150211-nightly</string>
 </dict>
 </plist>
