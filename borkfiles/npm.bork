@@ -14,3 +14,4 @@ ok npm livedown
 ok npm awm
 ok npm git-stats
 ok npm ghcal
+ok npm loadtest
