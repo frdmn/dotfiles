@@ -4,6 +4,7 @@ ok brew
 # Taps
 bake brew tap homebrew/dupes 2>/dev/null
 bake brew tap karan/karan 2>/dev/null
+bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 
 # Install formula
 ok brew git
@@ -37,7 +38,8 @@ ok brew zlib
 #ok brew php55
 ok brew rainbarf
 ok brew asciinema
-ok brew gitignore
+ok brew gitignore # via karan/karan tap
+ok brew sudolikeaboss # via ravenac95/sudolikeaboss tap
 
 # Cleanup
 bake brew cleanup
