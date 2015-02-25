@@ -10,6 +10,8 @@
 				"priority": 50
 			},
 			{
+				"function": "powerline.segments.common.net.network_load",
+				"priority": 50
 			}
 		]
 	}
