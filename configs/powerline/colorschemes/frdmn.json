@@ -48,6 +48,7 @@
 		"cwd:divider":               { "fg": "gray7", "bg": "gray4", "attrs": [] },
 		"virtualenv":                { "fg": "white", "bg": "darkcyan", "attrs": [] },
 		"attached_clients":          { "fg": "gray8", "bg": "gray0", "attrs": [] },
-		"uptime":                    { "fg": "tomorrow-night-eighties:background", "bg": "tomorrow-night-eighties:foreground", "attrs": [] }
+		"uptime":                    { "fg": "tomorrow-night-eighties:background", "bg": "tomorrow-night-eighties:foreground", "attrs": [] },
+		"network_load":              { "fg": "tomorrow-night-eighties:background", "bg": "tomorrow-night-eighties:blue", "attrs": [] }
 	}
 }
