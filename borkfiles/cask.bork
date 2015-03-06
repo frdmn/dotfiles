@@ -50,8 +50,8 @@ ok cask virtualbox $appdir
 ok cask vlc $appdir
 ok cask wireshark $appdir
 ok cask xquartz
-ok cask beardedspice
-ok cask boot2docker
+ok cask beardedspice $appdir
+ok cask boot2docker $appdir
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
 ok cask qlcolorcode
