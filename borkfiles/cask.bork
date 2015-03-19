@@ -50,7 +50,7 @@ ok cask virtualbox $appdir
 ok cask vlc $appdir
 ok cask wireshark $appdir
 ok cask xquartz
-ok cask beardedspice $appdir
+#ok cask beardedspice $appdir # disabled because we want my custom fork (https://github.com/frdmn/beardedspice)
 ok cask boot2docker $appdir
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
