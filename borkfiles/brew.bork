@@ -21,7 +21,6 @@ ok brew youtube-dl
 ok brew heroku-toolbelt
 ok brew tmux
 ok brew terminal-notifier
-ok brew wine
 ok brew go
 ok brew ffmpeg
 ok brew imagemagick
