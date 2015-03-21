@@ -32,9 +32,6 @@ ok brew git-extras
 ok brew mitmproxy
 ok brew nmap
 ok brew zlib
-#ok brew nginx
-#ok brew mysql
-#ok brew php55
 ok brew rainbarf
 ok brew asciinema
 ok brew gitignore # via karan/karan tap
