@@ -11,7 +11,6 @@ bake brew tap caskroom/versions 2>/dev/null
 ok brew brew-cask
 
 # Install desktop apps $appdir
-ok cask a-better-finder-rename $appdir
 ok cask adium-beta $appdir
 ok cask alfred $appdir
 ok cask appcleaner $appdir
