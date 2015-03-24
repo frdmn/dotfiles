@@ -3,7 +3,6 @@ ok brew
 
 # Taps
 bake brew tap homebrew/dupes 2>/dev/null
-bake brew tap karan/karan 2>/dev/null
 bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 
 # Install formula
@@ -34,7 +33,6 @@ ok brew nmap
 ok brew zlib
 ok brew rainbarf
 ok brew asciinema
-ok brew gitignore # via karan/karan tap
 ok brew sudolikeaboss # via ravenac95/sudolikeaboss tap
 
 # Cleanup
