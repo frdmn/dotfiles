@@ -190,10 +190,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# boot2docker
-export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # Set dev.sh (https://github.com/frdmn/dev-sh) project path
 export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
 
