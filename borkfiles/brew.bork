@@ -6,34 +6,34 @@ bake brew tap homebrew/dupes 2>/dev/null
 bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 
 # Install formula
-ok brew git
 ok brew ack
-ok brew hub
-ok brew node
-ok brew vim
-ok brew pssh
-ok brew wget
-ok brew pv
-ok brew maven
-ok brew python
-ok brew youtube-dl
-ok brew heroku-toolbelt
-ok brew tmux
-ok brew terminal-notifier
-ok brew go
-ok brew ffmpeg
-ok brew imagemagick
+ok brew asciinema
 ok brew bats
 ok brew boot2docker
 ok brew docker
-ok brew phantomjs
+ok brew ffmpeg
+ok brew git
 ok brew git-extras
+ok brew go
+ok brew heroku-toolbelt
+ok brew hub
+ok brew imagemagick
+ok brew maven
 ok brew mitmproxy
 ok brew nmap
-ok brew zlib
+ok brew node
+ok brew phantomjs
+ok brew pssh
+ok brew pv
+ok brew python
 ok brew rainbarf
-ok brew asciinema
 ok brew sudolikeaboss # via ravenac95/sudolikeaboss tap
+ok brew terminal-notifier
+ok brew tmux
+ok brew vim
+ok brew wget
+ok brew youtube-dl
+ok brew zlib
 
 # Cleanup
 bake brew cleanup
