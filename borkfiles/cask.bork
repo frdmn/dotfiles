@@ -11,12 +11,15 @@ bake brew tap caskroom/versions 2>/dev/null
 ok brew brew-cask
 
 # Install desktop apps $appdir
-ok cask adium-beta $appdir
 ok cask alfred $appdir
+ok cask anybar $appdir
 ok cask appcleaner $appdir
 ok cask atext $appdir
 ok cask atom $appdir
 ok cask bartender $appdir
+ok cask beardedspice $appdir
+ok cask boot2docker $appdir
+ok cask calibre $appdir
 ok cask chicken $appdir
 ok cask daisydisk $appdir
 ok cask dropbox $appdir
@@ -43,14 +46,11 @@ ok cask skype $appdir
 ok cask sublime-text3 $appdir
 ok cask teamviewer $appdir
 ok cask transmit $appdir
-#ok cask tunnelblick $appdir# because this version 3 4 0_r3007 it's not Yosemite ready yet
 ok cask vagrant $appdir
 ok cask virtualbox $appdir
 ok cask vlc $appdir
 ok cask wireshark $appdir
 ok cask xquartz
-#ok cask beardedspice $appdir # disabled because we want my custom fork (https://github.com/frdmn/beardedspice)
-ok cask boot2docker $appdir
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
 ok cask qlcolorcode
