@@ -197,5 +197,5 @@ export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
 export psshrun_configpath="${HOME}/.pssh"
 
 # $PATH
-export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH
 export EDITOR="vim"
