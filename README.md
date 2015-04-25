@@ -97,7 +97,7 @@ Explanation of the directories:
 
 ### License
 
-[WTFPL](LICENSE)
+[MIT](LICENSE)
 
 ### Version
 
