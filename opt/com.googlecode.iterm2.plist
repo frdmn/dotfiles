@@ -1678,14 +1678,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>6</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/opt</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 508}</string>
+	<string>{712, 532}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1711,33 +1707,31 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>2</integer>
 		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>589 428 231 329 0 0 1920 1177 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>829 179 885 94 0 0 1920 1177 </string>
+	<string>698 177 856 287 0 0 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>490 606 918 464 0 0 1920 1177 </string>
-	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>652 770 616 174 0 0 1920 1177 </string>
+	<string>985 700 918 464 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>513 505 570 352 0 0 1920 1177 </string>
+	<string>890 550 570 352 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>553 456 570 352 0 0 1920 1177 </string>
+	<string>52 662 955 377 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>641 347 570 352 0 0 1920 1177 </string>
+	<string>757 489 570 352 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>2157 522 570 352 1680 0 1680 1027 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>338 744 650 427 0 0 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>359 766 570 401 0 0 1920 1177 </string>
+	<string>401 817 570 352 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -2350,7 +2344,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoForPowerlineForPowerline 11</string>
+			<string>MenloForPowerline-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2531,6 +2525,10 @@
 			<string>/Users/jfr</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2605,11 +2603,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-23T21:07:58Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
-	<key>SUSkippedVersion</key>
-	<string>1.0.0.20140518</string>
+	<date>2015-05-07T07:15:16Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2635,7 +2629,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1413912960</real>
+	<real>1416388096</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2659,6 +2653,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20150422-nightly</string>
+	<string>2.9.20150505-nightly</string>
 </dict>
 </plist>
