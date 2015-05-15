@@ -94,3 +94,6 @@ alias vi="vim"
 
 # Always return full history
 alias history="history 1"
+
+# VLC alias
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
