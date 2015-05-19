@@ -6,6 +6,7 @@
 	[
 		"BracketHighlighter",
 		"Color Highlighter",
+		"DocBlockr",
 		"EasyDiff",
 		"Emmet",
 		"Expand Tabs on Save",
@@ -19,7 +20,6 @@
 		"Nodejs",
 		"Package Control",
 		"Package Snippets",
-		"PhpDoc",
 		"PlainTasks",
 		"SCSS",
 		"SideBarEnhancements",
