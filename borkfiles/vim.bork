@@ -8,9 +8,6 @@ ok directory ${HOME}/.vim/bundle
 destination ${HOME}/.vim/bundle
 ok github gmarik/Vundle.vim
 
-# Check for powerline
-ok pip powerline-status
-
 # Install Vundle plugins
 bake vim +PluginInstall +qall
 echo "ok: installed Vunlde plugins"

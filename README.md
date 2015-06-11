@@ -20,7 +20,7 @@ dotfiles
 * Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
 * Hostname specific processing and customizations
 * ZSH tab/auto completion
-* [Powerline](https://github.com/Lokaltog/powerline) in `vi` and `tmux`
+* [Powerline](https://github.com/Lokaltog/powerline) in `tmux`
 * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
 * [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
