@@ -59,12 +59,6 @@ filetype plugin indent on
 " Plugin settings
 """
 
-" [Powerline] Always show powerline
-set laststatus=2
-
-" [Powerline] Use 256 colours
-set t_Co=256
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
