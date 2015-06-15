@@ -27,6 +27,11 @@ set incsearch                     " Display incremental searches
 set relativenumber                " Relative line numbers
 set numberwidth=4                 " Four columns for line numbers
 
+" Prevent me from using arrow keys
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>"
 
 """
 " Vundle
