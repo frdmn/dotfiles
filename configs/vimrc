@@ -26,6 +26,10 @@ set smartcase                     " ... unless there is a capital letter
 set incsearch                     " Display incremental searches
 set relativenumber                " Relative line numbers
 set numberwidth=4                 " Four columns for line numbers
+set tabstop=2                     " Soft tabs, 2 characters
+set softtabstop=2                 " "
+set shiftwidth=2                  " "
+set expandtab                     " "
 
 " Prevent me from using arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
