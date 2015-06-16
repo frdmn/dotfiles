@@ -49,12 +49,8 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 
-" Powerline (https://github.com/powerline/powerline)
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Syntax checker (https://github.com/scrooloose/syntastic)
 Plugin 'Syntastic'
-" YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
-Plugin 'Valloric/YouCompleteMe'
 " vim-markdown (https://github.com/tpope/vim-markdown)
 Plugin 'tpope/vim-markdown'
 " vim-hackernews
