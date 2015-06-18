@@ -15,3 +15,4 @@ ok npm awm
 ok npm git-stats
 ok npm ghcal
 ok npm loadtest
+ok npm http-console
