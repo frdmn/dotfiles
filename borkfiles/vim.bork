@@ -8,21 +8,9 @@ ok directory ${HOME}/.vim/bundle
 destination ${HOME}/.vim/bundle
 ok github gmarik/Vundle.vim
 
-# Check for powerline
-ok pip powerline-status
-
 # Install Vundle plugins
 bake vim +PluginInstall +qall
 echo "ok: installed Vunlde plugins"
-
-# Check if YouCompleteMe libs are compiled
-if [[ ! -f ${HOME}/.vim/bundle/YouCompleteMe/third_party/ycmd/ycm_client_support.so ]]; then
-  echo "missing: compiled YouCompleteMe libs"
-  bake ${HOME}/.vim/bundle/YouCompleteMe/install.sh
-  echo "ok: compiled YouCompleteMe libs"
-else
-  echo "ok: compiled YouCompleteMe libs"
-fi
 
 # Clone tomorrow theme
 destination /usr/local/src

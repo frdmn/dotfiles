@@ -27,7 +27,8 @@ ok brew nmap
 ok brew node
 ok brew phantomjs
 ok brew pssh
-ok brew pv
+ok brew profanity
+ok brew python
 ok brew python
 ok brew rainbarf
 ok brew sudolikeaboss # via ravenac95/sudolikeaboss tap
