@@ -53,8 +53,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Syntastic'
 " vim-markdown (https://github.com/tpope/vim-markdown)
 Plugin 'tpope/vim-markdown'
-" vim-hackernews
-Plugin 'ryanss/vim-hackernews'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
