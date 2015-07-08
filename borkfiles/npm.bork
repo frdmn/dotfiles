@@ -19,3 +19,4 @@ ok npm http-console
 ok npm init.js
 ok npm npm-check-updates
 ok npm off-the-rip
+ok npm ttystudio
