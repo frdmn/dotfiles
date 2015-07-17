@@ -90,9 +90,6 @@ ok defaults com.apple.dock show-process-indicators bool true
 # Don’t automatically rearrange Spaces based on most recent use
 ok defaults com.apple.dock mru-spaces bool false
 
-# Reset LaunchPad at each login
-ok defaults com.apple.dock ResetLaunchPad bool true
-
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
