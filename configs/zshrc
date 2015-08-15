@@ -34,6 +34,7 @@ setopt hist_reduce_blanks      # Trim multiple blanks in history
 
 SAVEHIST=999999
 HISTSIZE=999999
+CASE_SENSITIVE="false"
 
 HISTFILE=~/.zsh_history
 
