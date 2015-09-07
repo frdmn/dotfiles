@@ -183,6 +183,10 @@ fi
 ### Exports (php-fpm, maven and $PATH)
 ###
 
+# Yellow (temp) autosuggested string
+export AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=3"
+export AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
+
 # php-fpm
 export PHP_AUTOCONF="/usr/local/bin/autoconf"
 export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
