@@ -1,5 +1,5 @@
 # Be nice
-alias please="sudo"
+alias please="sudo "
 
 # Easier navigation: .., ..., ....
 alias ..="cd .."
