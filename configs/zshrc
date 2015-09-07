@@ -58,6 +58,9 @@ fpath=( $fpath $HOME/.zsh/functions )
 # Enable bash completion
 autoload bashcompinit && bashcompinit
 
+# Proper case insensitivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 # Use proper completion
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
