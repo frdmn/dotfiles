@@ -13,6 +13,8 @@
   editor:
     tabLength: 4
     invisibles: {}
-  "highlight-line":
-    underline:
-      solid: false
+  "highlight-line": {}
+  "node-debugger":
+    nodePath: "/usr/local/bin/node"
+  hashrocket:
+    nodeExecutablePath: "/usr/local/bin/node"
