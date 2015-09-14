@@ -11,8 +11,11 @@
       "spacegray-dark-syntax"
     ]
   editor:
-    tabLength: 4
+    showIndentGuide: true
+    preferredLineLength: 100
+    tabLength: 2
     invisibles: {}
+    showInvisibles: true
   "highlight-line": {}
   "node-debugger":
     nodePath: "/usr/local/bin/node"
