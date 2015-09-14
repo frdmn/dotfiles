@@ -17,10 +17,9 @@
     invisibles: {}
     showInvisibles: true
   "highlight-line": {}
-  "node-debugger":
-    nodePath: "/usr/local/bin/node"
   hashrocket:
     nodeExecutablePath: "/usr/local/bin/node"
     phpExecutablePath: "/usr/local/bin/php"
     pythonExecutablePath: "/usr/local/bin/python"
     rubyExecutablePath: "/usr/bin/ruby"
+  linter: {}
