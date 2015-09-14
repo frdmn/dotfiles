@@ -5,11 +5,14 @@ file-icons
 hashrocket
 hex
 highlight-line
+linter
+linter-jshint
 linter-php
 minimap
+minimap-git-diff
 pigments
+quantum-syntax
+quantum-ui
 script
 sort-lines
-spacegray-dark-syntax
-spacegray-dark-ui
 tasks
