@@ -7,15 +7,15 @@
     userId: "a3d0e1b721f417804bf9c8a098629757bafe5628"
   core:
     themes: [
-      "spacegray-dark-ui"
-      "spacegray-dark-syntax"
+      "quantum-ui"
+      "quantum-syntax"
     ]
+    destroyEmptyPanes: false
   editor:
     showIndentGuide: true
     preferredLineLength: 100
     tabLength: 2
     invisibles: {}
-    showInvisibles: true
   "highlight-line": {}
   hashrocket:
     nodeExecutablePath: "/usr/local/bin/node"
@@ -24,3 +24,7 @@
     rubyExecutablePath: "/usr/bin/ruby"
   linter: {}
   minimap: {}
+  "linter-jshint": {}
+  "linter-htmlhint": {}
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
