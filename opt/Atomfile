@@ -6,7 +6,9 @@ hashrocket
 hex
 highlight-line
 linter-php
+pigments
 script
+sort-lines
 spacegray-dark-syntax
 spacegray-dark-ui
 tasks
