@@ -97,3 +97,6 @@ alias history="history 1"
 
 # VLC alias
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+
+# Get rid of SL3 habit
+alias subl="atom"
