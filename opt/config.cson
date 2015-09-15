@@ -23,7 +23,9 @@
     pythonExecutablePath: "/usr/local/bin/python"
     rubyExecutablePath: "/usr/bin/ruby"
   linter: {}
-  minimap: {}
+  minimap:
+    plugins:
+      "git-diff": true
   "linter-jshint": {}
   "linter-htmlhint": {}
   "linter-shellcheck":
