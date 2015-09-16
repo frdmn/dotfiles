@@ -16,6 +16,7 @@
     preferredLineLength: 100
     tabLength: 2
     invisibles: {}
+    fontSize: 17
   "highlight-line": {}
   hashrocket:
     nodeExecutablePath: "/usr/local/bin/node"
@@ -30,3 +31,4 @@
   "linter-htmlhint": {}
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  docblockr: {}
