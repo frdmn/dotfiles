@@ -8,11 +8,10 @@ dotfiles
 ### Features
 
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
-* Brew and Cask package check ensures that your packages are installed
-* Mac App Store app check ensures that your OS X apps are installed
+* Brew and Cask package check ensures that your packages GUI apps are installed
+* MAS app check ensures that your Mac App Store apps are installed
 * `npm` (Node Package Manager) package check
 * Ruby `gem`'s check
-* `apt-get` package check for Linux systems
 * Sublime Text 3 package check (via [Package Control](packagecontrol.io))
 * Commented code, so you know what is actually going on
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
@@ -75,7 +74,7 @@ Explanation of the directories:
     getting executed during the `dotfiles` process.
 ./hostnames/example.hostna.me/configs
 └── This folder could contain custom dotfile configurations that you only
-    need on one specific host. A custom `.vimrc`? Just drop a file called 
+    need on one specific host. A custom `.vimrc`? Just drop a file called
     `vimrc` in here and you are good to go. (If there is already a global one
     from ./configs with the same name, it will overwrite the global one).
 ./hostnames/example.hostna.me/includes
