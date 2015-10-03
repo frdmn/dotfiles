@@ -31,3 +31,5 @@
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   docblockr: {}
+  "file-types":
+    ".bork$": "source.shell"
