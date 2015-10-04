@@ -27,7 +27,7 @@ git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
 # Check arguments
 if [ -z ${1} ]; then
     # If no 2nd argument => use bootstrap borkfile
-    ${CURRENTDIR}/bork/bin/bork ${COMMAND} borkfiles/bootstrap.bork
+    ${CURRENTDIR}/bork/bin/bork ${COMMAND} borkfiles/_.bork
 
     # Host specific
     if [ "$(ls ${CURRENTDIR}/hostnames/${FULLHOST}/borkfiles 2> /dev/null)" ]; then
@@ -54,13 +54,13 @@ else
             # Expand to actual path of borkfile, append to $BORKFILESTRING
             echo "info: found host-specific bork files for \"${FULLHOST}\""
             BORKFILESTRING+=" hostnames/${FULLHOST}/borkfiles/${BORK}.bork"
-        else 
+        else
             echo "Error: couldn't find borkfile \"${BORK}.bork\" :("
         fi
     done
     # Check if we have found at least one valid borkfile
     if [[ ! -z ${BORKFILESTRING} ]]; then
-        # Execute $BORKFILESTRING 
+        # Execute $BORKFILESTRING
         ${CURRENTDIR}/bork/bin/bork ${COMMAND} ${BORKFILESTRING}
     fi
 fi

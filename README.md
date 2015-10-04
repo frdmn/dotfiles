@@ -54,7 +54,7 @@ Explanation of the directories:
 └── Includes the actual bork files, seperated to allow a condition based
     installation (system architecture, OS type).
 
-./borkfiles/bootstrap.bork
+./borkfiles/_.bork
 └── This is the bootstrapping one, which applies the other Borkfiles in
     the same folder.
 
