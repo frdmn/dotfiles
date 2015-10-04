@@ -24,7 +24,7 @@ for pkg in $pkgs; do
   match=false
   # For each installed package
   for installedPkg in $installedPkgs; do
-    if [[ $installedPkg == $pkg ]]; then
+    if [[ "$installedPkg" == "$pkg" ]]; then
       # Set matcher to true, if package is already installed
       match=true
     fi
