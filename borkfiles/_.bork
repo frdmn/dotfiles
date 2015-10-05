@@ -14,10 +14,7 @@ case $OSTYPE in
     include cask.bork
     include macstore.bork
     include osx.bork
-    include pip.bork
-    include sublimetext3.bork ;;
-  linux*)
-    include apt.bork ;;
+    include pip.bork ;;
 esac
 
 # Shell specfic

@@ -12,7 +12,6 @@ dotfiles
 * MAS app check ensures that your Mac App Store apps are installed
 * `npm` (Node Package Manager) package check
 * Ruby `gem`'s check
-* Sublime Text 3 package check (via [Package Control](packagecontrol.io))
 * Commented code, so you know what is actually going on
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
 * Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)

@@ -36,7 +36,6 @@ ok cask 1password-beta
 ok cask private-internet-access
 ok cask sequel-pro
 ok cask skype
-ok cask sublime-text3
 ok cask teamviewer
 ok cask transmit
 ok cask vagrant
