@@ -8,7 +8,6 @@ bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 # Install formula
 ok brew ab
 ok brew ack
-ok brew asciinema
 ok brew bats
 ok brew boot2docker
 ok brew curl
@@ -19,7 +18,6 @@ ok brew git-extras
 ok brew go
 ok brew heroku-toolbelt
 ok brew htop-osx
-ok brew hub
 ok brew imagemagick
 ok brew maven
 ok brew mitmproxy
@@ -27,11 +25,7 @@ ok brew nmap
 ok brew node
 ok brew phantomjs
 ok brew pssh
-ok brew profanity
 ok brew python
-ok brew python
-ok brew rainbarf
-ok brew sudolikeaboss # via ravenac95/sudolikeaboss tap
 ok brew terminal-notifier
 ok brew tmate
 ok brew tmux

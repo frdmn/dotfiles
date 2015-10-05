@@ -7,7 +7,6 @@ ok brew brew-cask
 
 # Install desktop apps
 ok cask alfred
-ok cask anybar
 ok cask appcleaner
 ok cask atext
 ok cask atom
@@ -36,7 +35,6 @@ ok cask nvalt
 ok cask 1password-beta
 ok cask private-internet-access
 ok cask sequel-pro
-ok cask shortcat
 ok cask skype
 ok cask sublime-text3
 ok cask teamviewer
