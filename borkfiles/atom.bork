@@ -39,3 +39,23 @@ for pkg in $pkgs; do
     echo "ok: apm $pkg"
   fi
 done
+
+# Check for installed packaged which are not declared in Atomfile
+for installedPkg in $installedPkgs; do
+  # Reset matcher
+  match=false
+  # For each package in Atomfile
+  for pkg in $pkgs; do
+    if [[ "$pkg" == "$installedPkg" ]]; then
+      # Set matcher to true, if package is already installed
+      match=true
+    fi
+  done
+  # If matcher false, package is currently installed but not
+  # declared in Atomfile => obsolte, remove package
+  if [[ $match == false ]]; then
+    echo "obsolete: $installedPkg"
+    apm remove $installedPkg
+    echo "ok: removed $installedPkg"
+  fi
+done
