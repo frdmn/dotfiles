@@ -1,6 +1,6 @@
 [core]
-    excludesfile = ~/.gitignore
-	editor = /usr/local/bin/vim
+  excludesfile = ~/.gitignore
+	editor = atom --wait
 
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
