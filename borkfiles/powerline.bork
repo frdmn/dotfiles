@@ -1,8 +1,0 @@
-# Check if .config folder exists
-ok directory "${HOME}/.config"
-
-# Check if symlink for ZSH exists
-ok symlink "${HOME}/.config/powerline" "${HOME}/.dotfiles/configs/powerline"
-
-# Go back into dotfile directory
-destination $HOME/.dotfiles

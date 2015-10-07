@@ -27,5 +27,4 @@ esac
 include bash.bork
 include gem.bork
 include npm.bork
-include powerline.bork
 include vim.bork
