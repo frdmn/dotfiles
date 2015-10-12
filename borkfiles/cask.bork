@@ -6,6 +6,7 @@ bake brew tap caskroom/versions 2>/dev/null
 ok brew brew-cask
 
 # Install desktop apps
+ok cask 1password-beta
 ok cask alfred
 ok cask appcleaner
 ok cask atext
@@ -13,6 +14,7 @@ ok cask atom
 ok cask bartender
 ok cask beardedspice
 ok cask boot2docker
+ok cask broomstick
 ok cask calibre
 ok cask chicken
 ok cask daisydisk
@@ -32,7 +34,6 @@ ok cask macpass
 ok cask minecraft
 ok cask multibit
 ok cask nvalt
-ok cask 1password-beta
 ok cask private-internet-access
 ok cask sequel-pro
 ok cask skype
