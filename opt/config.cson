@@ -22,7 +22,9 @@
     phpExecutablePath: "/usr/local/bin/php"
     pythonExecutablePath: "/usr/local/bin/python"
     rubyExecutablePath: "/usr/bin/ruby"
-  linter: {}
+    bashExecutablePath: "/bin/bash"
+  linter:
+    showErrorPanel: false
   minimap:
     plugins:
       "git-diff": true
