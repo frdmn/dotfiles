@@ -8,3 +8,4 @@ ok npm hubot
 ok npm init.js
 ok npm json
 ok npm prettyjson
+ok npm tlstools
