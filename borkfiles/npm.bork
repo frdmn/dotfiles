@@ -5,13 +5,6 @@ ok npm npm
 ok npm bower
 ok npm grunt-cli
 ok npm hubot
-ok npm prettyjson
-ok npm localtunnel
-ok npm hackertalk
-ok npm json
-ok npm livedown
-ok npm loadtest
 ok npm init.js
-ok npm npm-check-updates
-ok npm off-the-rip
-ok npm ttystudio
+ok npm json
+ok npm prettyjson
