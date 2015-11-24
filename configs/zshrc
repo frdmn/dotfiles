@@ -199,7 +199,7 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Set dev.sh (https://github.com/frdmn/dev-sh) project path
-export devsearch_projectspath="${HOME}/Dropbox/Share/Development"
+export devsearch_projectspath="${HOME}/Development"
 
 # Set pssh configuration directory
 export psshrun_configpath="${HOME}/.pssh"
