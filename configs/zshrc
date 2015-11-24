@@ -189,7 +189,7 @@ export AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
 
 # php-fpm
 export PHP_AUTOCONF="/usr/local/bin/autoconf"
-export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
+#export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
 # Maven
 export JAVA_HOME=$(/usr/libexec/java_home)
