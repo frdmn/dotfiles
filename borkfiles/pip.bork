@@ -1,6 +1,5 @@
 # pip packages
 ok pip beautifulsoup4
 ok pip joe
-ok pip pssh
 ok pip speedtest-cli
 ok pip subliminal
