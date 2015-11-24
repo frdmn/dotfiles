@@ -3,6 +3,7 @@ ok symlink "${HOME}/.vim" "${HOME}/.dotfiles/configs/vim"
 
 # Check if bundle folder exsits
 ok directory ${HOME}/.vim/bundle
+ok directory /usr/local/src
 
 # Check if Vundle.vim (plugin manager) is installed
 destination ${HOME}/.vim/bundle
