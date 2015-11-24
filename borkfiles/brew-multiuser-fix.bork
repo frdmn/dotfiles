@@ -1,3 +1,0 @@
-sudo chown -R $USER /usr/local /Library/Caches/Homebrew /opt/homebrew-cask /var/www &&
-sudo chmod -R u+wr /usr/local /Library/Caches/Homebrew /opt/homebrew-cask /var/www &&
-echo "ok: brew multiuser permission fix"
