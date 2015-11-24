@@ -6,12 +6,8 @@ bake brew tap homebrew/dupes 2>/dev/null
 bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 
 # Install formula
-ok brew ab
-ok brew ack
 ok brew bats
-ok brew boot2docker
 ok brew curl
-ok brew docker
 ok brew ffmpeg
 ok brew git
 ok brew git-extras
@@ -23,7 +19,6 @@ ok brew maven
 ok brew mitmproxy
 ok brew nmap
 ok brew node
-ok brew phantomjs
 ok brew pssh
 ok brew python
 ok brew terminal-notifier
