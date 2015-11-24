@@ -207,6 +207,3 @@ export psshrun_configpath="${HOME}/.pssh"
 # $PATH
 export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH
 export EDITOR="vim"
-
-# Brew cask apps in /Applications
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
