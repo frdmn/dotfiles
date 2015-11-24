@@ -12,6 +12,7 @@ ok cask appcleaner
 ok cask atext
 ok cask atom
 ok cask chicken
+ok cask dash
 ok cask dropbox
 ok cask github-desktop
 ok cask google-chrome
@@ -24,8 +25,10 @@ ok cask macpass
 ok cask nvalt
 ok cask private-internet-access
 ok cask sequel-pro
+ok cask sitesucker
 ok cask skype
 ok cask teamviewer
+ok cask textual
 ok cask transmit
 ok cask virtualbox
 ok cask vlc

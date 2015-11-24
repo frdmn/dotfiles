@@ -9,7 +9,6 @@ dotfiles
 
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
 * Brew and Cask package check ensures that your packages GUI apps are installed
-* MAS app check ensures that your Mac App Store apps are installed
 * `npm` (Node Package Manager) package check
 * Ruby `gem`'s check
 * Commented code, so you know what is actually going on
