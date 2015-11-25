@@ -35,3 +35,4 @@
   docblockr: {}
   "file-types":
     ".bork$": "source.shell"
+  "file-icons": {}
