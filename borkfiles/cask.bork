@@ -18,7 +18,7 @@ ok cask github-desktop
 ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
-ok cask iterm2
+ok cask iterm2-nightly
 ok cask keka
 ok cask macdown
 ok cask macpass
