@@ -11,7 +11,9 @@ ok cask alfred
 ok cask appcleaner
 ok cask atext
 ok cask atom
+ok cask carbon-copy-cloner
 ok cask chicken
+ok cask cord
 ok cask dash
 ok cask dropbox
 ok cask github-desktop
@@ -19,6 +21,7 @@ ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
 ok cask iterm2-nightly
+ok cask keepingyouawake
 ok cask keka
 ok cask macdown
 ok cask macpass
