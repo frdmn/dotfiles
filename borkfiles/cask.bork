@@ -17,6 +17,7 @@ ok cask cord
 ok cask dash
 ok cask dropbox
 ok cask github-desktop
+ok cask gitter
 ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
