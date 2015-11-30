@@ -34,6 +34,8 @@ ok cask skype
 ok cask teamviewer
 ok cask textual
 ok cask transmit
+ok cask vagrant
+ok cask vagrant-manager
 ok cask virtualbox4330101610
 ok cask vlc
 ok cask wireshark
