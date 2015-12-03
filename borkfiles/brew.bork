@@ -23,6 +23,7 @@ ok brew nmap
 ok brew node
 ok brew pssh
 ok brew python
+ok brew sshuttle
 ok brew terminal-notifier
 ok brew tmate
 ok brew tmux
