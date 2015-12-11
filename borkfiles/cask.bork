@@ -38,6 +38,7 @@ ok cask sublime-text3
 ok cask teamviewer
 ok cask textual
 ok cask textwrangler
+ok cask tigervnc-viewer
 ok cask transmit
 ok cask tunnelblick
 ok cask vagrant
