@@ -34,6 +34,7 @@ ok brew youtube-dl
 ok brew zlib
 ok brew zsh
 ok brew dev-search
+ok brew girahelper
 
 # Cleanup
 bake brew cleanup
