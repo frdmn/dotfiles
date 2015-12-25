@@ -1713,13 +1713,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1168 83 590 77 0 0 1920 1177 </string>
+	<string>1168 81 590 347 0 0 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 342 606 456 0 0 1920 1177 </string>
+	<string>268 712 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>65 377 1122 603 0 0 1920 1177 </string>
+	<string>183 223 1306 741 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>934 347 650 477 0 0 1920 1177 </string>
+	<string>401 194 1274 656 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>273 465 650 477 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>30 88 1626 1089 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -2332,7 +2336,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>OfficeCodePro-Regular 14</string>
+			<string>Mensch-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2497,6 +2501,8 @@
 			<false/>
 			<key>Use Cursor Guide</key>
 			<false/>
+			<key>Use HFS Plus Mapping</key>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -2597,7 +2603,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-11-28T00:26:24Z</date>
+	<date>2015-12-21T15:08:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
