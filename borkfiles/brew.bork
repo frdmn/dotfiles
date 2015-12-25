@@ -33,6 +33,7 @@ ok brew wget
 ok brew youtube-dl
 ok brew zlib
 ok brew zsh
+ok brew dev-search
 
 # Cleanup
 bake brew cleanup
