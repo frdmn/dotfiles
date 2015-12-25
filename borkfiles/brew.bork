@@ -3,6 +3,7 @@ ok brew
 
 # Taps
 bake brew tap homebrew/dupes 2>/dev/null
+bake brew tap frdmn/homebrew-formulas 2>/dev/null
 bake brew tap ravenac95/sudolikeaboss 2>/dev/null
 bake brew tap nviennot/tmate 2>/dev/null
 
