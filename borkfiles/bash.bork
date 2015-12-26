@@ -1,7 +1,6 @@
 # Check for Bash source files
 ok directory /usr/local/src
 destination /usr/local/src
-ok github frdmn/dev-search
 ok github frdmn/psshrun
 ok github frdmn/circular-dig
 ok github frdmn/direct-dig
