@@ -35,6 +35,7 @@ ok brew zlib
 ok brew zsh
 ok brew dev-search
 ok brew girahelper
+ok brew psshrun
 
 # Cleanup
 bake brew cleanup
