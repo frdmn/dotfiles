@@ -1,9 +1,6 @@
 ## Load dev.sh (https://github.com/frdmn/dev-sh) search tool
 . /usr/local/opt/dev-search/dev
 
-## psshrun (https://github.com/frdmn/psshrun) autocompletion
-. /usr/local/src/psshrun/bash_completion.d/psshrun
-
 ## dotfiles' Borkfile autocomplete
 . ${HOME}/.dotfiles/opt/dotfiles.bash_completion
 

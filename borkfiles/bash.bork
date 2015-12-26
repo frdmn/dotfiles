@@ -1,13 +1,11 @@
 # Check for Bash source files
 ok directory /usr/local/src
 destination /usr/local/src
-ok github frdmn/psshrun
 ok github frdmn/circular-dig
 ok github frdmn/direct-dig
 
 # Link executable into $PATH
 destination /usr/local/bin
-ok symlink "psshrun" "/usr/local/src/psshrun/psshrun"
 ok symlink "ddig" "/usr/local/src/direct-dig/ddig"
 ok symlink "odig" "/usr/local/src/circular-dig/odig"
 
