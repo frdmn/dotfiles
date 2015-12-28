@@ -10,7 +10,9 @@ bake brew tap nviennot/tmate 2>/dev/null
 # Install formula
 ok brew bats
 ok brew curl
+ok brew dev-search
 ok brew ffmpeg
+ok brew girahelper
 ok brew git
 ok brew git-extras
 ok brew go
@@ -23,6 +25,7 @@ ok brew mtr
 ok brew nmap
 ok brew node
 ok brew pssh
+ok brew psshrun
 ok brew python
 ok brew sshuttle
 ok brew terminal-notifier
@@ -33,9 +36,6 @@ ok brew wget
 ok brew youtube-dl
 ok brew zlib
 ok brew zsh
-ok brew dev-search
-ok brew girahelper
-ok brew psshrun
 
 # Cleanup
 bake brew cleanup
