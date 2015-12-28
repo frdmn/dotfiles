@@ -10,6 +10,7 @@ bake brew tap nviennot/tmate 2>/dev/null
 # Install formula
 ok brew bats
 ok brew curl
+ok brew ddig
 ok brew dev-search
 ok brew ffmpeg
 ok brew girahelper
@@ -24,6 +25,7 @@ ok brew mitmproxy
 ok brew mtr
 ok brew nmap
 ok brew node
+ok brew odig
 ok brew pssh
 ok brew psshrun
 ok brew python
