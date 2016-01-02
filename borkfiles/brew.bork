@@ -18,6 +18,7 @@ ok brew git-extras
 ok brew go
 ok brew heroku-toolbelt
 ok brew htop-osx
+ok brew hub
 ok brew imagemagick
 ok brew maven
 ok brew mitmproxy
