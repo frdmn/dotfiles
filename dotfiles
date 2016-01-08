@@ -5,7 +5,7 @@ FULLHOST=$(hostname -f)
 CURRENTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Check if bork repo exists
-if [ ! -d ${CURRENTDIR}/bork/.git ]; then
+if [[ ! -d "${CURRENTDIR}/bork/.git" ]]; then
     echo "missing: bork"
     git clone https://github.com/frdmn/bork.git ${CURRENTDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
 else
@@ -25,7 +25,7 @@ fi
 git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
 
 # Check arguments
-if [ -z ${1} ]; then
+if [[ -z ${1} ]]; then
     # If no 2nd argument => use bootstrap borkfile
     ${CURRENTDIR}/bork/bin/bork ${COMMAND} borkfiles/_.bork
 
