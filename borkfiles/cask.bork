@@ -44,7 +44,6 @@ ok cask tunnelblick
 ok cask vagrant
 ok cask vagrant-manager
 ok cask virtualbox
-ok cask virtualbox4330101610
 ok cask vlc
 ok cask wireshark
 
