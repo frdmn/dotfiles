@@ -3,7 +3,7 @@ ok npm npm
 
 # Packages
 ok npm bower
-ok npm grunt-cli
+ok npm gulp
 ok npm hubot
 ok npm init.js
 ok npm json
