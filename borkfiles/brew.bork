@@ -17,6 +17,7 @@ ok brew git
 ok brew git-extras
 ok brew go
 ok brew heroku-toolbelt
+ok brew homebrew/php/composer
 ok brew htop-osx
 ok brew hub
 ok brew imagemagick
