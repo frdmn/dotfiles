@@ -104,7 +104,7 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/ssh-hosts.zsh
 
 # Load zsh-autosuggestions plugin
-. ${HOME}/.zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
+. ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Load zsh-notify plugin
 # (tmp disabled because bugged with iTerm nightlies)
@@ -184,8 +184,7 @@ fi
 ###
 
 # Yellow (temp) autosuggested string
-export AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=3"
-export AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
 
 # php-fpm
 export PHP_AUTOCONF="/usr/local/bin/autoconf"

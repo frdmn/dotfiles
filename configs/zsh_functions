@@ -1,10 +1,3 @@
-## zsh-autosuggestions
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-
 ## set tab title to cwd
 # $1 = type; 0 - both, 1 - tab, 2 - title
 precmd () {
