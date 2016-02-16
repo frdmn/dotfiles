@@ -2,9 +2,6 @@
 bake brew tap caskroom/cask 2>/dev/null
 bake brew tap caskroom/versions 2>/dev/null
 
-# Install Homebrew Cask
-ok brew brew-cask
-
 # Install desktop apps
 ok cask 1password
 ok cask alfred
