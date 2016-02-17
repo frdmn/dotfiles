@@ -12,6 +12,7 @@ ok brew curl
 ok brew ddig
 ok brew dev-search
 ok brew ffmpeg
+ok brew gifify
 ok brew girahelper
 ok brew git
 ok brew git-extras
