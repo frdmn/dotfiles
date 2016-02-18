@@ -22,6 +22,7 @@ ok brew homebrew/php/composer
 ok brew htop-osx
 ok brew hub
 ok brew imagemagick
+ok brew iperf
 ok brew maven
 ok brew mitmproxy
 ok brew mtr
