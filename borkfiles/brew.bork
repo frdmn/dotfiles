@@ -37,6 +37,7 @@ ok brew terminal-notifier
 ok brew tmate
 ok brew tmux
 ok brew vim
+ok brew wakeonlan
 ok brew wget
 ok brew youtube-dl
 ok brew zlib
