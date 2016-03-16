@@ -8,6 +8,7 @@ bake brew tap nviennot/tmate 2>/dev/null
 
 # Install formula
 ok brew bats
+ok brew composer
 ok brew curl
 ok brew ddig
 ok brew dev-search
@@ -18,7 +19,6 @@ ok brew git
 ok brew git-extras
 ok brew go
 ok brew heroku-toolbelt
-ok brew homebrew/php/composer
 ok brew htop-osx
 ok brew hub
 ok brew imagemagick
