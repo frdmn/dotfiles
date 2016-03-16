@@ -27,6 +27,7 @@
 		"Package Control",
 		"Package Snippets",
 		"PlainTasks",
+		"PyYapf Python Formatter",
 		"SCSS",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
@@ -38,6 +39,7 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phplint",
 		"Terminality",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"WakaTime"
 	]
 }
