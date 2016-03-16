@@ -3,10 +3,10 @@ ok npm npm
 
 # Packages
 ok npm bower
+ok npm diff-so-fancy
 ok npm gulp
 ok npm hubot
 ok npm init.js
 ok npm json
 ok npm prettyjson
 ok npm tlstools
-ok npm updatr
