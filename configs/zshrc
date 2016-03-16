@@ -107,7 +107,6 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Load zsh-notify plugin
-# (tmp disabled because bugged with iTerm nightlies)
 . ${HOME}/.zsh/plugins/zsh-notify/notify.plugin.zsh
 
 ###
