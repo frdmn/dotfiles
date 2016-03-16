@@ -2281,15 +2281,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>268 712 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 601 620 392 0 0 1920 1177 </string>
+	<string>650 604 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 668 1666 473 0 0 1920 1177 </string>
+	<string>59 235 1842 792 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>377 102 1442 724 0 0 1920 1177 </string>
+	<string>825 412 906 571 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>273 482 650 452 0 0 1920 1177 </string>
+	<string>343 706 650 452 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>30 88 1626 1089 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -3152,6 +3152,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/jonas/.dotfiles/opt</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -3167,17 +3169,21 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml</string>
+	<string>https://iterm2.com/appcasts/testing3.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-09T15:11:41Z</date>
+	<date>2016-02-23T01:42:59Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
+	<key>Secure Input</key>
+	<true/>
 	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -3197,7 +3203,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1451494016</real>
+	<real>1452511616</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -3221,7 +3227,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160107-nightly</string>
+	<string>2.9.20160206</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
