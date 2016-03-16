@@ -31,7 +31,6 @@
 [alias]
   s = status
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  update = !"git fetch origin -v; git fetch upstream -v; git rebase upstream/master"
 
 [mergetool "sublime"]
   cmd = subl -w $MERGED
