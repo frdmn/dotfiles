@@ -31,7 +31,7 @@
 [alias]
   s = status
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  hub = !"open $(git config --get remote.origin.url | sed 's/git@//g' | sed 's/github.com:/http:\\/\\/github.com\\//g')"
+  hub = !"open $(git config --get remote.origin.url | sed 's/git@//g' | sed 's/github.com:/http:\\/\\/github.com\\//g' | sed 's/ssh.pushpull.space:/https:\\/\\/pushpull.space\\//g')"
 
 [mergetool "sublime"]
   cmd = subl -w $MERGED
