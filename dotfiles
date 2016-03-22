@@ -16,7 +16,7 @@ else
         echo "ok: bork"
     else
         echo "outdated: bork"
-        git --git-dir=${CURRENTDIR}/bork/.git --work-tree=${CURRENTDIR}/bork git pull
+        git --git-dir=${CURRENTDIR}/bork/.git --work-tree=${CURRENTDIR}/bork pull
         echo "ok: bork"
     fi
 fi
