@@ -124,6 +124,9 @@ if [ -f ${HOME}/.bash_vault ]; then
   . ${HOME}/.bash_vault
 fi
 
+# Make sure to export docker-machine env variables
+[[ $(docker-machine ls -q) ]] && eval $(docker-machine env default)
+
 ###
 ### Key bindings
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)

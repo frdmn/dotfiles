@@ -98,5 +98,8 @@ alias history="history 1"
 # VLC alias
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
-# Get rid of SL3 habit
-#alias subl="atom"
+# Docker aliases
+alias docker-machine-create="docker-machine create -d virtualbox default"
+alias docker-machine-start="docker-machine start default"
+alias docker-machine-ip="docker-machine ip default"
+alias docker-machine-reset="docker-machine rm default; docker-machine rm default"
