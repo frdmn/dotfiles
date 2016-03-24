@@ -1,8 +1,5 @@
 destination $HOME/.dotfiles
 
-# Update Bork
-ok github frdmn/bork
-
 # All UNIXes
 include configs.bork
 
