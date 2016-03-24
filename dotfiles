@@ -22,7 +22,7 @@ else
 fi
 
 # Make sure dotfile repo is up to date
-git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
+git --git-dir=${CURRENTDIR}/bork/.git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
 
 # Check arguments
 if [[ -z ${1} ]]; then
