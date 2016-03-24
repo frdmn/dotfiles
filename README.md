@@ -23,10 +23,12 @@ dotfiles
 
 ### Installation
 
-1. Fork this repository
-2. `git clone https://github.com/<GitHub-user>/dotfiles $HOME/.dotfiles`
-3. `cd $HOME/.dotfiles`
-4. `./dotfiles`
+1. Make sure to install homebrew and the following packages:  
+  `brew install bork`
+1. Fork this repository:  
+  `git clone https://github.com/frdmn/dotfiles ~/.dotfiles`
+1. Run the bootstrap script to initially install and setup the dotfiles:  
+  `cd ~/.dotfiles && ./dotfiles`
 
 ### Available commands
 
