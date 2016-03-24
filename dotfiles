@@ -14,7 +14,7 @@ fi
 # Check arguments
 if [[ -z ${1} ]]; then
     # If no 2nd argument => use bootstrap borkfile
-    ${DOTFILEDIR}/bork/bin/bork ${COMMAND} borkfiles/_.bork
+    bork ${COMMAND} borkfiles/_.bork
 
     # Host specific
     if [ "$(ls ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles 2> /dev/null)" ]; then
@@ -23,7 +23,7 @@ if [[ -z ${1} ]]; then
       cd ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles
       for file in *; do
         # Execute without location paths
-        ${DOTFILEDIR}/bork/bin/bork ${COMMAND} "${file}"
+        bork ${COMMAND} "${file}"
       done
       # Change back into previous directory
       cd - >/dev/null
@@ -48,6 +48,6 @@ else
     # Check if we have found at least one valid borkfile
     if [[ ! -z ${BORKFILESTRING} ]]; then
         # Execute $BORKFILESTRING
-        ${DOTFILEDIR}/bork/bin/bork ${COMMAND} ${BORKFILESTRING}
+        bork ${COMMAND} ${BORKFILESTRING}
     fi
 fi
