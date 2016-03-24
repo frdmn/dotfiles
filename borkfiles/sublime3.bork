@@ -3,13 +3,13 @@ ok directory ${HOME}'/Library/Application Support/Sublime Text 3/Installed Packa
 ok directory ${HOME}'/Library/Application Support/Sublime Text 3/Packages/User'
 
 # Check if Package Control is installed
-ok download ${HOME}'/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package' 'https://sublime.wbond.net/Package%20Control.sublime-package'
+ok download "${HOME}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" https://sublime.wbond.net/Package%20Control.sublime-package
 
 # Download base16-ocean theme
-ok download ${HOME}'/Library/Application Support/Sublime Text 3/Packages/User/base16-ocean.dark.tmTheme' 'https://raw.githubusercontent.com/chriskempson/base16-textmate/master/base16-ocean.dark.tmTheme'
+ok download "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/base16-ocean.dark.tmTheme" https://raw.githubusercontent.com/chriskempson/base16-textmate/master/base16-ocean.dark.tmTheme
 
 # Check if symlink for Package Control's package list exists
-ok symlink ${HOME}'/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings' ${HOME}'/.dotfiles/opt/Package Control.sublime-settings'
+ok symlink "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings" "${HOME}/.dotfiles/opt/Package Control.sublime-settings"
 
 # Check if symlink for Sublime Text 3 preferences file exists
-ok symlink ${HOME}'/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings' ${HOME}'/.dotfiles/opt/Preferences.sublime-settings'
+ok symlink "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings" "${HOME}/.dotfiles/opt/Preferences.sublime-settings"
