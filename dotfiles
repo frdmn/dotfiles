@@ -5,24 +5,11 @@ FULLHOST=$(hostname -f)
 DOTFILEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Check if bork repo exists
-if [[ ! -d "${DOTFILEDIR}/bork/.git" ]]; then
+if [[ -z $(command -v "bork") ]]; then
     echo "missing: bork"
-    git clone https://github.com/frdmn/bork.git ${DOTFILEDIR}/bork >/dev/null && echo "ok: bork" || echo "error: bork"
-else
-    # Check if bork is up to date
-    REMOTEHEAD=$(git --git-dir=${DOTFILEDIR}/bork/.git --work-tree=${DOTFILEDIR}/bork ls-remote origin -h refs/heads/master | awk '{ print $1 }')
-    LOCALHEAD=$(git --git-dir=${DOTFILEDIR}/bork/.git --work-tree=${DOTFILEDIR}/bork rev-parse HEAD)
-    if [[ $REMOTEHEAD == $LOCALHEAD ]]; then
-        echo "ok: bork"
-    else
-        echo "outdated: bork"
-        git --git-dir=${DOTFILEDIR}/bork/.git --work-tree=${DOTFILEDIR}/bork pull
-        echo "ok: bork"
-    fi
+    echo "Make sure to install bork before trying to bootstrap the dotfiles: $ brew install bork"
+    exit 1
 fi
-
-# Make sure dotfile repo is up to date
-git --git-dir=${DOTFILEDIR}/bork/.git pull >/dev/null && echo "ok: dotfiles" || echo "error: dotfiles"
 
 # Check arguments
 if [[ -z ${1} ]]; then
