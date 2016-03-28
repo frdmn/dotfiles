@@ -2,8 +2,10 @@
 ok brew
 
 # Taps
-bake brew tap homebrew/dupes 2>/dev/null
-bake brew tap frdmn/homebrew-formulas 2>/dev/null
+ok brew-tap homebrew/dupes
+ok brew-tap frdmn/formulas
+ok brew-tap caskroom/cask
+ok brew-tap caskroom/versions
 
 # Install formula
 ok brew bats
