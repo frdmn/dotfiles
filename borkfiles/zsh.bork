@@ -6,11 +6,8 @@ ok download "${HOME}/.zsh/functions/_brew" "https://gist.githubusercontent.com/m
 
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
-destination ${HOME}/.zsh/plugins
+cd ${HOME}/.zsh/plugins
 ok github zsh-users/zsh-syntax-highlighting
 ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
 ok github marzocchi/zsh-notify --branch=next-iterm
-
-# Go back into dotfile directory
-destination $HOME/.dotfiles

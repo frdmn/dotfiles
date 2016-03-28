@@ -6,7 +6,7 @@ ok directory ${HOME}/.vim/bundle
 ok directory /usr/local/src
 
 # Check if Vundle.vim (plugin manager) is installed
-destination ${HOME}/.vim/bundle
+cd ${HOME}/.vim/bundle
 ok github gmarik/Vundle.vim
 
 # Install Vundle plugins
@@ -14,7 +14,7 @@ bake vim +PluginInstall +qall
 echo "ok: installed Vunlde plugins"
 
 # Clone tomorrow theme
-destination /usr/local/src
+cd /usr/local/src
 ok github chriskempson/tomorrow-theme
 
 # Symlink theme
@@ -24,6 +24,3 @@ ok symlink "${HOME}/.vim/colors/Tomorrow-Night.vim" "/usr/local/src/tomorrow-the
 ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Blue.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Blue.vim"
 ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Bright.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Bright.vim"
 ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Eighties.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Eighties.vim"
-
-# Go back into dotfile directory
-destination $HOME/.dotfiles
