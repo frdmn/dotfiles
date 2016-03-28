@@ -8,18 +8,17 @@ dotfiles
 ### Features
 
 * Dotfile wrapper based on [Bork](https://github.com/mattly/bork)
-* Brew and Cask package check ensures that your packages GUI apps are installed
+* Homebrew and Cask checks ensure that your packages / GUI apps are installed and up-to-date
 * `npm` (Node Package Manager) package check
-* Ruby `gem`'s check
-* Commented code, so you know what is actually going on
+* Ruby `gem` package check
+* [Atom](https://atom.io/) package check
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
-* Theme support for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
-* Lightweight Atom package installer which uses a bundle [Atomfile](opt/Atomfile) (and `apm` of course)
-* Hostname specific processing and customizations
-* ZSH tab/auto completion
-* [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
+* [Theme support](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) for your prompts based on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
+* Hostname specific configurations and customizations
+* Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
 * [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
+* ~~Commented code, so you know what is actually going on~~
 
 ### Installation
 
