@@ -14,33 +14,30 @@ fi
 # Check arguments
 if [[ -z ${1} ]]; then
     # If no 2nd argument => use bootstrap borkfile
-    bork ${COMMAND} borkfiles/_.bork
+    bork ${COMMAND} ${DOTFILEDIR}/borkfiles/_.bork
 
     # Host specific
     if [ "$(ls ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles 2> /dev/null)" ]; then
       # Change into the host specific borkfile folder. Hack to avoid bork appending the fullpath a second time
       echo "info: found host-specific bork files for \"${FULLHOST}\""
-      cd ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles
-      for file in *; do
+      for file in ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles/*; do
         # Execute without location paths
         bork ${COMMAND} "${file}"
       done
-      # Change back into previous directory
-      cd - >/dev/null
     fi
 else
     # Otherwise, install use the specific borkfile(s)
     BORKFILES=${@:1}
     # For each specified borkfile
     for BORK in ${BORKFILES}; do
-        if [[ -f borkfiles/${BORK}.bork ]]; then
+        if [[ -f ${DOTFILEDIR}/borkfiles/${BORK}.bork ]]; then
             # Expand to actual path of borkfile, append to $BORKFILESTRING
-            BORKFILESTRING+=" borkfiles/${BORK}.bork"
+            BORKFILESTRING+=" ${DOTFILEDIR}/borkfiles/${BORK}.bork"
         # If host specific, use that one instead
         elif [[ -f ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles/${BORK}.bork ]]; then
             # Expand to actual path of borkfile, append to $BORKFILESTRING
             echo "info: found host-specific bork files for \"${FULLHOST}\""
-            BORKFILESTRING+=" hostnames/${FULLHOST}/borkfiles/${BORK}.bork"
+            BORKFILESTRING+=" ${DOTFILEDIR}/hostnames/${FULLHOST}/borkfiles/${BORK}.bork"
         else
             echo "Error: couldn't find borkfile \"${BORK}.bork\" :("
         fi
