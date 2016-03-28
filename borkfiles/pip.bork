@@ -1,6 +1,7 @@
-# First, try to upgrade pip itself
+# Pip-ception
 ok pip pip
-# then the packages
+
+# Install pip packages
 ok pip beautifulsoup4
 ok pip joe
 ok pip speedtest-cli
