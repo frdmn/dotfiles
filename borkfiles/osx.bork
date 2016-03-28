@@ -112,4 +112,4 @@ ok defaults com.apple.TimeMachine DoNotOfferNewDisksForBackup bool true
 ok defaults com.googlecode.iterm2 LoadPrefsFromCustomFolder bool true
 
 # Load preferences from dotfiles repo
-ok defaults com.googlecode.iterm2 PrefsCustomFolder string '~/.dotfiles/opt'
+ok defaults com.googlecode.iterm2 PrefsCustomFolder string '/Users/jonas/.dotfiles/opt'
