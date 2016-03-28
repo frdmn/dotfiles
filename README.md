@@ -27,7 +27,7 @@ dotfiles
 1. Fork this repository:  
   `git clone https://github.com/frdmn/dotfiles ~/.dotfiles`
 1. Run the bootstrap script to initially install and setup the dotfiles:  
-  `cd ~/.dotfiles && ./dotfiles`
+  `~/.dotfiles/dotfiles`
 
 ### Available commands
 
