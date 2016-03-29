@@ -71,9 +71,6 @@ alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/defaul
 alias nginx.logs.phpmyadmin.error='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.error.log'
 alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.access.log'
 
-# Function to use dotfile wrapper in any directory
-dotfiles(){cd ~/.dotfiles; ./dotfiles $1; cd - > /dev/null}
-
 # Force tmux to use 256 color terminal
 alias tmux="tmux -2"
 
@@ -82,9 +79,6 @@ alias tmux-kill="tmux ls | sed 's/:.*//g' | xargs -I{} tmux kill-session -t {}"
 
 # Update locatedb
 alias updatedb="sudo /usr/libexec/locate.updatedb"
-
-# Recursive search using grep
-search() { grep -R "${*}" . | grep -v "/.git/" }
 
 # Always use vim instead of vi
 alias vi="vim"

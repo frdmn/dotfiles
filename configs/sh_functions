@@ -18,3 +18,23 @@ ssh() {
             command ssh "$@"
     fi
 }
+
+# Function to use dotfile wrapper in any directory
+dotfiles (){
+    cd ~/.dotfiles
+    ./dotfiles $1
+    cd - > /dev/null
+}
+
+# Recursive search using grep
+search () {
+    grep -R "${*}" . | grep -v "/.git/"
+}
+
+## set tab title to cwd
+# $1 = type; 0 - both, 1 - tab, 2 - title
+precmd () {
+  tab_label=${PWD/${HOME}/\~} # use 'relative' path
+  echo -ne "\e]2;${tab_label}\a" # set window title to full string
+  echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
+}
