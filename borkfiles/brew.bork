@@ -12,6 +12,8 @@ ok brew bats
 ok brew binwalk
 ok brew composer
 ok brew curl
+ok brew docker
+ok brew docker-machine
 ok brew ddig
 ok brew dev-search
 ok brew exiftool
