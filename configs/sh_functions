@@ -19,13 +19,6 @@ ssh() {
     fi
 }
 
-# Function to use dotfile wrapper in any directory
-dotfiles (){
-    cd ~/.dotfiles
-    ./dotfiles $1
-    cd - > /dev/null
-}
-
 # Recursive search using grep
 search () {
     grep -R "${*}" . | grep -v "/.git/"
