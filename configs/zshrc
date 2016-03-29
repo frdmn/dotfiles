@@ -103,6 +103,9 @@ zstyle ':completion:*' insert-tab false
 # Load zsh-notify plugin
 . ${HOME}/.zsh/plugins/zsh-notify/notify.plugin.zsh
 
+# Load alias-tips plugin
+. ${HOME}/.zsh/plugins/alias-tips/alias-tips.plugin.zsh
+
 # Complete known SSH hosts
 . ${HOME}/.zsh/ssh-hosts.zsh
 
