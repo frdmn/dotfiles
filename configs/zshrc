@@ -109,6 +109,9 @@ zstyle ':completion:*' insert-tab false
 # Load wakatime plugin
 . ${HOME}/.zsh/plugins/zsh-wakatime/zsh-wakatime.plugin.zsh
 
+# Load gulp plugin
+. ${HOME}/.zsh/plugins/gulp.plugin.zsh/gulp.plugin.zsh
+
 # Complete known SSH hosts
 . ${HOME}/.zsh/ssh-hosts.zsh
 

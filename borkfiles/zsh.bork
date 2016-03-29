@@ -17,3 +17,4 @@ ok github zsh-users/zsh-history-substring-search
 ok github marzocchi/zsh-notify --branch=next-iterm
 ok github djui/alias-tips
 ok github wbinglee/zsh-wakatime
+ok github akoenig/gulp.plugin.zsh
