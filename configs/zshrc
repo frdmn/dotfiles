@@ -91,27 +91,13 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/git-extras.zsh
 . ${HOME}/.zsh/prompts/robbyrussell.zsh
 
-# Load zsh-syntax-highlighting plugin
-. ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Determine plugins to load
+ZSH_PLUGINS=( syntax-highlighting history-substring-search notify alias-tips wakatime gulp ssh-hosts )
 
-# Load zsh-history-substring-search
-. ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-
-# Load zsh-autosuggestions plugin
-. ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Load zsh-notify plugin
-. ${HOME}/.zsh/plugins/zsh-notify/notify.plugin.zsh
-
-# Load alias-tips plugin
-. ${HOME}/.zsh/plugins/alias-tips/alias-tips.plugin.zsh
-
-# Load wakatime plugin
-. ${HOME}/.zsh/plugins/zsh-wakatime/zsh-wakatime.plugin.zsh
-
-# Load gulp plugin
-. ${HOME}/.zsh/plugins/gulp.plugin.zsh/gulp.plugin.zsh
-
+# Load each plugin
+for ZSH_PLUGIN ($ZSH_PLUGINS); do
+  . ${HOME}/.zsh/plugins/**/*${ZSH_PLUGIN}*.zsh
+done
 
 ###
 ### Aliases and functions
