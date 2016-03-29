@@ -106,6 +106,9 @@ zstyle ':completion:*' insert-tab false
 # Load alias-tips plugin
 . ${HOME}/.zsh/plugins/alias-tips/alias-tips.plugin.zsh
 
+# Load wakatime plugin
+. ${HOME}/.zsh/plugins/zsh-wakatime/zsh-wakatime.plugin.zsh
+
 # Complete known SSH hosts
 . ${HOME}/.zsh/ssh-hosts.zsh
 

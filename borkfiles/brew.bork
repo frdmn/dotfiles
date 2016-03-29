@@ -54,6 +54,7 @@ ok brew tmate
 ok brew tmux
 ok brew uping
 ok brew vim
+ok brew wakatime-cli
 ok brew wakeonlan
 ok brew wget
 ok brew youtube-dl
