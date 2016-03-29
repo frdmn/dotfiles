@@ -97,14 +97,14 @@ zstyle ':completion:*' insert-tab false
 # Load zsh-history-substring-search
 . ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# Complete known SSH hosts
-. ${HOME}/.zsh/ssh-hosts.zsh
-
 # Load zsh-autosuggestions plugin
 . ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Load zsh-notify plugin
 . ${HOME}/.zsh/plugins/zsh-notify/notify.plugin.zsh
+
+# Complete known SSH hosts
+. ${HOME}/.zsh/ssh-hosts.zsh
 
 ###
 ### Aliases and functions
