@@ -92,6 +92,11 @@ alias history="history 1"
 # VLC alias
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
+# Use personal hastebin server
+alias hastebin="HASTE_SERVER=http://paste.frd.mn hastebin"
+alias haste="hastebin"
+alias paste="haste"
+
 # Docker aliases
 alias docker-machine-create="docker-machine create -d virtualbox default"
 alias docker-machine-start="docker-machine start default"
