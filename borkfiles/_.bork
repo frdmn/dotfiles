@@ -8,13 +8,15 @@ case $OSTYPE in
     include brew.bork
     include cask.bork
     include osx.bork
-    include pip.bork ;;
+    include pip.bork
+    ;;
 esac
 
 # Shell specfic
 case $SHELL in
   *zsh*)
-    include zsh.bork ;;
+    include zsh.bork
+    ;;
 esac
 
 # Depending on above
