@@ -97,9 +97,6 @@ zstyle ':completion:*' insert-tab false
 # Load zsh-history-substring-search
 . ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# Load tmuxinator completion
-. ${HOME}/.zsh/tmuxinator.zsh
-
 # Complete known SSH hosts
 . ${HOME}/.zsh/ssh-hosts.zsh
 
