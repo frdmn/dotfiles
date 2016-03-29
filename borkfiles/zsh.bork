@@ -1,8 +1,12 @@
 # Check if symlink for ZSH exists
 ok symlink "${HOME}/.zsh" "${HOME}/.dotfiles/configs/zsh"
 
-# Check brew autocomplete function
+# Check several autocomplete functions
 ok download "${HOME}/.zsh/functions/_brew" "https://gist.githubusercontent.com/mbgearhead/7187772/raw/b537daddfe7019426d2163bf0d64f6f1147509bd/_brew"
+ok download "${HOME}/.zsh/functions/_docker-machine" "https://raw.githubusercontent.com/zsh-users/zsh-completions/master/src/_docker-machine"
+ok download "${HOME}/.zsh/functions/_bower" "https://raw.githubusercontent.com/zsh-users/zsh-completions/master/src/_bower"
+ok download "${HOME}/.zsh/functions/_vagrant" "https://raw.githubusercontent.com/zsh-users/zsh-completions/master/src/_vagrant"
+ok download "${HOME}/.zsh/functions/_virtualbox" "https://raw.githubusercontent.com/zsh-users/zsh-completions/master/src/_virtualbox"
 
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
