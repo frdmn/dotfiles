@@ -112,8 +112,6 @@ zstyle ':completion:*' insert-tab false
 # Load gulp plugin
 . ${HOME}/.zsh/plugins/gulp.plugin.zsh/gulp.plugin.zsh
 
-# Complete known SSH hosts
-. ${HOME}/.zsh/ssh-hosts.zsh
 
 ###
 ### Aliases and functions

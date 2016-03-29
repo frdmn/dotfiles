@@ -11,6 +11,7 @@ ok download "${HOME}/.zsh/functions/_virtualbox" "https://raw.githubusercontent.
 # Clone into ZSH plugins and functions
 ok directory ${HOME}/.zsh/plugins
 cd ${HOME}/.zsh/plugins
+ok download ${HOME}/.zsh/plugins/ssh-hosts.zsh "https://gist.githubusercontent.com/frdmn/41bc8cf01f58ddbc369b/raw/ssh-hosts.zsh"
 ok github zsh-users/zsh-syntax-highlighting
 ok github tarruda/zsh-autosuggestions
 ok github zsh-users/zsh-history-substring-search
