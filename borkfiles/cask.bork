@@ -43,12 +43,16 @@ ok cask wireshark
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
 ok cask betterzipql
+ok cask provisionql
 ok cask qlcolorcode
+ok cask qlimagesize
 ok cask qlmarkdown
 ok cask qlprettypatch
 ok cask qlstephen
+ok cask qlvideo
 ok cask quicklook-csv
 ok cask quicklook-json
+ok cask suspicious-package
 ok cask webpquicklook
 
 # Cleanup
