@@ -92,7 +92,7 @@ zstyle ':completion:*' insert-tab false
 . ${HOME}/.zsh/prompts/robbyrussell.zsh
 
 # Determine plugins to load
-ZSH_PLUGINS=( syntax-highlighting history-substring-search notify alias-tips wakatime gulp ssh-hosts )
+ZSH_PLUGINS=( syntax-highlighting history-substring-search autosuggestions notify alias-tips wakatime gulp ssh-hosts )
 
 # Load each plugin
 for ZSH_PLUGIN ($ZSH_PLUGINS); do
