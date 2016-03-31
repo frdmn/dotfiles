@@ -9,5 +9,6 @@ ok npm hastebin
 ok npm hubot
 ok npm init.js
 ok npm json
+ok npm npm-check
 ok npm prettyjson
 ok npm tlstools
