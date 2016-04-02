@@ -17,7 +17,7 @@ ok cask gitter
 ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
-ok cask iterm2-nightly
+ok cask iterm2-beta
 ok cask keepingyouawake
 ok cask keka
 ok cask macdown
@@ -31,7 +31,6 @@ ok cask skype
 ok cask sublime-text3
 ok cask teamviewer
 ok cask textual
-ok cask textwrangler
 ok cask tigervnc-viewer
 ok cask transmit
 ok cask tunnelblick
