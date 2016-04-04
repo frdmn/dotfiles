@@ -32,6 +32,7 @@
   s = status
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   hub = !"open $(git config --get remote.origin.url | sed 's/git@//g' | sed 's/github.com:/http:\\/\\/github.com\\//g' | sed 's/ssh.pushpull.space:/https:\\/\\/pushpull.space\\//g')"
+  pushup = "!gitbranchname() { git symbolic-ref --short HEAD; }; gitpushupstream() { git push --set-upstream origin `gitbranchname`; }; gitpushupstream"
 
 [mergetool "sublime"]
   cmd = subl -w $MERGED
