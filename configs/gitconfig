@@ -8,6 +8,7 @@
 [user]
   name = Jonas Friedmann
   email = j@frd.mn
+  signingkey = D713FC95
 
 [merge]
   log = true
@@ -47,3 +48,5 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+[commit]
+  gpgsign = true
