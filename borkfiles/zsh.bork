@@ -1,6 +1,9 @@
 # Check if symlink for ZSH exists
 ok symlink "${HOME}/.zsh" "${HOME}/.dotfiles/configs/zsh"
 
+# Make sure gpg-agent config is in place
+ok symlink "${HOME}/.gnupg/gpg-agent.conf" "${HOME}/.dotfiles/opt/gpg-agent.conf"
+
 # Check several autocomplete functions
 ok download "${HOME}/.zsh/functions/_brew" "https://gist.githubusercontent.com/mbgearhead/7187772/raw/b537daddfe7019426d2163bf0d64f6f1147509bd/_brew"
 ok download "${HOME}/.zsh/functions/_docker-machine" "https://raw.githubusercontent.com/zsh-users/zsh-completions/master/src/_docker-machine"
