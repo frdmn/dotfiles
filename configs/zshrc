@@ -172,6 +172,17 @@ if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes 2> /dev/null)" ]; th
 fi
 
 ###
+### GPG
+###
+
+if [ -f "${HOME}/.gnupg/gpg-agent-info" ]; then
+  . "${HOME}/.gnupg/gpg-agent-info"
+  export SSH_AUTH_SOCK
+  export GPG_TTY=$(tty)
+  export GPG_AGENT_INFO
+fi
+
+###
 ### Exports (php-fpm, maven and $PATH)
 ###
 
