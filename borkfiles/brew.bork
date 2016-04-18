@@ -17,6 +17,7 @@ ok brew docker-machine
 ok brew ddig
 ok brew dev-search
 ok brew exiftool
+ok brew fdupes
 ok brew ffmpeg
 ok brew gifify
 ok brew girahelper
