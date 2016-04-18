@@ -114,9 +114,6 @@ if [ -f ${HOME}/.bash_vault ]; then
   . ${HOME}/.bash_vault
 fi
 
-# Make sure to export docker-machine env variables
-[[ $(docker-machine ls -q --filter "state=Running") ]] && eval $(docker-machine env default)
-
 ###
 ### Key bindings
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
@@ -170,42 +167,3 @@ if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes 2> /dev/null)" ]; th
     . "${file}"
   done
 fi
-
-###
-### GPG
-###
-
-if [ -f "${HOME}/.gnupg/gpg-agent-info" ]; then
-  . "${HOME}/.gnupg/gpg-agent-info"
-  export SSH_AUTH_SOCK
-  export GPG_TTY=$(tty)
-  export GPG_AGENT_INFO
-fi
-
-###
-### Exports (php-fpm, maven and $PATH)
-###
-
-# Yellow (temp) autosuggested string
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
-
-# php-fpm
-export PHP_AUTOCONF="/usr/local/bin/autoconf"
-#export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
-
-# Maven
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-# Go
-export GOPATH=$HOME/.go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-# Set dev.sh (https://github.com/frdmn/dev-sh) project path
-export devsearch_projectspath="${HOME}/Development"
-
-# Set pssh configuration directory
-export psshrun_configpath="${HOME}/.pssh"
-
-# $PATH
-export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH:$HOME/.npm-packages/bin
-export EDITOR="vim"
