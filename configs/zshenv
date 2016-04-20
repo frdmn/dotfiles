@@ -38,4 +38,4 @@ export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin
 export EDITOR="vim"
 
 # Make sure to export docker-machine env variables
-[[ $(docker-machine ls -q --filter "state=Running") ]] && eval $(docker-machine env default)
+#[[ $(docker-machine ls -q --filter "state=Running") ]] && eval $(docker-machine env default)
