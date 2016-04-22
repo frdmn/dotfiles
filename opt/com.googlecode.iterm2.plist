@@ -2243,9 +2243,11 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/atom-one-dark-terminal-master/scheme/one-dark</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 521}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -2281,17 +2283,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>268 712 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 604 620 392 0 0 1920 1177 </string>
+	<string>-1270 588 620 392 -1920 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>59 235 1842 792 0 0 1920 1177 </string>
+	<string>20 289 1866 677 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>825 412 906 571 0 0 1920 1177 </string>
+	<string>422 678 650 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>343 706 650 452 0 0 1920 1177 </string>
+	<string>371 190 1546 826 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>30 88 1626 1089 0 0 1920 1177 </string>
+	<string>58 719 650 452 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -3173,7 +3175,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-02-23T01:42:59Z</date>
+	<date>2016-04-11T19:44:43Z</date>
+	<key>SUSkippedVersion</key>
+	<string>2.9.20160313</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -3183,7 +3187,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -3227,7 +3231,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160206</string>
+	<string>2.9.20160313</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
