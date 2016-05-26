@@ -28,6 +28,7 @@ ok brew git
 ok brew git-extras
 ok brew go
 ok brew gd
+ok brew ghostscript
 ok brew heroku-toolbelt
 ok brew highlight
 ok brew htop-osx
