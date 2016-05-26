@@ -10,6 +10,7 @@ ok brew-tap caskroom/versions
 # Install formula
 ok brew bats
 ok brew binwalk
+ok brew cmake
 ok brew composer
 ok brew curl
 ok brew docker
