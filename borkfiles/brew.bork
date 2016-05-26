@@ -17,6 +17,8 @@ ok brew docker
 #ok brew docker-machine
 ok brew ddig
 ok brew dev-search
+ok brew dmd
+ok brew dub
 ok brew exiftool
 ok brew fdupes
 ok brew ffmpeg
