@@ -27,6 +27,7 @@ ok brew girahelper
 ok brew git
 ok brew git-extras
 ok brew go
+ok brew gd
 ok brew heroku-toolbelt
 ok brew highlight
 ok brew htop-osx
