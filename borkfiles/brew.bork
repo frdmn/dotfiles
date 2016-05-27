@@ -59,6 +59,7 @@ ok brew sshuttle
 ok brew terminal-notifier
 ok brew tmate
 ok brew tmux
+ok brew unar
 ok brew uping
 ok brew vim
 ok brew wakatime-cli
