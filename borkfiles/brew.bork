@@ -29,7 +29,7 @@ ok brew git-extras
 ok brew go
 ok brew gd
 ok brew ghostscript
-ok brew heroku-toolbelt
+ok brew heroku
 ok brew highlight
 ok brew htop-osx
 ok brew httpie
