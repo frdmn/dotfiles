@@ -27,7 +27,7 @@ ok cask private-internet-access
 ok cask sequel-pro
 ok cask sitesucker
 ok cask skype
-ok cask sublime-text3
+ok cask sublime-text
 ok cask teamviewer
 ok cask textual
 ok cask tigervnc-viewer
