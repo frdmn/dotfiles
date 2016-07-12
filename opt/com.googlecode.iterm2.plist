@@ -2285,17 +2285,17 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>479 718 400 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 789 620 392 0 0 2560 1417 </string>
+	<string>650 612 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>127 155 2418 1081 0 0 2560 1417 </string>
+	<string>129 309 1610 860 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1275 195 874 486 0 0 2560 1417 </string>
+	<string>527 452 650 452 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>84 111 1778 1047 0 0 1920 1177 </string>
+	<string>325 178 650 452 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>58 719 650 452 0 0 1920 1177 </string>
+	<string>87 957 650 452 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>310 725 650 452 0 0 1920 1177 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -3179,11 +3179,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=31</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=31</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-16T08:19:05Z</date>
+	<date>2016-08-02T02:01:48Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -3239,7 +3239,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.5</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
