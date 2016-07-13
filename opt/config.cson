@@ -29,6 +29,8 @@
   "linter-jshint": {}
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  livereload:
+    applyImageLive: true
   metrics:
     userId: "a3d0e1b721f417804bf9c8a098629757bafe5628"
   minimap:
