@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Better Completion",
+		"BracketGuard",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"CSS Completions",
