@@ -13,7 +13,7 @@ ok brew binwalk
 ok brew cmake
 ok brew composer
 ok brew curl
-ok brew docker
+#ok brew docker
 #ok brew docker-machine
 ok brew ddig
 ok brew dev-search
