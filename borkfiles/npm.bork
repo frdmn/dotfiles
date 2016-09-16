@@ -5,6 +5,7 @@ ok npm npm
 ok npm bower
 ok npm diff-so-fancy
 ok npm gifify
+ok npm grunt
 ok npm gulp
 ok npm hastebin
 ok npm hubot
