@@ -14,3 +14,4 @@ ok npm json
 ok npm npm-check
 ok npm prettyjson
 ok npm tlstools
+ok npm yo
