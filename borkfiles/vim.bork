@@ -12,15 +12,3 @@ ok github gmarik/Vundle.vim
 # Install Vundle plugins
 bake vim +PluginInstall +qall
 echo "ok: installed Vunlde plugins"
-
-# Clone tomorrow theme
-cd /usr/local/src
-ok github chriskempson/tomorrow-theme
-
-# Symlink theme
-ok directory ${HOME}/.vim/colors
-ok symlink "${HOME}/.vim/colors/Tomorrow.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow.vim"
-ok symlink "${HOME}/.vim/colors/Tomorrow-Night.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night.vim"
-ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Blue.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Blue.vim"
-ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Bright.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Bright.vim"
-ok symlink "${HOME}/.vim/colors/Tomorrow-Night-Eighties.vim" "/usr/local/src/tomorrow-theme/vim/colors/Tomorrow-Night-Eighties.vim"
