@@ -12,6 +12,7 @@ ok brew bats
 ok brew binwalk
 ok brew cmake
 ok brew composer
+ok brew coreutils
 ok brew curl
 #ok brew docker
 #ok brew docker-machine
