@@ -10,6 +10,7 @@
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
+    showInvisibles: true
     tabLength: 2
   "exception-reporting":
     userId: "f637adea-1050-8ece-429a-1a2be9ddef08"
