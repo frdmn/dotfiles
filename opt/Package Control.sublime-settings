@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"ayu",
 		"Better Completion",
 		"BracketGuard",
 		"BracketHighlighter",

@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"convert_path": "/usr/local/bin/convert",
 	"convert_tabspaces_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -16,7 +16,8 @@
 		"Vintage"
 	],
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"ui_separator": true
 }
