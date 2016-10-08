@@ -1,6 +1,7 @@
 "*":
   core:
     destroyEmptyPanes: false
+    telemetryConsent: "limited"
     themes: [
       "quantum-ui"
       "quantum-syntax"
@@ -17,6 +18,7 @@
   "file-icons": {}
   "file-types":
     ".bork$": "source.shell"
+  "gtk-dark-theme": {}
   hashrocket:
     bashExecutablePath: "/bin/bash"
     nodeExecutablePath: "/usr/local/bin/node"
@@ -24,8 +26,7 @@
     pythonExecutablePath: "/usr/local/bin/python"
     rubyExecutablePath: "/usr/bin/ruby"
   "highlight-line": {}
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-htmlhint": {}
   "linter-jshint": {}
   "linter-shellcheck":
@@ -37,5 +38,6 @@
   minimap:
     plugins:
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
   welcome:
     showOnStartup: false
