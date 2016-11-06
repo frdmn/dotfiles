@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/ayu/ayu-light.tmTheme",
 	"convert_path": "/usr/local/bin/convert",
 	"convert_tabspaces_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -16,7 +16,7 @@
 		"Vintage"
 	],
 	"tab_size": 2,
-	"theme": "Default.sublime-theme",
+	"theme": "ayu-light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ui_separator": true
