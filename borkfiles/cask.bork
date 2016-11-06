@@ -17,6 +17,7 @@ ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
 ok cask iterm2-beta
+ok cask java7
 ok cask keepingyouawake
 ok cask keka
 ok cask macdown
