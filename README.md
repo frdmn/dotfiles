@@ -18,7 +18,7 @@ dotfiles
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
 * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
 * [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
-* ~~Commented code, so you know what is actually going on~~
+* ~~Commented code, so you know what is actually going on~~ (Not anymore, to be honest...)
 
 ### Installation
 
