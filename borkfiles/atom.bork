@@ -4,7 +4,6 @@ ok apm autocomplete-paths
 ok apm color-picker
 ok apm docblockr
 ok apm file-icons
-ok apm file-types
 ok apm hashrocket
 ok apm hex
 ok apm highlight-line
