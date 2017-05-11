@@ -5,9 +5,6 @@ ok directory ${HOME}'/Library/Application Support/Sublime Text 3/Packages/User'
 # Check if Package Control is installed
 ok download "${HOME}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" https://sublime.wbond.net/Package%20Control.sublime-package
 
-# Download base16-ocean theme
-ok download "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/base16-ocean.dark.tmTheme" https://raw.githubusercontent.com/chriskempson/base16-textmate/master/base16-ocean.dark.tmTheme
-
 # Check if symlink for Package Control's package list exists
 ok symlink "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings" "${HOME}/.dotfiles/opt/Package Control.sublime-settings"
 
