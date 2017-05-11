@@ -3,15 +3,18 @@ ok cask 1password
 ok cask alfred
 ok cask appcleaner
 ok cask atext
+ok cask bartender
 ok cask cakebrew
 ok cask carbon-copy-cloner
 ok cask chicken
 ok cask cord
 ok cask dropbox
+ok cask docker
 ok cask firefox
 ok cask gas-mask
 ok cask github-desktop
 ok cask gitter
+ok cask gitup
 ok cask google-chrome
 ok cask gpgtools
 ok cask hex-fiend
@@ -38,6 +41,7 @@ ok cask vagrant-manager
 ok cask virtualbox
 ok cask vlc
 ok cask wireshark
+ok cask xquartz
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
 ok cask betterzipql
