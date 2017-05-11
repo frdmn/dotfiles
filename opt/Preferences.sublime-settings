@@ -1,4 +1,17 @@
 {
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 50,
+	"auto_complete_selector": "source - comment",
+	"auto_complete_size_limit": 4194304,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		}
+	],
+	"auto_complete_with_fields": false,
 	"color_scheme": "Packages/ayu/ayu-light.tmTheme",
 	"convert_path": "/usr/local/bin/convert",
 	"convert_tabspaces_on_save": true,
@@ -15,6 +28,7 @@
 		"Markdown",
 		"Vintage"
 	],
+	"skin": "ayu/ayu light",
 	"tab_size": 2,
 	"theme": "ayu-light.sublime-theme",
 	"translate_tabs_to_spaces": true,
