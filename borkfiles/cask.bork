@@ -23,9 +23,9 @@ ok cask macdown
 ok cask macpass
 ok cask mactracker
 ok cask nvalt
-#ok cask private-internet-access
-ok cask sequel-pro
-ok cask sitesucker
+#ok cask private-internet-access # DO NOT INSTALL USING CASK
+                                 # OTHERWISE VPN CONNECTIONS
+                                 # WONT WORK
 ok cask skype
 ok cask sublime-text
 ok cask teamviewer
