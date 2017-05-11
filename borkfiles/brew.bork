@@ -17,9 +17,7 @@ ok brew curl
 ok brew ddig
 ok brew dev-search
 ok brew dmd
-ok brew dub
 ok brew exiftool
-ok brew fdupes
 ok brew ffmpeg
 ok brew gd
 ok brew ghostscript
@@ -38,7 +36,6 @@ ok brew imapsync
 ok brew iperf
 ok brew jq
 ok brew mas
-ok brew maven
 ok brew media-info
 ok brew mitmproxy
 ok brew mtr
