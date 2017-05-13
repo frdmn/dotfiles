@@ -21,7 +21,6 @@ ok brew exiftool
 ok brew ffmpeg
 ok brew gd
 ok brew ghostscript
-ok brew girahelper
 ok brew git
 ok brew git-extras
 ok brew go

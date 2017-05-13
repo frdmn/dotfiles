@@ -6,6 +6,7 @@ ok npm bower
 ok npm common-readme
 ok npm diff-so-fancy
 ok npm gifify
+ok npm girahelper
 ok npm grunt
 ok npm gulp
 ok npm hastebin
