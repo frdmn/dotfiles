@@ -2,10 +2,11 @@
 ok brew
 
 # Taps
-ok brew-tap homebrew/dupes
-ok brew-tap frdmn/formulas
 ok brew-tap caskroom/cask
 ok brew-tap caskroom/versions
+ok brew-tap frdmn/formulas
+ok brew-tap homebrew/dupes
+ok brew-tap homebrew/php
 
 # Install formula
 ok brew bats
