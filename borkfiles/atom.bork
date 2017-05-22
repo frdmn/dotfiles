@@ -1,0 +1,26 @@
+# Install Atom packages
+ok apm atom-beautify
+ok apm autocomplete-paths
+ok apm color-picker
+ok apm docblockr
+ok apm file-icons
+ok apm hashrocket
+ok apm hex
+ok apm highlight-line
+ok apm jquery-snippets
+ok apm linter
+ok apm linter-htmlhint
+ok apm linter-jshint
+ok apm linter-jsonlint
+ok apm linter-php
+ok apm linter-shellcheck
+ok apm minimap
+ok apm minimap-git-diff
+ok apm pigments
+ok apm quantum-syntax
+ok apm quantum-ui
+ok apm script
+ok apm sort-lines
+ok apm tasks
+ok apm the-closer
+ok apm valign
