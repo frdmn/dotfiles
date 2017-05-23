@@ -9,6 +9,7 @@ ok brew-tap homebrew/dupes
 ok brew-tap homebrew/php
 
 # Install formula
+ok brew asciinema
 ok brew bats
 ok brew binwalk
 ok brew cmake
