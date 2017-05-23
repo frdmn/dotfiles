@@ -12,6 +12,7 @@ ok npm gulp
 ok npm hastebin
 ok npm hubot
 ok npm init.js
+ok npm jscs
 ok npm json
 ok npm npm-check
 ok npm prettyjson

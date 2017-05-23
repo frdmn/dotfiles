@@ -3,7 +3,7 @@ dotfiles
 
 <center><sub><sup>(click screenshot for a demo execution)</sup></sub></center>
 
-[![](http://up.frd.mn/lTR9b.png)](https://asciinema.org/a/98ssj3pm69zu39084ewfhktde)
+[![](http://i.imgur.com/GafvUSe.png)](https://asciinema.org/a/98ssj3pm69zu39084ewfhktde)
 
 [Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems that is really simple and easy to understand.
 
