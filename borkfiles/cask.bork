@@ -8,7 +8,6 @@ ok cask atom-beta
 ok cask cakebrew
 ok cask carbon-copy-cloner
 ok cask chicken
-ok cask cord
 ok cask dropbox
 ok cask docker
 ok cask firefox
