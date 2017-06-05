@@ -1,16 +1,22 @@
 # Install desktop apps
 ok cask 1password
+ok cask aerial
 ok cask alfred
 ok cask appcleaner
 ok cask atext
-ok cask bartender
 ok cask atom-beta
-ok cask cakebrew
+ok cask bartender
+ok cask beardedspice
 ok cask carbon-copy-cloner
 ok cask chicken
-ok cask dropbox
+ok cask coconutbattery
+ok cask discord
 ok cask docker
+ok cask dropbox
+ok cask electrum
+ok cask fileshuttle
 ok cask firefox
+ok cask font-source-code-pro-for-powerline
 ok cask gas-mask
 ok cask github-desktop
 ok cask gitter
@@ -25,15 +31,16 @@ ok cask keka
 ok cask macdown
 ok cask macpass
 ok cask mactracker
+ok cask nomad
 ok cask nvalt
 #ok cask private-internet-access # DO NOT INSTALL USING CASK
                                  # OTHERWISE VPN CONNECTIONS
                                  # WONT WORK
+ok cask riot
 ok cask skype
 ok cask sublime-text
 ok cask teamviewer
 ok cask textual
-ok cask tigervnc-viewer
 ok cask transmit
 ok cask tunnelblick
 ok cask vagrant
