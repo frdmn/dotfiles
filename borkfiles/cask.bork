@@ -7,6 +7,7 @@ ok cask atext
 ok cask atom-beta
 ok cask bartender
 ok cask beardedspice
+ok cask blockblock
 ok cask carbon-copy-cloner
 ok cask chicken
 ok cask coconutbattery
@@ -36,6 +37,7 @@ ok cask nvalt
 #ok cask private-internet-access # DO NOT INSTALL USING CASK
                                  # OTHERWISE VPN CONNECTIONS
                                  # WONT WORK
+ok cask oversight
 ok cask riot
 ok cask skype
 ok cask sublime-text
