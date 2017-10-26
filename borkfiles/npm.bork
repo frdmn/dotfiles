@@ -4,7 +4,6 @@ ok npm npm
 # Install global packages
 ok npm bower
 ok npm common-readme
-ok npm diff-so-fancy
 ok npm gifify
 ok npm giracli
 ok npm grunt
