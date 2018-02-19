@@ -4,7 +4,6 @@ include configs.bork
 # OS specfic
 case $OSTYPE in
   darwin*)
-    include atom.bork
     include brew.bork
     include cask.bork
     include mas.bork
