@@ -28,7 +28,6 @@ ok brew git-extras
 ok brew go
 ok brew heroku
 ok brew highlight
-ok brew htop-osx
 ok brew httpie
 ok brew httpstat
 ok brew hub
