@@ -18,7 +18,7 @@ ok cask gas-mask
 ok cask github-desktop
 ok cask gitup
 ok cask google-chrome
-ok cask gpgtools
+ok cask gpg-suite
 ok cask hex-fiend
 ok cask iterm2-beta
 ok cask java7
