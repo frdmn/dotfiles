@@ -15,13 +15,11 @@ ok cask electrum
 ok cask fileshuttle
 ok cask font-source-code-pro-for-powerline
 ok cask gas-mask
-ok cask github-desktop
 ok cask gitup
 ok cask google-chrome
 ok cask gpg-suite
 ok cask hex-fiend
 ok cask iterm2-beta
-ok cask java7
 ok cask keepingyouawake
 ok cask keka
 ok cask macdown
