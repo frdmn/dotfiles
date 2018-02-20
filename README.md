@@ -1,11 +1,11 @@
 dotfiles
 ========
 
-<center><sub><sup>(click screenshot for a demo execution)</sup></sub></center>
-
-[![](http://i.imgur.com/GafvUSe.png)](https://asciinema.org/a/98ssj3pm69zu39084ewfhktde)
-
 [Bork](https://github.com/mattly/bork)-based dotfile setup for Mac and Linux systems that is really simple and easy to understand.
+
+iTerm | Sublime Text
+--- | --- 
+[![](https://i.imgur.com/7X3mi0x.png)](https://asciinema.org/a/98ssj3pm69zu39084ewfhktde) <center><sub><sup>(click screenshot for a demo execution)</sup></sub></center> | ![](https://i.imgur.com/MfK1rnR.png)
 
 ### Features
 
