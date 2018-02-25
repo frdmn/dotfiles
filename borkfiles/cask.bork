@@ -41,7 +41,6 @@ ok cask wireshark
 ok cask xquartz
 
 # Quick Look plugins - https://github.com/sindresorhus/quick-look-plugins
-ok cask betterzipql
 ok cask provisionql
 ok cask qlcolorcode
 ok cask qlimagesize
