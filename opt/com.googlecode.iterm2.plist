@@ -4,6 +4,10 @@
 <dict>
 	<key>AboutToPasteTabs</key>
 	<true/>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AboutToPasteTabs_selection</key>
 	<integer>0</integer>
 	<key>AdjustWindowForFontSizeChange</key>
@@ -2846,11 +2850,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1449 132 1045 341 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 793 620 392 0 0 2560 1417 </string>
+	<string>650 614 620 392 0 0 1920 1177 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>356 241 606 469 0 0 3200 1777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1299 870 796 473 0 0 2560 1417 </string>
+	<string>1770 1181 770 429 0 0 3200 1777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>322 204 570 451 0 0 2560 1418 </string>
+	<string>1678 281 1480 1223 0 0 3200 1777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>306 986 570 352 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -4468,6 +4474,8 @@
 			<string>/Users/jfr</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -4548,7 +4556,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-19T07:40:05Z</date>
+	<date>2018-06-28T18:33:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -4558,7 +4566,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -4610,7 +4618,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6beta3</string>
+	<string>3.2.0beta3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
