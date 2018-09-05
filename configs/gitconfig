@@ -52,3 +52,6 @@
 
 [commit]
   gpgsign = true
+
+[github]
+	user = frdmn
