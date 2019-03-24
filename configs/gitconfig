@@ -1,6 +1,6 @@
 [core]
   excludesfile = ~/.gitignore
-  editor = subl -n -w
+  editor = code -w
   trustctime = false
   eol = lf
   autocrlf = input
