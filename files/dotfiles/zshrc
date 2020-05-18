@@ -120,6 +120,10 @@ zplug load
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
 ###
 
+# Skip forward/back a word with opt-arrow
+bindkey '[D' backward-word
+bindkey '[C' forward-word
+
 # Make the delete key (or Fn + Delete on the Mac) work instead of outputting a ~
 bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
