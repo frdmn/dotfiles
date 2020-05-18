@@ -48,15 +48,12 @@ bindkey -e
 # Enable colors
 autoload -U colors && colors
 
-# Add functions folder in $fpath array
-fpath=( $fpath $HOME/.zsh/functions )
-
 ###
 ### Auto/tab-completions
 ###
 
 # Enable bash completion
-autoload bashcompinit && bashcompinit
+# autoload bashcompinit && bashcompinit
 
 # Proper case insensitivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -66,7 +63,7 @@ autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
 # Add autocomplete for git-extras
-zstyle ':completion:::git:*' script /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
 
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \
@@ -85,19 +82,27 @@ zstyle ':completion:*' insert-tab false
 ### Plugins and prompt
 ###
 
-# Load Robby Russell's theme/prompt and dependencies
-. ${HOME}/.zsh/appearance.zsh
-. ${HOME}/.zsh/git.zsh
-. ${HOME}/.zsh/git-extras.zsh
-. ${HOME}/.zsh/prompts/robbyrussell.zsh
+# zplug initalization
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
-# Determine plugins to load
-ZSH_PLUGINS=( syntax-highlighting history-substring-search autosuggestions notify alias-tips wakatime gulp ssh-hosts )
+# Load plugins
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "marzocchi/zsh-notify"
 
-# Load each plugin
-for ZSH_PLUGIN ($ZSH_PLUGINS); do
-  . ${HOME}/.zsh/plugins/**/*${ZSH_PLUGIN}*.zsh
-done
+# Load theme
+zplug mafredri/zsh-async, from:github
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+
+# Install packages that have not been installed yet
+if ! zplug check --verbose; then
+    zplug install
+fi
+
+# Load all modules
+zplug load
 
 ###
 ### Aliases and functions
@@ -110,39 +115,16 @@ done
 # Load zsh specific functions
 . ~/.zsh_functions
 
-if [ -f ${HOME}/.bash_vault ]; then
-  . ${HOME}/.bash_vault
-fi
-
 ###
 ### Key bindings
 ### (To find out the actual bindings, use Ctrl+V followed by the key in a zsh shell)
 ###
-
-## General
-# Skip forward/back a word with opt-arrow
-bindkey '[D' backward-word
-bindkey '[C' forward-word
-
-# Skip to start/end of line with opt-shift-arrow
-bindkey '^[[1;10D' beginning-of-line
-bindkey '^[[1;10C' end-of-line
 
 # Make the delete key (or Fn + Delete on the Mac) work instead of outputting a ~
 bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
 bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
-
-## zsh-autosuggestions
-# use ctrl+t to toggle autosuggestions
-bindkey '^T' autosuggest-toggle
-
-## zsh-history-substring-search
-# bind UP and DOWN arrow keys
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up
@@ -157,13 +139,9 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 ###
-### Per hostname
+### Prompt
 ###
 
-# Check for host specific sources/includes
-FULLHOST=$(hostname -f)
-if [ "$(ls ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes 2> /dev/null)" ]; then
-  for file in ${HOME}/.dotfiles/hostnames/${FULLHOST}/includes/*; do
-    . "${file}"
-  done
-fi
+# Single line prompt
+prompt_newline='%666v'
+PROMPT=" $PROMPT"

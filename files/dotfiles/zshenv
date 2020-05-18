@@ -20,9 +20,6 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
 export PHP_AUTOCONF="/usr/local/bin/autoconf"
 #export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
-# Maven
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # Go
 export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
