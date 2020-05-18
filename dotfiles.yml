@@ -7,9 +7,12 @@
     - role: dotfiles
       tags: 
         - dotfiles
-    - role: pip
+    - role: gem
       tags: 
-        - pip
+        - gem
     - role: npm
       tags: 
         - npm
+    - role: pip
+      tags: 
+        - pip

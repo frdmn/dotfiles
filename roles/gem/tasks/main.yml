@@ -1,0 +1,5 @@
+- name: Install global npm packages
+  gem:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ packages }}"
