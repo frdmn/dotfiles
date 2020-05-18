@@ -13,6 +13,9 @@
     - role: npm
       tags: 
         - npm
+    - role: osx
+      tags: 
+        - osx
     - role: pip
       tags: 
         - pip
