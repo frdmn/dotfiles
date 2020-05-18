@@ -1,2 +1,2 @@
 - Automatically discover dotfiles in "files/" for "dotfile" role
-- Check "files/vim/" and "files/zsh/" folders?
+- Check "files/vim/" folder?
