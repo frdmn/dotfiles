@@ -9,6 +9,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# Colors for ls
+alias ls='ls -G'
+alias ll='ls -lG'
+
 # Prevent common typos
 alias cd..="cd .."
 alias sl="ls"
