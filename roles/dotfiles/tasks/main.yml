@@ -1,0 +1,20 @@
+- name: dotfiles files
+  file:
+    src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
+    path: '~/.{{ item }}'
+    state: link
+  loop:
+  - bash_profile
+  - bash_sessions_disable
+  - gitconfig
+  - hushlogin
+  - jshintrc
+  - sh_aliases
+  - sh_functions
+  - tmux.conf
+  - vim
+  - vimrc
+  - zsh
+  - zsh_functions
+  - zshenv
+  - zshrc

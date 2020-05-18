@@ -4,3 +4,6 @@
     - role: brew
       tags: 
         - brew
+    - role: dotfiles
+      tags: 
+        - dotfiles
