@@ -1,0 +1,11 @@
+packages:
+  - bower
+  - giracli
+  - grunt
+  - gulp
+  - init.js
+  - json
+  - prettyjson
+  - tlstools
+  - yarn
+  - yo
