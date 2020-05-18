@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -e
+
+if ! [ -x "$(command -v brew)" ]; then
+  echo "Homebrew missing - please install manually using instructions on https://brew.sh/"
+  exit 1
+fi
+
+if ! [ -x "$(command -v ansible)" ]; then
+  brew install ansible
+fi
+
+tags="$1"
+
+if [ -z $tags ]; then
+  tags="all"
+fi
+
+ansible-playbook -i ~/.dotfiles/hosts ~/.dotfiles/dotfiles.yml --tags $tags
+
+if command -v terminal-notifier 1>/dev/null 2>&1; then
+  terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up dev environment."
+fi
