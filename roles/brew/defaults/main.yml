@@ -13,6 +13,7 @@ brew_packages:
   - go
   - imapsync
   - iperf
+  - java
   - jq
   - mas
   - media-info
@@ -25,10 +26,10 @@ brew_packages:
   - uping
   - wakeonlan
   - youtube-dl
+  - zplug
   - zsh
 
 cask_packages:
-  - 1password
   - aerial
   - alfred
   - appcleaner
@@ -38,20 +39,17 @@ cask_packages:
   - discord
   - docker
   - dropbox
-  - fileshuttle
   - gas-mask
   - gitup
   - google-chrome
   - hex-fiend
-  - iterm2-beta
+  - iterm2
   - keka
   - macdown
   - nvalt
-  - teamviewer
   - textual
   - transmit
   - vagrant
-  - vagrant-manager
   - virtualbox
   - visual-studio-code
   - vlc
