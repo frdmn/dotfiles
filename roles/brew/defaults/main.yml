@@ -1,0 +1,71 @@
+brew_taps:
+  - frdmn/formulas
+
+brew_packages:
+  - ansible
+  - asciinema
+  - bats
+  - coreutils
+  - ddig
+  - dev-search
+  - exiftool
+  - git-extras
+  - go
+  - imapsync
+  - iperf
+  - jq
+  - mas
+  - media-info
+  - mitmproxy
+  - mtr
+  - nmap
+  - odig
+  - terminal-notifier
+  - tmux
+  - uping
+  - wakeonlan
+  - youtube-dl
+  - zsh
+
+cask_packages:
+  - 1password
+  - aerial
+  - alfred
+  - appcleaner
+  - atext
+  - bartender
+  - carbon-copy-cloner
+  - discord
+  - docker
+  - dropbox
+  - fileshuttle
+  - gas-mask
+  - gitup
+  - google-chrome
+  - hex-fiend
+  - iterm2-beta
+  - keka
+  - macdown
+  - nvalt
+  - teamviewer
+  - textual
+  - transmit
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - visual-studio-code
+  - vlc
+  - wireshark
+
+cask_ql_packages:
+  - provisionql
+  - qlcolorcode
+  - qlimagesize
+  - qlmarkdown
+  - qlprettypatch
+  - qlstephen
+  - qlvideo
+  - quicklook-csv
+  - quicklook-json
+  - suspicious-package
+  - webpquicklook
