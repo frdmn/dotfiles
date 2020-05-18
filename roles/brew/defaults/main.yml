@@ -20,6 +20,7 @@ brew_packages:
   - mitmproxy
   - mtr
   - nmap
+  - nodejs
   - odig
   - terminal-notifier
   - tmux
