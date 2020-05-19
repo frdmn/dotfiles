@@ -31,6 +31,7 @@ brew_packages:
   - zsh
 
 cask_packages:
+  - 1password
   - aerial
   - alfred
   - appcleaner
@@ -47,7 +48,11 @@ cask_packages:
   - iterm2
   - keka
   - macdown
+  - nordvpn
   - nvalt
+  - spotify
+  - things
+  - telegram
   - textual
   - transmit
   - vagrant
