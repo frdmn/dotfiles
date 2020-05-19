@@ -1,4 +1,4 @@
-- name: dotfiles files
+- name: Symlink all dotfiles into home folder
   file:
     src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
@@ -12,9 +12,6 @@
   - sh_aliases
   - sh_functions
   - tmux.conf
-  - vim
   - vimrc
-  - zsh
   - zsh_functions
   - zshenv
-  - zshrc
