@@ -1,5 +1,6 @@
 brew_taps:
   - frdmn/formulas
+  - homebrew/cask-versions
 
 brew_packages:
   - ansible
@@ -57,7 +58,7 @@ cask_packages:
   - transmit
   - vagrant
   - virtualbox
-  - visual-studio-code
+  - visual-studio-code-insiders
   - vlc
   - wireshark
 
