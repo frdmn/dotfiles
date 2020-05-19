@@ -69,3 +69,35 @@
     type: float
     value: 3
     state: present
+
+- name: iterm2 - Specify the preferences directory
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: PrefsCustomFolder
+    type: string
+    value: /Users/jonas/.dotfiles/files/iterm2
+    state: present
+
+- name: iterm2 - Use the custom preferences in the directory
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: LoadPrefsFromCustomFolder
+    type: integer
+    value: 1
+    state: present
+
+- name: iterm2 - Save changes on exit 1/2
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: NoSyncNeverRemindPrefsChangesLostForFile
+    type: integer
+    value: 1
+    state: present
+
+- name: iterm2 - Save changes on exit 2/2
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: NoSyncNeverRemindPrefsChangesLostForFile_selection
+    type: integer
+    value: 0
+    state: present
