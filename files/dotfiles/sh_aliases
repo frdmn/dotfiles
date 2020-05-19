@@ -2,7 +2,7 @@
 alias please="sudo "
 
 # dotfiles alias
-alias dotfiles="~/.dotfiles/dotfiles"
+alias dotfiles="~/.dotfiles/bootstrap"
 
 # Easier navigation: .., ..., ....
 alias ..="cd .."
