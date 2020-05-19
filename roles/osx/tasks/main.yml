@@ -59,7 +59,15 @@
     domain: NSGlobalDomain
     key: KeyRepeat
     type: integer
-    value: 0
+    value: 2
+    state: present
+
+- name: Set a short keyboard repeat rate delay
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: integer
+    value: 15
     state: present
 
 - name: Increase speed of trackpad cursor movement
