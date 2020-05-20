@@ -50,8 +50,8 @@
   smudge = git lfs smudge %f
   required = true
 
-#[commit]
-#  gpgsign = true
+[commit]
+  gpgsign = true
 
 [github]
-	user = frdmn
+  user = frdmn

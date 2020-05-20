@@ -12,6 +12,7 @@ brew_packages:
   - exiftool
   - git-extras
   - go
+  - gpg2
   - imapsync
   - iperf
   - java
@@ -23,6 +24,7 @@ brew_packages:
   - nmap
   - nodejs
   - odig
+  - pinentry-mac
   - terminal-notifier
   - tmux
   - uping

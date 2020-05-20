@@ -2,4 +2,5 @@
 - Check "files/vim/" folder?
 
 manual:
+- gpg keys + config (.gnu*)
 - vscode sync login 
