@@ -16,9 +16,3 @@
   - zsh_functions
   - zshenv
   - zshrc
-
-- name: Symlink VSCode configuration folder
-  file:
-    src: '{{ ansible_env.PWD }}/files/vscode'
-    path: '~/.vscode'
-    state: link

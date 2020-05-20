@@ -1,2 +1,5 @@
 - Automatically discover dotfiles in "files/" for "dotfile" role
 - Check "files/vim/" folder?
+
+manual:
+- vscode sync login 
