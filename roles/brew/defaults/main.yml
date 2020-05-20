@@ -1,4 +1,5 @@
 brew_taps:
+  - domt4/autoupdate
   - frdmn/formulas
   - homebrew/cask-versions
 
@@ -35,6 +36,7 @@ brew_packages:
 
 cask_packages:
   - 1password
+  - bitwarden
   - aerial
   - alfred
   - appcleaner
