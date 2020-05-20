@@ -16,3 +16,9 @@
   - zsh_functions
   - zshenv
   - zshrc
+
+- name: Download git-shift
+  get_url:
+    url: https://raw.githubusercontent.com/gitbits/git-shift/master/git-shift
+    dest: /usr/local/bin/git-shift
+    mode: '550'
