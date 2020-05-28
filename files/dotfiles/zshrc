@@ -96,6 +96,11 @@ zplug "marzocchi/zsh-notify"
 zplug mafredri/zsh-async, from:github
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
+# Completions
+zplug "docker/cli", use:contrib/completion/zsh
+zplug "docker/compose", use:contrib/completion/zsh
+zplug "lukechilds/zsh-better-npm-completion", defer:2
+
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
     zplug install
