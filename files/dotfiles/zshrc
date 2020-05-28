@@ -113,11 +113,8 @@ zplug load
 ### Aliases and functions
 ###
 
-# Load bash/zsh shared aliases and functions
-. ~/.sh_aliases
-. ~/.sh_functions
-
-# Load zsh specific functions
+# Load aliases and functions
+. ~/.zsh_aliases
 . ~/.zsh_functions
 
 ###

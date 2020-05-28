@@ -5,3 +5,11 @@ precmd () {
   echo -ne "\e]2;${tab_label}\a" # set window title to full string
   echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
 }
+
+## Load dev.sh (https://github.com/frdmn/dev-sh) search tool
+. /usr/local/opt/dev-search/dev
+
+# Recursive search using grep
+search () {
+    grep -R "${*}" . | grep -v "/.git/"
+}

@@ -9,10 +9,9 @@
   - gitconfig
   - hushlogin
   - jshintrc
-  - sh_aliases
-  - sh_functions
   - tmux.conf
   - vimrc
+  - zsh_aliases
   - zsh_functions
   - zshenv
   - zshrc

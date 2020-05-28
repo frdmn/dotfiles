@@ -1,7 +1,0 @@
-## Load dev.sh (https://github.com/frdmn/dev-sh) search tool
-. /usr/local/opt/dev-search/dev
-
-# Recursive search using grep
-search () {
-    grep -R "${*}" . | grep -v "/.git/"
-}
