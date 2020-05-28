@@ -2,20 +2,20 @@
   hosts: local
   roles:
     - role: brew
-      tags: 
+      tags:
         - brew
     - role: dotfiles
-      tags: 
+      tags:
         - dotfiles
     - role: gem
-      tags: 
+      tags:
         - gem
     - role: npm
-      tags: 
+      tags:
         - npm
     - role: osx
-      tags: 
+      tags:
         - osx
     - role: pip
-      tags: 
+      tags:
         - pip
