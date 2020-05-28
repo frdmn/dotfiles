@@ -26,10 +26,12 @@ brew_packages:
   - nodejs
   - odig
   - pinentry-mac
+  - telnet
   - terminal-notifier
   - tmux
   - uping
   - wakeonlan
+  - wget
   - youtube-dl
   - zplug
   - zsh
@@ -59,6 +61,7 @@ cask_packages:
   - telegram
   - textual
   - transmit
+  - ultimaker-cura
   - vagrant
   - virtualbox
   - visual-studio-code-insiders
