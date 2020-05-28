@@ -21,3 +21,12 @@
     url: https://raw.githubusercontent.com/gitbits/git-shift/master/git-shift
     dest: /usr/local/bin/git-shift
     mode: '750'
+
+- name: Download Vundle (vi bundle manager)
+  git:
+    repo: https://github.com/VundleVim/Vundle.vim.git
+    dest: ~/.vim/bundle/Vundle.vim
+
+- name: Setup Vundle and install plugins
+  shell:
+    cmd: echo | echo | vim +PluginInstall +qall &>/dev/null
