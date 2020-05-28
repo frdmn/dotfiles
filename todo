@@ -1,8 +1,0 @@
-- Automatically discover dotfiles in "files/" for "dotfile" role
-- Check "files/vim/" folder?
-- alfred
-- vim
-
-manual:
-- gpg keys + config (.gnu*)
-- vscode sync login 
