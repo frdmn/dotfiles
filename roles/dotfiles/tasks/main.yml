@@ -4,8 +4,6 @@
     path: '~/.{{ item }}'
     state: link
   loop:
-  - bash_profile
-  - bash_sessions_disable
   - gitconfig
   - gitignore
   - hushlogin
