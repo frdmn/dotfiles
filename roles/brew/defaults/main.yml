@@ -26,6 +26,7 @@ brew_packages:
   - nodejs
   - odig
   - pinentry-mac
+  - ruby
   - telnet
   - terminal-notifier
   - tmux
