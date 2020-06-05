@@ -18,11 +18,9 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
 
 # php-fpm
 export PHP_AUTOCONF="/usr/local/bin/autoconf"
-#export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
 # Go
 export GOPATH=$HOME/.go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Set dev.sh (https://github.com/frdmn/dev-sh) project path
 export devsearch_projectspath="${HOME}/Development"
@@ -31,7 +29,7 @@ export devsearch_projectspath="${HOME}/Development"
 export psshrun_configpath="${HOME}/.pssh"
 
 # $PATH
-export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH:$HOME/.npm-packages/bin
+export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:$HOME/.composer/vendor/bin:$HOME/.npm-packages/bin:/usr/local/opt/ruby/bin:/usr/local/opt/go/libexec/bin:$PATH
 export EDITOR="vim"
 
 # Make sure to export docker-machine env variables
