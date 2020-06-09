@@ -12,6 +12,11 @@ fi
 
 tags="$1"
 
+if [ ! -d ~/.dotfiles/roles/${tags} ]; then
+  echo "The specified tag (${tags}) doesn't exist!"
+  exit 1
+fi
+
 if [ -z $tags ]; then
   tags="all"
 fi
@@ -19,5 +24,5 @@ fi
 ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook -i ~/.dotfiles/hosts ~/.dotfiles/dotfiles.yml --tags $tags
 
 if command -v terminal-notifier 1>/dev/null 2>&1; then
-  terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up dev environment."
+  terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
 fi
