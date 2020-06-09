@@ -1,4 +1,4 @@
-- name: Install global npm packages
+- name: "[npm] Install global npm packages"
   npm:
     name: "{{ item }}"
     global: yes

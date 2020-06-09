@@ -1,11 +1,11 @@
-- name: "[dotfiles] get list of files to symlink"
+- name: "[dotfiles] Get list of files to symlink"
   shell: "ls -1 ~/.dotfiles/files/dotfiles  > /tmp/dotfiles_symlinks_to_build"
 
-- name: "[dotfiles] store list of files into variable"
+- name: "[dotfiles] Store list of files into variable"
   shell: "cat /tmp/dotfiles_symlinks_to_build"
   register: filesToSymlink
 
-- name: "[dotfiles] set symlinks"
+- name: "[dotfiles] Set symlinks"
   file:
     src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
@@ -13,17 +13,17 @@
   with_items:
     - "{{filesToSymlink.stdout_lines}}"
 
-- name: Download git-shift
+- name: "[dotfiles] Download git-shift and set executable bit"
   get_url:
     url: https://raw.githubusercontent.com/gitbits/git-shift/master/git-shift
     dest: /usr/local/bin/git-shift
     mode: '750'
 
-- name: Download Vundle (vi bundle manager)
+- name: "[dotfiles] Download Vundle (vi bundle manager)"
   git:
     repo: https://github.com/VundleVim/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
 
-- name: Setup Vundle and install plugins
+- name: "[dotfiles] Setup and install Vundle"
   shell:
     cmd: echo | echo | vim +PluginInstall +qall &>/dev/null

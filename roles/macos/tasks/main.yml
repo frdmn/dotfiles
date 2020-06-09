@@ -1,4 +1,4 @@
-- name: Disable the "Are you sure you want to open this application?" dialog
+- name: "[macOS] Disable the \"Are you sure you want to open this application?\" dialog"
   osx_defaults:
     domain: com.apple.LaunchServices
     key: LSQuarantine
@@ -6,7 +6,7 @@
     value: false
     state: present
 
-- name: Check for software updates daily, not just once per week
+- name: "[macOS] Check for software updates daily, not just once per week"
   osx_defaults:
     domain: com.apple.SoftwareUpdate
     key: ScheduleFrequency
@@ -14,7 +14,7 @@
     value: 1
     state: present
 
-- name: Disable smart quotes as they’re annoying when typing code
+- name: "[macOS] Disable smart quotes as they’re annoying when typing code"
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
@@ -22,7 +22,7 @@
     value: false
     state: present
 
-- name: Disable smart dashes as they’re annoying when typing code
+- name: "[macOS] Disable smart dashes as they’re annoying when typing code"
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled
@@ -30,7 +30,7 @@
     value: false
     state: present
 
-- name: Trackpad - enable tap to click for this user and for the login screen
+- name: "[macOS] Trackpad - enable tap to click for this user and for the login screen"
   osx_defaults:
     domain: NSGlobalDomain
     key: com.apple.mouse.tapBehavior
@@ -38,7 +38,7 @@
     value: 1
     state: present
 
-- name: Trackpad - enable tap to click for this user and for the login screen
+- name: "[macOS] Trackpad - enable tap to click for this user and for the login screen"
   osx_defaults:
     domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
     key: Clicking
@@ -46,7 +46,7 @@
     value: 1
     state: present
 
-- name: Disable press-and-hold for keys in favor of key repeat
+- name: "[macOS] Disable press-and-hold for keys in favor of key repeat"
   osx_defaults:
     domain: NSGlobalDomain
     key: ApplePressAndHoldEnabled
@@ -54,7 +54,7 @@
     value: false
     state: present
 
-- name: Set a blazingly fast keyboard repeat rate
+- name: "[macOS] Set a blazingly fast keyboard repeat rate"
   osx_defaults:
     domain: NSGlobalDomain
     key: KeyRepeat
@@ -62,7 +62,7 @@
     value: 2
     state: present
 
-- name: Set a short keyboard repeat rate delay
+- name: "[macOS] Set a short keyboard repeat rate delay"
   osx_defaults:
     domain: NSGlobalDomain
     key: InitialKeyRepeat
@@ -70,7 +70,7 @@
     value: 15
     state: present
 
-- name: Increase speed of trackpad cursor movement
+- name: "[macOS] Increase speed of trackpad cursor movement"
   osx_defaults:
     domain: NSGlobalDomain
     key: com.apple.trackpad.scaling
@@ -78,7 +78,7 @@
     value: 3
     state: present
 
-- name: iterm2 - Specify the preferences directory
+- name: "[macOS] iterm2 - Specify the preferences directory"
   osx_defaults:
     domain: com.googlecode.iterm2.plist
     key: PrefsCustomFolder
@@ -86,7 +86,7 @@
     value: /Users/jonas/.dotfiles/files/iterm2
     state: present
 
-- name: iterm2 - Use the custom preferences in the directory
+- name: "[macOS] iterm2 - Use the custom preferences in the directory"
   osx_defaults:
     domain: com.googlecode.iterm2.plist
     key: LoadPrefsFromCustomFolder
@@ -94,7 +94,7 @@
     value: 1
     state: present
 
-- name: iterm2 - Save changes on exit 1/2
+- name: "[macOS] iterm2 - Save changes on exit 1/2"
   osx_defaults:
     domain: com.googlecode.iterm2.plist
     key: NoSyncNeverRemindPrefsChangesLostForFile
@@ -102,7 +102,7 @@
     value: 1
     state: present
 
-- name: iterm2 - Save changes on exit 2/2
+- name: "[macOS] iterm2 - Save changes on exit 2/2"
   osx_defaults:
     domain: com.googlecode.iterm2.plist
     key: NoSyncNeverRemindPrefsChangesLostForFile_selection

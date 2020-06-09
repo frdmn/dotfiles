@@ -1,19 +1,19 @@
-- name: Configure Homebrew taps
+- name: "[brew] Configure Homebrew taps"
   homebrew_tap:
     name: "{{ item }}"
   loop: "{{ brew_taps }}"
 
-- name: Install Homebrew formulae
+- name: "[brew] Install Homebrew formulae"
   homebrew:
     name: "{{ item }}"
   loop: "{{ brew_packages }}"
 
-- name: Install Homebrew casks
+- name: "[brew] Install Homebrew casks"
   homebrew_cask:
     name: "{{ item }}"
   loop: "{{ cask_packages }}"
 
-- name: Install QuickLook plugins
+- name: "[brew] Install QuickLook plugins"
   homebrew_cask:
     name: "{{ item }}"
   loop: "{{ cask_ql_packages }}"

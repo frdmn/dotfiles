@@ -1,4 +1,4 @@
-- name: Install pip packages
+- name: "[pip] Install pip packages"
   pip:
     name: "{{ item }}"
     executable: pip3.8
