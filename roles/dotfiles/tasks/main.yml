@@ -1,19 +1,17 @@
-- name: Symlink all dotfiles into home folder
+- name: "[dotfiles] get list of files to symlink"
+  shell: "ls -1 ~/.dotfiles/files/dotfiles  > /tmp/dotfiles_symlinks_to_build"
+
+- name: "[dotfiles] store list of files into variable"
+  shell: "cat /tmp/dotfiles_symlinks_to_build"
+  register: filesToSymlink
+
+- name: "[dotfiles] set symlinks"
   file:
     src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
-  loop:
-  - gitconfig
-  - gitignore
-  - hushlogin
-  - jshintrc
-  - tmux.conf
-  - vimrc
-  - zsh_aliases
-  - zsh_functions
-  - zshenv
-  - zshrc
+  with_items:
+    - "{{filesToSymlink.stdout_lines}}"
 
 - name: Download git-shift
   get_url:
