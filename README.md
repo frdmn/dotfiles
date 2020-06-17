@@ -24,6 +24,7 @@ iTerm | Visual Studio Code
     * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-notify) plugin
     * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
 * Configured GnuPG including `gpg-agent` and enabled commit signatures in git
+* [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) themes for iTerm and VSCode (even though VSCode is _currently_ controlled by the [built-in sync](https://code.visualstudio.com/docs/editor/settings-sync))
 * ~~Commented code, so you know what is actually going on~~ (Not anymore, to be honest...)
 
 ### Installation
