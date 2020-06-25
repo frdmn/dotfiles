@@ -27,6 +27,7 @@ brew_packages:
   - odig
   - pinentry-mac
   - ruby
+  - sshuttle
   - telnet
   - terminal-notifier
   - tmux
