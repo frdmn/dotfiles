@@ -286,10 +286,12 @@
 	<string>0 163 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 341 799 448 0 0 1440 877 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 381 620 392 -1440 150 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>908 789 570 467 0 0 2560 1417 </string>
+	<string>128 950 650 467 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2839 47 948 688 1440 -227 2560 1417 </string>
+	<string>0 410 570 467 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>2713 633 570 467 1440 -227 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -299,6 +301,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -862,7 +866,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>SauceCodeProNerdFontComplete-Light 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -929,19 +933,32 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.11</string>
 		<string>3.3.10</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>SauceCodePro Nerd Font Mono</string>
+		<string>SauceCodePro Nerd Font</string>
+	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {2560, 1440}}</string>
+		<key>topLeft</key>
+		<string>{977, 1217}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{508, 714}</string>
+		<string>{269, 616}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>9FF99592-F585-4873-8A6A-B1FDEE5E21BB</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>18</integer>
+	<integer>33</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1732,8 +1749,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-04T06:38:39Z</date>
+	<date>2020-06-26T08:48:52Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2779943695</integer>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
@@ -1744,6 +1765,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.10</string>
+	<string>3.3.11</string>
 </dict>
 </plist>
