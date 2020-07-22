@@ -6,14 +6,20 @@ brew_taps:
 brew_packages:
   - ansible
   - asciinema
+  - bat
   - bats
+  - composer
   - coreutils
   - ddig
   - dev-search
+  - exa
   - exiftool
+  - ffmpeg
+  - font-saucecodepro-nerd-font
   - git-extras
   - go
   - gpg2
+  - htop
   - imapsync
   - iperf
   - java
