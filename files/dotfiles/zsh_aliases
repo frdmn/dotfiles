@@ -31,7 +31,7 @@ alias rmds="find . -type f -name '*.DS_Store' -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Start a Simple HTTP Server
-alias server="python -m SimpleHTTPServer"
+alias serve="python -m SimpleHTTPServer"
 
 # Enable aliases to be sudo’ed
 alias sudo="sudo "
