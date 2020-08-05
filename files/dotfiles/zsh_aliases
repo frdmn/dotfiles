@@ -13,6 +13,12 @@ alias ....="cd ../../.."
 alias ls="ls -G"
 alias ll="ls -lG"
 
+# Replace ls with exa
+alias ls="exa -s=type --git"
+
+# Replace cat with bat
+alias cat="bat --paging=never"
+
 # Prevent common typos
 alias cd..="cd .."
 alias sl="ls"
