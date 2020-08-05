@@ -14,7 +14,7 @@ alias ls="ls -G"
 alias ll="ls -lG"
 
 # Replace ls with exa
-alias ls="exa -s=type --git"
+alias ls="exa -gh -s=type --git"
 
 # Replace cat with bat
 alias cat="bat --paging=never"
