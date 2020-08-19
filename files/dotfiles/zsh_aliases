@@ -17,7 +17,7 @@ alias ll="ls -lG"
 alias ls="exa -gh -s=type --git"
 
 # Replace cat with bat
-alias cat="bat --paging=never"
+alias cat="bat --paging=never --style=plain"
 
 # Prevent common typos
 alias cd..="cd .."
