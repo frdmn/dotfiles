@@ -54,3 +54,6 @@
 
 [github]
   user = frdmn
+
+[init]
+	defaultBranch = main
