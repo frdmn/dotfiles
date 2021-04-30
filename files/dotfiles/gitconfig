@@ -12,7 +12,6 @@
 
 [merge]
   log = true
-  tool = sublime
 
 [push]
   default = simple
