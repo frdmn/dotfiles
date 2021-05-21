@@ -7,7 +7,6 @@ brew_packages:
   - ansible
   - asciinema
   - bat
-  - bats
   - composer
   - coreutils
   - ddig
