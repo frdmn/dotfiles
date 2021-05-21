@@ -1,5 +1,6 @@
 - name: Set up local workstation
   hosts: local
+  ignore_errors: yes
   roles:
     - role: brew
       tags:
