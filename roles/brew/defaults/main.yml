@@ -15,7 +15,7 @@ brew_packages:
   - exa
   - exiftool
   - ffmpeg
-  - font-saucecodepro-nerd-font
+  - font-hack-nerd-font
   - git-extras
   - go
   - gpg2
