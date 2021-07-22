@@ -20,3 +20,6 @@
     - role: pip
       tags:
         - pip
+    - role: docker
+      tags:
+        - docker
