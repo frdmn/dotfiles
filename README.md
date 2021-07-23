@@ -16,6 +16,7 @@ iTerm | Visual Studio Code
     * Ruby `gem` package checks
     * Python `pip` package checks
     * macOS `defaults` (plist settings)
+    * Docker host cleanup/prune
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
 * Several additional, preconfigured ZSH plugins (using [zplug](https://github.com/zplug/zplug)):
