@@ -14,7 +14,6 @@ brew_packages:
   - exa
   - exiftool
   - ffmpeg
-  - font-hack-nerd-font
   - git-extras
   - go
   - gpg2
@@ -45,16 +44,17 @@ brew_packages:
 
 cask_packages:
   - 1password
-  - bitwarden
   - aerial
   - alfred
   - appcleaner
   - atext
   - bartender
+  - bitwarden
   - carbon-copy-cloner
   - discord
   - docker
   - dropbox
+  - font-hack-nerd-font
   - gas-mask
   - gitup
   - google-chrome
