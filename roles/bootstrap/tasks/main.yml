@@ -1,0 +1,4 @@
+- name: "[bootstrap] Create file to indicate successful bootstrap"
+  file:
+    path: ~/.dotfile_bootstrap_complete
+    state: touch

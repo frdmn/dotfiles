@@ -5,21 +5,29 @@
     - role: brew
       tags:
         - brew
+        - bootstrap
     - role: dotfiles
       tags:
         - dotfiles
     - role: gem
       tags:
         - gem
+        - bootstrap
     - role: npm
       tags:
         - npm
+        - bootstrap
     - role: macos
       tags:
         - macos
+        - bootstrap
     - role: pip
       tags:
         - pip
+        - bootstrap
+    - role: bootstrap
+      tags:
+        - bootstrap
     - role: docker
       tags:
         - docker
