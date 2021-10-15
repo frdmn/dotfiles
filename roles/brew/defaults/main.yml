@@ -20,7 +20,6 @@ brew_packages:
   - htop
   - imapsync
   - iperf
-  - java
   - jq
   - mas
   - media-info
@@ -31,14 +30,12 @@ brew_packages:
   - odig
   - pinentry-mac
   - ruby
-  - sshuttle
   - telnet
   - terminal-notifier
   - tmux
   - uping
-  - wakeonlan
   - wget
-  - youtube-dl
+  - youtube-dlc
   - zplug
   - zsh
 
@@ -61,7 +58,6 @@ cask_packages:
   - hex-fiend
   - iterm2
   - keka
-  - macdown
   - nordvpn
   - nvalt
   - spotify
