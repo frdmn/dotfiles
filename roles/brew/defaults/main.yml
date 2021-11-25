@@ -68,7 +68,7 @@ cask_packages:
   - ultimaker-cura
   - vagrant
   - virtualbox
-  - visual-studio-code-insiders
+  - visual-studio-code
   - vlc
   - wireshark
 
