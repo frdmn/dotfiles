@@ -72,14 +72,7 @@ cask_packages:
   - wireshark
 
 cask_ql_packages:
-  - provisionql
-  - qlcolorcode
-  - qlimagesize
   - qlmarkdown
-  - qlprettypatch
   - qlstephen
-  - qlvideo
-  - quicklook-csv
   - quicklook-json
   - suspicious-package
-  - webpquicklook
