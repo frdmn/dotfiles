@@ -2,6 +2,7 @@ brew_taps:
   - domt4/autoupdate
   - frdmn/formulas
   - homebrew/cask-versions
+  - homebrew/cask-fonts
 
 brew_packages:
   - ansible
