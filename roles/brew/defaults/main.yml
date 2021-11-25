@@ -67,7 +67,7 @@ cask_packages:
   - transmit
   - ultimaker-cura
   - vagrant
-  - virtualbox
+#  - virtualbox
   - visual-studio-code
   - vlc
   - wireshark
