@@ -12,6 +12,7 @@ iTerm | Visual Studio Code
 * Dotfile wrapper based on [Ansible](https://www.ansible.com/)
     * dotfiles symlink checks
     * Homebrew and Cask checks ensure that your packages / GUI apps are installed and up-to-date
+    * Mac App Store package checks
     * Node `npm` package checks
     * Ruby `gem` package checks
     * Python `pip` package checks

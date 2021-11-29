@@ -1,0 +1,5 @@
+- name: "[mas] Install Mac App Store packages"
+  mas:
+    id: "{{ item }}"
+    state: present
+  loop: "{{ mas_packages }}"

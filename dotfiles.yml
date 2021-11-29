@@ -17,6 +17,10 @@
       tags:
         - npm
         - bootstrap
+    - role: mas
+      tags:
+        - mas
+        - bootstrap
     - role: macos
       tags:
         - macos
