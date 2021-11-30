@@ -8,6 +8,7 @@ brew_packages:
   - ansible
   - asciinema
   - bat
+  - bitwarden-cli
   - composer
   - coreutils
   - ddig
@@ -52,6 +53,7 @@ cask_packages:
   - discord
   - docker
   - dropbox
+  - dropshare
   - font-hack-nerd-font
   - gas-mask
   - gitup
@@ -65,7 +67,6 @@ cask_packages:
   - telegram
   - textual
   - transmit
-  - ultimaker-cura
   - vagrant
 #  - virtualbox
   - visual-studio-code
