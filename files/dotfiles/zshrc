@@ -63,7 +63,7 @@ autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
 # Add autocomplete for git-extras
-source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
+source $HOMEBREW_PREFIX/opt/git-extras/share/git-extras/git-extras-completion.zsh
 
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \
@@ -83,7 +83,7 @@ zstyle ':completion:*' insert-tab false
 ###
 
 # zplug initalization
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # Load plugins
