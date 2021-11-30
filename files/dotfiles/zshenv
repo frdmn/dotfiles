@@ -32,8 +32,5 @@ export EDITOR="vim"
 # Gem Home dir
 export GEM_HOME="$HOME/.gem"
 
-# Make sure to export docker-machine env variables
-#[[ $(docker-machine ls -q --filter "state=Running") ]] && eval $(docker-machine env default)
-
 # Update locale
 export LANG="de_DE.UTF-8"
