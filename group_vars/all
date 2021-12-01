@@ -1,0 +1,2 @@
+# New prefix path on M1 Macs, Intel still uses "/usr/local"
+homebrew_prefix: /opt/homebrew
