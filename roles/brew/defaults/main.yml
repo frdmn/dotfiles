@@ -69,7 +69,6 @@ cask_packages:
   - textual
   - transmit
   - vagrant
-#  - virtualbox
   - visual-studio-code
   - vlc
   - wireshark
