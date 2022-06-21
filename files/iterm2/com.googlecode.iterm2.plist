@@ -1754,6 +1754,8 @@
 			<string>/Users/jonas</string>
 		</dict>
 	</array>
+	<key>OpenBookmark</key>
+	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1794,7 +1796,56 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
+	<key>Snippets</key>
+	<array>
+		<dict>
+			<key>guid</key>
+			<string>D1F8CAA8-CCBD-4FFC-8C76-1187E4E5345F</string>
+			<key>title</key>
+			<string>~/Development/185_docker-rocketchat feature/refactor-compose* 7s ❯ docker-compose logs -f rocketchat
+185_docker-rocketchat-rocketchat-1  | LocalStore: store created at
+185_docker-rocketchat-rocketchat-1  | LocalStore: store created at
+185_docker-rocketchat-rocketchat-1  | LocalStore: store created at
+185_docker-rocketchat-rocketchat-1  | MessageType.render is deprecated. Use MessageType.message instead. livechat_webrtc_video_call
+185_docker-rocketchat-rocketchat-1  | {"level":40,"time":"2022-06-17T09:33:47.244Z","pid":1,"hostname":"f09656f55cff","name":"VoIPService","msg":"Voip is not enabled. Cant start the service"}
+185_docker-rocketchat-rocketchat-1  | {"level":40,"time":"2022-06-17T09:33:56.555Z","pid":1,"hostname":"f09656f55cff","name":"VoIPService","msg":"VoIP service already stopped"}
+185_docker-rocketchat-rocketchat-1  | {"level":51,"time":"2022-06-17T09:33:57.313Z","pid":1,"hostname":"f09656f55cff","name":"Migrations","msg":"Not migrating, already at version 265"}
+185_docker-rocketchat-rocketchat-1  | ufs: temp directory created at "/tmp/ufs"
+185_docker-rocketchat-rocketchat-1  | Loaded the Apps Framework and loaded a total of 0 Apps!
+185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+
+185_docker-rocketchat-rocketchat-1  | |                    SERVER RUNNING                   |
+185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+
+185_docker-rocketchat-rocketchat-1  | |                                                     |
+185_docker-rocketchat-rocketchat-1  | |  Rocket.Chat Version: 4.8.1                         |
+185_docker-rocketchat-rocketchat-1  | |       NodeJS Version: 14.18.3 - x64                 |
+185_docker-rocketchat-rocketchat-1  | |      MongoDB Version: 4.4.15                        |
+185_docker-rocketchat-rocketchat-1  | |       MongoDB Engine: wiredTiger                    |
+185_docker-rocketchat-rocketchat-1  | |             Platform: linux                         |
+185_docker-rocketchat-rocketchat-1  | |         Process Port: 3000                          |
+185_docker-rocketchat-rocketchat-1  | |             Site URL: http://rocketchat.local:3000  |
+185_docker-rocketchat-rocketchat-1  | |     ReplicaSet OpLog: Enabled                       |
+185_docker-rocketchat-rocketchat-1  | |          Commit Hash: 0b106e3645                    |
+185_docker-rocketchat-rocketchat-1  | |        Commit Branch: HEAD                          |
+185_docker-rocketchat-rocketchat-1  | |                                                     |
+185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>value</key>
+			<string>~/Development/185_docker-rocketchat feature/refactor-compose* 7s ❯ docker-compose logs -f rocketchat\n185_docker-rocketchat-rocketchat-1  | LocalStore: store created at\n185_docker-rocketchat-rocketchat-1  | LocalStore: store created at\n185_docker-rocketchat-rocketchat-1  | LocalStore: store created at\n185_docker-rocketchat-rocketchat-1  | MessageType.render is deprecated. Use MessageType.message instead. livechat_webrtc_video_call\n185_docker-rocketchat-rocketchat-1  | {"level":40,"time":"2022-06-17T09:33:47.244Z","pid":1,"hostname":"f09656f55cff","name":"VoIPService","msg":"Voip is not enabled. Cant start the service"}\n185_docker-rocketchat-rocketchat-1  | {"level":40,"time":"2022-06-17T09:33:56.555Z","pid":1,"hostname":"f09656f55cff","name":"VoIPService","msg":"VoIP service already stopped"}\n185_docker-rocketchat-rocketchat-1  | {"level":51,"time":"2022-06-17T09:33:57.313Z","pid":1,"hostname":"f09656f55cff","name":"Migrations","msg":"Not migrating, already at version 265"}\n185_docker-rocketchat-rocketchat-1  | ufs: temp directory created at "/tmp/ufs"\n185_docker-rocketchat-rocketchat-1  | Loaded the Apps Framework and loaded a total of 0 Apps!\n185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+\n185_docker-rocketchat-rocketchat-1  | |                    SERVER RUNNING                   |\n185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+\n185_docker-rocketchat-rocketchat-1  | |                                                     |\n185_docker-rocketchat-rocketchat-1  | |  Rocket.Chat Version: 4.8.1                         |\n185_docker-rocketchat-rocketchat-1  | |       NodeJS Version: 14.18.3 - x64                 |\n185_docker-rocketchat-rocketchat-1  | |      MongoDB Version: 4.4.15                        |\n185_docker-rocketchat-rocketchat-1  | |       MongoDB Engine: wiredTiger                    |\n185_docker-rocketchat-rocketchat-1  | |             Platform: linux                         |\n185_docker-rocketchat-rocketchat-1  | |         Process Port: 3000                          |\n185_docker-rocketchat-rocketchat-1  | |             Site URL: http://rocketchat.local:3000  |\n185_docker-rocketchat-rocketchat-1  | |     ReplicaSet OpLog: Enabled                       |\n185_docker-rocketchat-rocketchat-1  | |          Commit Hash: 0b106e3645                    |\n185_docker-rocketchat-rocketchat-1  | |        Commit Branch: HEAD                          |\n185_docker-rocketchat-rocketchat-1  | |                                                     |\n185_docker-rocketchat-rocketchat-1  | +-----------------------------------------------------+\n\n\n\n\n\n\n\n\n\n\n</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
