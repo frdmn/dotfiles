@@ -3,6 +3,7 @@ brew_taps:
   - frdmn/formulas
   - homebrew/cask-versions
   - homebrew/cask-fonts
+  - yt-dlp/taps
 
 brew_packages:
   - ansible
@@ -37,7 +38,7 @@ brew_packages:
   - tmux
   - uping
   - wget
-  - youtube-dlc
+  - yt-dlp
   - zplug
   - zsh
 
