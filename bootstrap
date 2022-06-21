@@ -10,7 +10,7 @@ if ! [ -x "$(command -v ansible)" ]; then
   brew install ansible
 fi
 
-if [ ${1} == "--bootstrap" ]; then
+if [ "${1}" == "--bootstrap" ]; then
   if [ -f .dotfile_bootstrap_complete ]; then
     rm .dotfile_bootstrap_complete
   fi
@@ -23,16 +23,16 @@ fi
 
 tags="${1}"
 
-if [ ! -d ~/.dotfiles/roles/${tags} ]; then
+if [ ! -d "${HOME}/.dotfiles/roles/${tags}" ]; then
   echo "The specified tag (${tags}) doesn't exist!"
   exit 1
 fi
 
-if [ -z ${tags} ]; then
+if [ -z "${tags}" ]; then
   tags="all"
 fi
 
-ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook -i ~/.dotfiles/hosts ~/.dotfiles/dotfiles.yml --tags ${tags} ${skipargs}
+ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook -i ~/.dotfiles/hosts ~/.dotfiles/dotfiles.yml --tags "${tags}" ${skipargs}
 
 if command -v terminal-notifier 1>/dev/null 2>&1; then
   terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
