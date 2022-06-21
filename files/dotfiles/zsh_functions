@@ -36,3 +36,19 @@ bwu() {
     esac
     bw sync
 }
+
+ffmpeg-optimize() {
+    if [ ! -f "$1" ]; then
+        echo "Input file \"$1\" doesnt exist"
+        return 1
+    fi
+
+    ffpb -i "$1" "$1.mp4"
+}
+
+ffmpeg-optimize-and-replace() {
+    ffmpeg-optimize "$1"
+    if [ $? -eq 0 ]; then
+        rm "$1"
+    fi
+}
