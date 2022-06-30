@@ -1795,6 +1795,8 @@
 	</dict>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>Snippets</key>
