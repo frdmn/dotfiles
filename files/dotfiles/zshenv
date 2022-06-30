@@ -22,12 +22,6 @@ export GOPATH=$HOME/.go
 # Set dev.sh (https://github.com/frdmn/dev-sh) project path
 export devsearch_projectspath="${HOME}/Development"
 
-# Homebrew shell setup
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Additonal $PATH customization
-#export PATH=$PATH
-
 # $EDITOR
 export EDITOR="vim"
 
