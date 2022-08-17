@@ -13,19 +13,6 @@
   with_items:
     - "{{filesToSymlink.stdout_lines}}"
 
-- name: "[dotfiles] Download git-shift and set executable bit"
-  get_url:
-    url: https://raw.githubusercontent.com/gitbits/git-shift/master/git-shift
-    dest: "{{ homebrew_prefix}}/bin/git-shift"
-    mode: '750'
-
-# TODO: get rid of this replace task, fork git-shift instead
-- name: "[dotfiles] Add commit-signage for git-shift"
-  replace:
-    path: "{{ homebrew_prefix}}/bin/git-shift"
-    regexp: '''git'', ''commit-tree'', @parent_opts,'
-    replace: '''git'', ''commit-tree'', ''-S'', @parent_opts,'
-
 - name: "[dotfiles] Download Vundle (vi bundle manager)"
   git:
     repo: https://github.com/VundleVim/Vundle.vim.git

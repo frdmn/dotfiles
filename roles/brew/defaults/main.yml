@@ -18,6 +18,7 @@ brew_packages:
   - exiftool
   - ffmpeg
   - git-extras
+  - git-shift
   - go
   - gpg2
   - htop
