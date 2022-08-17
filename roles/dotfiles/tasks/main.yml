@@ -1,9 +1,11 @@
 - name: "[dotfiles] Get list of files to symlink"
   shell: "ls -1 ~/.dotfiles/files/dotfiles  > /tmp/dotfiles_symlinks_to_build"
+  changed_when: false
 
 - name: "[dotfiles] Store list of files into variable"
   shell: "cat /tmp/dotfiles_symlinks_to_build"
   register: filesToSymlink
+  changed_when: false
 
 - name: "[dotfiles] Set symlinks"
   file:
