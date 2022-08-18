@@ -11,13 +11,13 @@ if ! [ -x "$(command -v ansible)" ]; then
 fi
 
 if [ "${1}" == "--bootstrap" ]; then
-  if [ -f .dotfile_bootstrap_complete ]; then
-    rm .dotfile_bootstrap_complete
+  if [ -f ${HOME}/.dotfile_bootstrap_complete ]; then
+    rm ${HOME}/.dotfile_bootstrap_complete
   fi
   shift
 fi
 
-if [ -f .dotfile_bootstrap_complete ]; then
+if [ -f ${HOME}/.dotfile_bootstrap_complete ]; then
   skipargs="--skip-tags bootstrap"
 fi
 
