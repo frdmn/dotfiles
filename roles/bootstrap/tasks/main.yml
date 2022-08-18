@@ -2,3 +2,4 @@
   file:
     path: ~/.dotfile_bootstrap_complete
     state: touch
+  changed_when: false

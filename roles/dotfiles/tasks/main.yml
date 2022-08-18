@@ -19,7 +19,9 @@
   git:
     repo: https://github.com/VundleVim/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
+  changed_when: false
 
 - name: "[dotfiles] Setup and install Vundle"
   shell:
     cmd: echo | echo | vim +PluginInstall +qall &>/dev/null
+  changed_when: false
