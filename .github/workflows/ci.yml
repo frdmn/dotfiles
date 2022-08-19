@@ -26,6 +26,7 @@ jobs:
       - name: Lint code
         run: |
           pwd
+          ls -la
           yamllint **/*.yml
           ansible-lint
 
