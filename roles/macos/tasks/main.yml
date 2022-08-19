@@ -1,4 +1,5 @@
-- name: "[ macOS] Disable the \"Are you sure you want to open this application?\" dialog"
+---
+- name: "[ macOS] Disable \"Are you sure to open this application?\" dialog"
   osx_defaults:
     domain: com.apple.LaunchServices
     key: LSQuarantine
@@ -30,7 +31,7 @@
     value: false
     state: present
 
-- name: "[ macOS] Trackpad - enable tap to click for this user and for the login screen"
+- name: "[ macOS] Trackpad - enable tap to click for user and login screen"
   osx_defaults:
     domain: NSGlobalDomain
     key: com.apple.mouse.tapBehavior
@@ -38,7 +39,7 @@
     value: 1
     state: present
 
-- name: "[ macOS] Trackpad - enable tap to click for this user and for the login screen"
+- name: "[ macOS] Trackpad - enable tap to click for user and login screen"
   osx_defaults:
     domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
     key: Clicking

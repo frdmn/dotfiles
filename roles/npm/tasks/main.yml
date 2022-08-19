@@ -1,3 +1,4 @@
+---
 - name: "[ npm] Install global npm packages"
   npm:
     name: "{{ item }}"

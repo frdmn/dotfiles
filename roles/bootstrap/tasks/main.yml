@@ -1,3 +1,4 @@
+---
 - name: "[ boostrap] Create file to indicate successful bootstrap"
   ansible.builtin.file:
     path: ~/.dotfile_bootstrap_complete

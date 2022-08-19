@@ -1,3 +1,4 @@
+---
 - name: "[ docker] Prune unused containers older >24h"
   community.docker.docker_prune:
     containers: true
