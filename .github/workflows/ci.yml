@@ -38,10 +38,11 @@ jobs:
       - name: Install Ansible using Homebrew
         run: brew install ansible
 
-      - name: Remove Docker and gitignore from brew role defaults
-        run: |
-          sed -ie '/docker/d' ./roles/brew/defaults/main.yml
-          sed -ie '/gitignore/d' ./roles/brew/defaults/main.yml
+      - name: Remove Docker from brew role defaults
+        run: sed -ie '/docker/d' ./roles/brew/defaults/main.yml
+
+      - name: Remove gitignore dotfile
+        run: rm ./files/dotfiles/gitignore
 
       - name: Test the playbook's syntax
         run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas,docker" --syntax-check
