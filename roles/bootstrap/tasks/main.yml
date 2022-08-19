@@ -1,5 +1,5 @@
 - name: "[ boostrap] Create file to indicate successful bootstrap"
-  file:
+  ansible.builtin.file:
     path: ~/.dotfile_bootstrap_complete
     state: touch
   changed_when: false
