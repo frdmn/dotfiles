@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-if ! [ -x "$(command -v brew)" ]; then
-  echo "Homebrew missing - please install manually using instructions on https://brew.sh/"
-  exit 1
-fi
-
 if ! [ -x "$(command -v ansible)" ]; then
   echo "Ansible missing - please install manually:"
   echo
