@@ -32,7 +32,7 @@ if [ -z "${tags}" ]; then
   tags="all"
 fi
 
-ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook -i ~/.dotfiles/hosts ~/.dotfiles/dotfiles.yml --tags "${tags}" ${skipargs}
+ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook ~/.dotfiles/dotfiles.yml --tags "${tags}" ${skipargs}
 
 if command -v terminal-notifier 1>/dev/null 2>&1; then
   terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."

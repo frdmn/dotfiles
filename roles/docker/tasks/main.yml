@@ -1,21 +1,22 @@
+---
 - name: "[ docker] Prune unused containers older >24h"
   community.docker.docker_prune:
-    containers: yes
+    containers: true
     containers_filters:
       until: 24h
 
 - name: "[ docker] Prune unused images"
   community.docker.docker_prune:
-    images: yes
+    images: true
 
 - name: "[ docker] Prune unused networks"
   community.docker.docker_prune:
-    networks: yes
+    networks: true
 
 - name: "[ docker] Prune unused volumes"
   community.docker.docker_prune:
-    volumes: yes
+    volumes: true
 
 - name: "[ docker] Prune builder cache"
   community.docker.docker_prune:
-    builder_cache: yes
+    builder_cache: true

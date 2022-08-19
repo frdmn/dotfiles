@@ -1,3 +1,4 @@
+---
 - name: "[ homebrew] Configure Homebrew taps"
   homebrew_tap:
     name: "{{ item }}"

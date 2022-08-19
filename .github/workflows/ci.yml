@@ -1,0 +1,60 @@
+---
+# yamllint disable
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the codebase
+        uses: actions/checkout@v3
+
+      - name: Run yamllint
+        uses: karancode/yamllint-github-action@master
+
+      - name: Run ansible-lint
+        uses: ansible-community/ansible-lint-action@main
+
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - macos-12
+          - macos-11
+
+    steps:
+      - name: Check out the codebase
+        uses: actions/checkout@v3
+
+      - name: Install Ansible using Homebrew
+        run: brew install ansible
+
+      - name: Remove Docker from brew role defaults
+        run: sed -ie '/docker/d' ./roles/brew/defaults/main.yml
+
+      - name: Remove gitconfig dotfile
+        run: rm ./files/dotfiles/gitconfig
+
+      - name: Test the playbook's syntax
+        run: ansible-playbook dotfiles.yml --skip-tags "mas,docker" --syntax-check
+
+      - name: Test the playbook
+        run: ansible-playbook dotfiles.yml --skip-tags "mas,docker"
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
+
+      - name: Idempotence check
+        run: |
+          idempotence=$(mktemp)
+          ansible-playbook dotfiles.yml --skip-tags "mas,docker" | tee -a ${idempotence}
+          tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
