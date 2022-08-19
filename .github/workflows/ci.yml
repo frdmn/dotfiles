@@ -45,6 +45,7 @@ jobs:
       - name: Update PATH env
         run: |
           pythonpath=$(python -m site | grep USER_BASE | awk '{ print $2 }' | sed "s/'//g")
+          echo "${pythonpath}"
           echo "${pythonpath}" >> $GITHUB_PATH
 
       - name: Test PATH
