@@ -47,6 +47,9 @@ jobs:
           pythonpath=$(python -m site | grep USER_BASE | awk '{ print $2 }' | sed "s/'//g")
           echo "${pythonpath}" >> $GITHUB_PATH
 
+      - name: Test PATH
+        run: echo $PATH
+
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
 
