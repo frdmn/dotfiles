@@ -1,11 +1,13 @@
 - name: "[﬒ dotfiles] Get list of files to symlink"
-  ansible.builtin.shell: "ls -1 ~/.dotfiles/files/dotfiles  > /tmp/dotfiles_symlinks_to_build"
+  ansible.builtin.shell: "ls -1 ~/.dotfiles/files/dotfiles > /tmp/dotfiles_symlinks_to_build"
   changed_when: false
 
 - name: "[﬒ dotfiles] Store list of files into variable"
   ansible.builtin.shell: "cat /tmp/dotfiles_symlinks_to_build"
-  register: filesToSymlink
+  register: files_to_symlink
   changed_when: false
+  tags:
+    - skip_ansible_lint
 
 - name: "[﬒ dotfiles] Set symlinks"
   ansible.builtin.file:
@@ -13,12 +15,13 @@
     path: '~/.{{ item }}'
     state: link
   with_items:
-    - "{{filesToSymlink.stdout_lines}}"
+    - "{{ files_to_symlink.stdout_lines }}"
 
 - name: "[﬒ dotfiles] Download Vundle (vi bundle manager)"
   ansible.builtin.git:
     repo: https://github.com/VundleVim/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
+    version: v0.10.2
   changed_when: false
 
 - name: "[﬒ dotfiles] Setup and install Vundle"
