@@ -33,9 +33,6 @@
       tags:
         - pip
         - bootstrap
-    - role: bootstrap
-      tags:
-        - bootstrap
     - role: docker
       tags:
         - docker
