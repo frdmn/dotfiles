@@ -44,12 +44,8 @@ jobs:
 
       - name: Update PATH env
         run: |
-          pythonpath=$(ls ~/Library/Python)
-          echo "${pythonpath}"
-          echo "$HOME/Library/Python/3.8/bin" >> $GITHUB_PATH
-
-      - name: Test PATH
-        run: echo $PATH
+          pythonversion=$(ls ~/Library/Python)
+          echo "${HOME}/Library/Python/${pythonversion}/bin" >> $GITHUB_PATH
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
