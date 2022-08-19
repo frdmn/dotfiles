@@ -11,61 +11,62 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the codebase.
+      - name: Check out the codebase
         uses: actions/checkout@v2
 
-      - name: Set up Python 3.
+      - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
 
-      - name: Install test dependencies.
+      - name: Install test dependencies
         run: pip3 install yamllint ansible ansible-lint
 
-      - name: Lint code.
+      - name: Lint code
         run: |
-          yamllint .
+          yamllint
           ansible-lint
 
-  integration:
-    name: Integration
+  test:
+    name: Test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os:
-          - macos-10.15
+          - macos-12
+          - macos-11
 
     steps:
-      - name: Check out the codebase.
+      - name: Check out the codebase
         uses: actions/checkout@v2
 
-      - name: Uninstall GitHub Actions' built-in Homebrew.
+      - name: Uninstall GitHub Actions' built-in Homebrew
         run: tests/uninstall-homebrew.sh
 
-      - name: Uninstall GitHub Actions' built-in browser installs.
+      - name: Uninstall GitHub Actions' built-in browser installs
         run: |
           sudo rm -rf /Applications/Firefox.app
           sudo rm -rf /Applications/Google\ Chrome.app
 
-      - name: Install test dependencies.
+      - name: Install test dependencies
         run: sudo pip3 install ansible
 
-      - name: Set up the test environment.
+      - name: Set up the test environment
         run: |
           cp tests/ansible.cfg ./ansible.cfg
           cp tests/inventory ./inventory
           cp tests/config.yml ./config.yml
           ansible-galaxy install -r requirements.yml
 
-      - name: Test the playbook's syntax.
+      - name: Test the playbook's syntax
         run: ansible-playbook main.yml --syntax-check
 
-      - name: Test the playbook.
+      - name: Test the playbook
         run: ansible-playbook main.yml
         env:
           ANSIBLE_FORCE_COLOR: '1'
 
-      - name: Idempotence check.
+      - name: Idempotence check
         run: |
           idempotence=$(mktemp)
           ansible-playbook main.yml | tee -a ${idempotence}
