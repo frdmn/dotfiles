@@ -27,7 +27,7 @@ jobs:
         run: |
           pwd
           ls -la
-          yamllint **/*.yml
+          yamllint *.yml
           ansible-lint
 
   test:
