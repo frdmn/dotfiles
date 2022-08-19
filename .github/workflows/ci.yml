@@ -41,33 +41,27 @@ jobs:
       - name: Check out the codebase
         uses: actions/checkout@v2
 
-      - name: Uninstall GitHub Actions' built-in browser installs
-        run: |
-          sudo rm -rf /Applications/Firefox.app
-          sudo rm -rf /Applications/Google\ Chrome.app
-
-      - name: Install test dependencies
-        run: sudo pip3 install ansible
+      - name: Install Ansible using Homebrew
+        run: brew install ansible
 
       - name: Set up the test environment
         run: |
           cp tests/ansible.cfg ./ansible.cfg
           cp tests/inventory ./inventory
           cp tests/config.yml ./config.yml
-          ansible-galaxy install -r requirements.yml
 
       - name: Test the playbook's syntax
-        run: ansible-playbook main.yml --syntax-check
+        run: ansible-playbook dotfiles.yml --syntax-check
 
       - name: Test the playbook
-        run: ansible-playbook main.yml
+        run: ansible-playbook dotfiles.yml
         env:
           ANSIBLE_FORCE_COLOR: '1'
 
       - name: Idempotence check
         run: |
           idempotence=$(mktemp)
-          ansible-playbook main.yml | tee -a ${idempotence}
+          ansible-playbook dotfiles.yml | tee -a ${idempotence}
           tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
         env:
           ANSIBLE_FORCE_COLOR: '1'
