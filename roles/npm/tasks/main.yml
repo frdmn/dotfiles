@@ -1,5 +1,5 @@
 - name: "[ npm] Install global npm packages"
   npm:
     name: "{{ item }}"
-    global: yes
+    global: true
   loop: "{{ packages }}"
