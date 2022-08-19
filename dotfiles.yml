@@ -2,6 +2,10 @@
 - name: Set up local workstation
   hosts: local
   roles:
+    - role: geerlingguy.mac.homebrew
+      tags:
+        - brew
+        - bootstrap
     - role: brew
       tags:
         - brew

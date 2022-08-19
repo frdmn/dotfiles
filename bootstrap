@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -e
 
-if ! [ -x "$(command -v brew)" ]; then
-  echo "Homebrew missing - please install manually using instructions on https://brew.sh/"
-  exit 1
-fi
-
 if ! [ -x "$(command -v ansible)" ]; then
-  brew install ansible
+  echo "Ansible missing - please install manually:"
+  echo
+  echo "$ sudo pip3 install --upgrade pip"
+  echo "$ pip3 install ansible"
+  exit 1
 fi
 
 if [ "${1}" == "--bootstrap" ]; then
@@ -32,7 +31,8 @@ if [ -z "${tags}" ]; then
   tags="all"
 fi
 
-ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook ~/.dotfiles/dotfiles.yml --tags "${tags}" ${skipargs}
+ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-galaxy install -r ~/.dotfiles/requirements.yml &>/dev/null
+ANSIBLE_CONFIG=~/.dotfiles/ansible.cfg ansible-playbook ~/.dotfiles/dotfiles.yml --ask-become-pass --tags "${tags}" ${skipargs}
 
 if command -v terminal-notifier 1>/dev/null 2>&1; then
   terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
