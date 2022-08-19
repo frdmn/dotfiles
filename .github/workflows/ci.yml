@@ -39,7 +39,7 @@ jobs:
         run: brew install ansible
 
       - name: Remove Docker from brew role defaults
-        run: sed -i '/docker/d' ./roles/brew/defaults/main.yml
+        run: sed -ie '/docker/d' ./roles/brew/defaults/main.yml
 
       - name: Test the playbook's syntax
         run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas,docker" --syntax-check
