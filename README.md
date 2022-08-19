@@ -44,10 +44,10 @@ iTerm | Visual Studio Code
     git clone https://github.com/frdmn/dotfiles ~/.dotfiles
     ```
 
-3. Run the bootstrap script to initially install and setup the dotfiles and its components:
+3. Run the dotfile wrapper with the `--bootstrap` switch to initially install and setup the dotfiles and its components:
 
     ```bash
-    ~/.dotfiles/bootstrap
+    ~/.dotfiles/dotfiles --bootstrap
     ```
 
 ### Available commands

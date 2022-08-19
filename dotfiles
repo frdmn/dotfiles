@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -e
+
+if ! [ -x "$(command -v ansible)" ]; then
+  echo "Ansible missing - please install manually:"
+  echo
+  echo "$ sudo pip3 install --upgrade pip"
+  echo "$ pip3 install ansible"
+  exit 1
+fi
+
+if [ "${1}" == "--bootstrap" ]; then
+  tags="all"
+else
+  tags="${1}"
+fi
+
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-galaxy install -r ${SCRIPTPATH}/requirements.yml &>/dev/null
+ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-playbook ${SCRIPTPATH}/dotfiles.yml --ask-become-pass --tags "${tags}" ${skipargs}
+
+if command -v terminal-notifier 1>/dev/null 2>&1; then
+  terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
+fi
