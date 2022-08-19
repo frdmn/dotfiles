@@ -1,7 +1,7 @@
 ---
 - name: "[﬒ dotfiles] Get list of files to symlink"
   ansible.builtin.shell: |
-    ls -1 ~/.dotfiles/files/dotfiles > /tmp/dotfiles_symlinks_to_build
+    ls -1 {{ ansible_env.PWD }}/.dotfiles/files/dotfiles > /tmp/dotfiles_symlinks_to_build
   changed_when: false
 
 - name: "[﬒ dotfiles] Store list of files into variable"
