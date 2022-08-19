@@ -37,11 +37,10 @@ jobs:
       - name: Uninstall GitHub Actions' built-in Homebrew
         run: tests/uninstall-homebrew.sh
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-
       - name: Install Ansible using pip
-        run: pip install ansible
+        run: |
+          sudo pip3 install --upgrade pip
+          pip3 install ansible
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
