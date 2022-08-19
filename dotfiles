@@ -12,7 +12,8 @@ fi
 if [ "${1}" == "--bootstrap" ]; then
   tags="all"
 else
-  tags="${1}"
+  tags="${1:-all}"
+  skipargs="--skip-tags bootstrap"
 fi
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
