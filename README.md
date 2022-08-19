@@ -5,7 +5,7 @@ dotfiles
 
 iTerm | Visual Studio Code
 --- | ---
-[![](https://i.imgur.com/uANcyts.png)](https://asciinema.org/a/334678) <center><sub><sup>(click screenshot for a demo execution)</sup></sub></center> | ![](https://i.imgur.com/abpdBUY.png)
+[![](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI.svg)](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI) <center><sub><sup>(click screenshot for a demo execution)</sup></sub></center> | ![](https://i.imgur.com/abpdBUY.png)
 
 ### Features
 
@@ -93,6 +93,9 @@ Explanation of the directories:
 ./bootstrap
 └── Basically the base wrapper that I use to install and update the
     dotfiles as well as interact with the `ansible-playbook` command.
+
+./group_vars/all
+└── This file contains variables that apply to all groups available.
 
 ./hosts
 └── The inventory file for Ansible, for now it only contains the
