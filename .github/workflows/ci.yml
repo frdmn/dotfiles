@@ -24,7 +24,7 @@ jobs:
 
       - name: Lint code
         run: |
-          yamllint
+          yamllint .
           ansible-lint
 
   test:
