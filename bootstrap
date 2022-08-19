@@ -7,7 +7,11 @@ if ! [ -x "$(command -v brew)" ]; then
 fi
 
 if ! [ -x "$(command -v ansible)" ]; then
-  brew install ansible
+  echo "Ansible missing - please install manually:"
+  echo
+  echo "$ sudo pip3 install --upgrade pip"
+  echo "$ pip3 install ansible"
+  exit 1
 fi
 
 if [ "${1}" == "--bootstrap" ]; then
