@@ -42,17 +42,17 @@ jobs:
         run: brew install ansible
 
       - name: Test the playbook's syntax
-        run: ansible-playbook -i ./inventory dotfiles.yml --syntax-check
+        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas" --syntax-check
 
       - name: Test the playbook
-        run: ansible-playbook -i ./inventory dotfiles.yml
+        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas"
         env:
           ANSIBLE_FORCE_COLOR: '1'
 
       - name: Idempotence check
         run: |
           idempotence=$(mktemp)
-          ansible-playbook -i ./inventory dotfiles.yml | tee -a ${idempotence}
+          ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas" | tee -a ${idempotence}
           tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
         env:
           ANSIBLE_FORCE_COLOR: '1'
