@@ -9,15 +9,15 @@ iTerm | Visual Studio Code
 
 ### Features
 
-* Dotfile wrapper based on [Ansible](https://www.ansible.com/)
-    * dotfiles symlink checks
-    * Homebrew and Cask checks ensure that your packages / GUI apps are installed and up-to-date
-    * Mac App Store package checks
-    * Node `npm` package checks
-    * Ruby `gem` package checks
-    * Python `pip` package checks
+* Dotfile wrapper based on [Ansible](https://www.ansible.com/), that takes care of...
+    * bash/zsh configuration files
+    * Homebrew and Cask packages
+    * Mac App Store apps
+    * Node `npm` packages
+    * Ruby `gem` packages
+    * Python `pip` packages
     * macOS `defaults` (plist settings)
-    * Docker host cleanup/prune
+* Docker host cleanup/prune
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
 * Several additional, preconfigured ZSH plugins (using [zplug](https://github.com/zplug/zplug)):
@@ -32,19 +32,33 @@ iTerm | Visual Studio Code
 ### Installation
 
 1. Make sure to install Homebrew and the Ansible packages:
-  `brew install ansible`
-1. Fork this repository:
-  `git clone https://github.com/frdmn/dotfiles ~/.dotfiles`
-1. Run the bootstrap script to initially install and setup the dotfiles:
-  `~/.dotfiles/bootstrap`
+
+    ```bash
+    brew install ansible
+    ```
+
+2. Fork this repository:
+
+    ```bash
+    git clone https://github.com/frdmn/dotfiles ~/.dotfiles
+    ```
+
+3. Run the bootstrap script to initially install and setup the dotfiles and its components:
+
+    ```bash
+    ~/.dotfiles/bootstrap
+    ```
 
 ### Available commands
 
-```sh
-# Install/update all available tags
+```bash
+# (Re-)apply dotfile related tasks
 $ dotfiles
 
-# Install/update a specific tag
+# (Re-)apply dotfile and bootstrap related tasks (by default only "dotfiles" will be execated when not specifying --botstrap)
+$ dotfiles --bootstrap
+
+# Apply a specific tag/task
 $ dotfiles <tag>
 ```
 
