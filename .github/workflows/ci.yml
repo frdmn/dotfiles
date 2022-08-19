@@ -37,6 +37,11 @@ jobs:
       - name: Uninstall GitHub Actions' built-in Homebrew
         run: tests/uninstall-homebrew.sh
 
+      - name: Uninstall GitHub Actions' built-in browser installs.
+        run: |
+          sudo rm -rf /Applications/Firefox.app
+          sudo rm -rf /Applications/Google\ Chrome.app
+
       - name: Install Ansible using pip
         run: |
           sudo pip3 install --upgrade pip
