@@ -39,7 +39,9 @@ jobs:
 
     steps:
       - name: Check out the codebase
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          path: "${HOME}/.dotfiles"
 
       - name: Install Ansible using Homebrew
         run: brew install ansible
