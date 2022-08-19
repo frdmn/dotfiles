@@ -37,6 +37,9 @@ jobs:
       - name: Install Ansible using Homebrew
         run: brew install ansible
 
+      - name: Install Ansible roles and collections
+        run: ansible-galaxy install -r requirements.yml
+
       - name: Remove Docker from brew role defaults
         run: sed -ie '/docker/d' ./roles/brew/defaults/main.yml
 
