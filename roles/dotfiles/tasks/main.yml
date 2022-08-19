@@ -1,13 +1,13 @@
-- name: "[dotfiles] Get list of files to symlink"
+- name: "[﬒ dotfiles] Get list of files to symlink"
   shell: "ls -1 ~/.dotfiles/files/dotfiles  > /tmp/dotfiles_symlinks_to_build"
   changed_when: false
 
-- name: "[dotfiles] Store list of files into variable"
+- name: "[﬒ dotfiles] Store list of files into variable"
   shell: "cat /tmp/dotfiles_symlinks_to_build"
   register: filesToSymlink
   changed_when: false
 
-- name: "[dotfiles] Set symlinks"
+- name: "[﬒ dotfiles] Set symlinks"
   file:
     src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
@@ -15,13 +15,13 @@
   with_items:
     - "{{filesToSymlink.stdout_lines}}"
 
-- name: "[dotfiles] Download Vundle (vi bundle manager)"
+- name: "[﬒ dotfiles] Download Vundle (vi bundle manager)"
   git:
     repo: https://github.com/VundleVim/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
   changed_when: false
 
-- name: "[dotfiles] Setup and install Vundle"
+- name: "[﬒ dotfiles] Setup and install Vundle"
   shell:
     cmd: echo | echo | vim +PluginInstall +qall &>/dev/null
   changed_when: false
