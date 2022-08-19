@@ -35,24 +35,24 @@ jobs:
       - name: Check out the codebase
         uses: actions/checkout@v3
 
-      - name: Setup Docker
-        uses: douglascamata/setup-docker-macos-action@v1-alpha
-
       - name: Install Ansible using Homebrew
         run: brew install ansible
 
+      - name: Remove Docker from brew role defaults
+        run: sed -i '/docker/d' ./roles/brew/defaults/main.yml
+
       - name: Test the playbook's syntax
-        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas" --syntax-check
+        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas,docker" --syntax-check
 
       - name: Test the playbook
-        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas"
+        run: ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas,docker"
         env:
           ANSIBLE_FORCE_COLOR: '1'
 
       - name: Idempotence check
         run: |
           idempotence=$(mktemp)
-          ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas" | tee -a ${idempotence}
+          ansible-playbook -i ./inventory dotfiles.yml --skip-tags "mas,docker" | tee -a ${idempotence}
           tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
         env:
           ANSIBLE_FORCE_COLOR: '1'
