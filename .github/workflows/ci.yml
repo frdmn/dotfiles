@@ -35,7 +35,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Uninstall GitHub Actions' built-in Homebrew
-        run: tests/uninstall-homebrew.sh
+        run: |
+          curl -sLO https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh
+          chmod +x ./uninstall.sh
+          sudo ./uninstall.sh --force
+          sudo rm -rf /usr/local/Homebrew /usr/local/Caskroom /usr/local/bin/brew
 
       - name: Uninstall GitHub Actions' built-in browser installs.
         run: |
