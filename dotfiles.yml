@@ -2,7 +2,7 @@
 - name: Set up local workstation
   hosts: local
 
-  vars_files: [ "config.defaults.yml"]
+  vars_files: ["config.defaults.yml"]
 
   pre_tasks:
     - name: "[﬒ dotfiles] Include config.yml overrides"
