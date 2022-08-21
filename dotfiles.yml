@@ -3,36 +3,28 @@
   hosts: local
   roles:
     - role: geerlingguy.mac.homebrew
-      tags:
-        - brew
-        - bootstrap
+      tags: ["brew", "bootstrap"]
+
     - role: brew
-      tags:
-        - brew
-        - bootstrap
+      tags: ["brew", "bootstrap"]
+
     - role: dotfiles
-      tags:
-        - dotfiles
+      tags: ["dotfiles"]
+
     - role: gem
-      tags:
-        - gem
-        - bootstrap
+      tags: ["gem", "bootstrap"]
+
     - role: npm
-      tags:
-        - npm
-        - bootstrap
+      tags: ["npm", "bootstrap"]
+
     - role: mas
-      tags:
-        - mas
-        - bootstrap
+      tags: ["mas", "bootstrap"]
+
     - role: macos
-      tags:
-        - macos
-        - bootstrap
+      tags: ["macos", "bootstrap"]
+
     - role: pip
-      tags:
-        - pip
-        - bootstrap
+      tags: ["pip", "bootstrap"]
+
     - role: docker
-      tags:
-        - docker
+      tags: ["docker"]
