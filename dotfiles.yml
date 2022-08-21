@@ -1,6 +1,10 @@
 ---
 - name: Set up local workstation
   hosts: local
+
+  vars_files:
+    - defaults.config.yml
+
   roles:
     - role: geerlingguy.mac.homebrew
       tags: ["brew", "bootstrap"]

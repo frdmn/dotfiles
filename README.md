@@ -83,10 +83,6 @@ Explanation of the directories:
 └── In this directory you will find all available Ansible roles that I
     currently use within this project.
 
-./roles/{rolename}/defaults/main.yml
-└── This file contains variables and lists to work with in the actual
-    Ansible tasks, like package names/lists.
-
 ./roles/{rolename}/tasks/main.yml
 └── This is the actual Ansible tasks that uses the variable (defaults)
     file and proceeds with the role specific function.
@@ -94,6 +90,10 @@ Explanation of the directories:
 ./bootstrap
 └── Basically the base wrapper that I use to install and update the
     dotfiles as well as interact with the `ansible-playbook` command.
+
+./defaults.config.yml
+└── This file contains variables to work with in the actual Ansible
+    tasks like package names/lists, configuration options, etc.
 
 ./group_vars/all
 └── This file contains variables that apply to all groups available.

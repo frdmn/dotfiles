@@ -1,4 +1,0 @@
----
-pip_packages:
-  - beautifulsoup4
-  - docker
