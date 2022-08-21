@@ -87,16 +87,20 @@ Explanation of the directories:
 └── This is the actual Ansible tasks that uses the variable (defaults)
     file and proceeds with the role specific function.
 
-./bootstrap
-└── Basically the base wrapper that I use to install and update the
-    dotfiles as well as interact with the `ansible-playbook` command.
+./ansible.cfg
+└── Ansible configuration file that is applied when executing the
+    dotfile wrapper / playbook.
 
 ./defaults.config.yml
 └── This file contains variables to work with in the actual Ansible
     tasks like package names/lists, configuration options, etc.
 
-./group_vars/all
-└── This file contains variables that apply to all groups available.
+./dotfiles
+└── Basically the base wrapper that I use to install and update the
+    dotfiles as well as interact with the `ansible-playbook` command.
+
+./dotfiles.yml
+└── The main Ansible playbook.
 
 ./hosts
 └── The inventory file for Ansible, for now it only contains the
