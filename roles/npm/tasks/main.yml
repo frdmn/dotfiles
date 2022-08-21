@@ -3,4 +3,4 @@
   npm:
     name: "{{ item }}"
     global: true
-  loop: "{{ packages }}"
+  loop: "{{ npm_packages }}"
