@@ -3,4 +3,4 @@
   ansible.builtin.pip:
     name: "{{ item }}"
     executable: pip3
-  loop: "{{ packages }}"
+  loop: "{{ pip_packages }}"
