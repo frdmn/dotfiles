@@ -60,7 +60,7 @@ jobs:
         run: ansible-galaxy install -r requirements.yml
 
       - name: Remove Docker from brew role defaults
-        run: sed -ie '/docker/d' ./roles/brew/defaults/main.yml
+        run: sed -ie '/docker/d' ./config.defaults.yml
 
       - name: Remove gitconfig dotfile
         run: rm ./files/dotfiles/gitconfig
