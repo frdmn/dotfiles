@@ -3,4 +3,4 @@
   gem:
     name: "{{ item }}"
     state: present
-  loop: "{{ packages }}"
+  loop: "{{ gem_packages }}"
