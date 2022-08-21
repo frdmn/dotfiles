@@ -2,8 +2,13 @@
 - name: Set up local workstation
   hosts: local
 
-  vars_files:
-    - defaults.config.yml
+  vars_files: [ "config.defaults.yml"]
+
+  pre_tasks:
+    - name: "[﬒ dotfiles] Include config.yml overrides"
+      include_vars: "{{ item }}"
+      with_fileglob: "{{ playbook_dir }}/config.yml"
+      tags: ["always"]
 
   roles:
     - role: geerlingguy.mac.homebrew

@@ -1,2 +1,5 @@
 # Mac meta
 .DS_Store
+
+# dotfiles config/overrides
+config.yml

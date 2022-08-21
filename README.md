@@ -44,7 +44,14 @@ iTerm | Visual Studio Code
     git clone https://github.com/frdmn/dotfiles ~/.dotfiles
     ```
 
-3. Run the dotfile wrapper with the `--bootstrap` switch to initially install and setup the dotfiles and its components:
+3. Copy and adjust the default configuration file:
+
+    ```bash
+    cp ~/.dotfiles/config.defaults.yml ~/.dotfiles/config.yml
+    vi ~/.dotfiles/config.yml
+    ```
+
+4. Run the dotfile wrapper with the `--bootstrap` switch to initially install and setup the dotfiles and its components:
 
     ```bash
     ~/.dotfiles/dotfiles --bootstrap
@@ -94,6 +101,10 @@ Explanation of the directories:
 ./config.defaults.yml
 └── This file contains variables to work with in the actual Ansible
     tasks like package names/lists, configuration options, etc.
+
+./config.yml
+└── This (optional) file can be used to override the defaults (above)
+    as as desired, not tracked by git.
 
 ./dotfiles
 └── Basically the base wrapper that I use to install and update the
