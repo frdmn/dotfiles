@@ -7,28 +7,28 @@
 
   roles:
     - role: geerlingguy.mac.homebrew
-      tags: ["brew", "bootstrap"]
+      tags: ["brew"]
 
     - role: brew
-      tags: ["brew", "bootstrap"]
+      tags: ["brew"]
 
     - role: dotfiles
       tags: ["dotfiles"]
 
     - role: gem
-      tags: ["gem", "bootstrap"]
+      tags: ["gem"]
 
     - role: npm
-      tags: ["npm", "bootstrap"]
+      tags: ["npm"]
 
     - role: mas
-      tags: ["mas", "bootstrap"]
+      tags: ["mas"]
 
     - role: macos
-      tags: ["macos", "bootstrap"]
+      tags: ["macos"]
 
     - role: pip
-      tags: ["pip", "bootstrap"]
+      tags: ["pip"]
 
     - role: docker
       tags: ["docker"]

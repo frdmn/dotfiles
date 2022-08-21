@@ -12,13 +12,12 @@ fi
 if [ "${1}" == "--bootstrap" ]; then
   tags="all"
 else
-  tags="${1:-all}"
-  skipargs="--skip-tags bootstrap"
+  tags="${1:-dotfiles}"
 fi
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-galaxy install -r ${SCRIPTPATH}/requirements.yml &>/dev/null
-ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-playbook ${SCRIPTPATH}/dotfiles.yml --ask-become-pass --tags "${tags}" ${skipargs}
+ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-playbook ${SCRIPTPATH}/dotfiles.yml --ask-become-pass --tags "${tags}"
 
 if command -v terminal-notifier 1>/dev/null 2>&1; then
   terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
