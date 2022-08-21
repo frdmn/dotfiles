@@ -5,7 +5,7 @@
   changed_when: false
 
 - name: "[﬒ dotfiles] Store list of files into variable"
-  ansible.builtin.shell: "cat /tmp/dotfilesToLink"
+  ansible.builtin.command: "cat /tmp/dotfilesToLink"
   register: files_to_symlink
   changed_when: false
   tags:
