@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
+# Check if "ansible" binary is available in $PATH
 if ! [ -x "$(command -v ansible)" ]; then
   echo "Ansible missing - please install manually:"
   echo
@@ -9,16 +10,22 @@ if ! [ -x "$(command -v ansible)" ]; then
   exit 1
 fi
 
+# Check if --bootstrap switch is supplied, if so use "all" tags
 if [ "${1}" == "--bootstrap" ]; then
   tags="all"
 else
+  # Otherwise, use value from 1st argument, defaulting to "dotfiles"
   tags="${1:-dotfiles}"
 fi
 
+# Get full directory path of this wrapper
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+# Install Ansible requirements like roles and collections
 ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-galaxy install -r ${SCRIPTPATH}/requirements.yml &>/dev/null
+# Execute the Ansible playbook
 ANSIBLE_CONFIG=${SCRIPTPATH}/ansible.cfg ansible-playbook ${SCRIPTPATH}/dotfiles.yml --ask-become-pass --tags "${tags}"
 
+# Send notification in case "terminal-notifier" is installed
 if command -v terminal-notifier 1>/dev/null 2>&1; then
   terminal-notifier -title "dotfiles: Bootstrap complete" -message "Successfully set up environment."
 fi
