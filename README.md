@@ -91,7 +91,7 @@ Explanation of the directories:
 └── Ansible configuration file that is applied when executing the
     dotfile wrapper / playbook.
 
-./defaults.config.yml
+./config.defaults.yml
 └── This file contains variables to work with in the actual Ansible
     tasks like package names/lists, configuration options, etc.
 
