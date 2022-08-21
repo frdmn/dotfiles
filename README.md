@@ -1,11 +1,15 @@
 dotfiles
 ========
 
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/frdmn/dotfiles/master)](https://github.com/frdmn/dotfiles/actions/workflows/ci.yml)
+![GitHub Repo stars](https://img.shields.io/github/stars/frdmn/dotfiles)
+[![GitHub](https://img.shields.io/github/license/frdmn/dotfiles)](https://github.com/frdmn/dotfiles)
+
 [Ansible](https://www.ansible.com/)-based dotfile setup for macOS systems that is really simple and easy to understand.
 
 iTerm | Visual Studio Code
 --- | ---
-[![](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI.svg)](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI) <center><sub><sup>(click screenshot for a demo execution)</sup></sub></center> | ![](https://i.imgur.com/abpdBUY.png)
+[![](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI.svg)](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI) <center></center> | ![](https://i.imgur.com/abpdBUY.png)
 
 ### Features
 
