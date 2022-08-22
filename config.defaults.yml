@@ -66,7 +66,11 @@ cask_packages:
   - keka
   - nordvpn
   - nvalt
+  - qlmarkdown
+  - qlstephen
+  - quicklook-json
   - spotify
+  - suspicious-package
   - telegram
   - textual
   - transmit
@@ -74,12 +78,6 @@ cask_packages:
   - visual-studio-code
   - vlc
   - wireshark
-
-cask_ql_packages:
-  - qlmarkdown
-  - qlstephen
-  - quicklook-json
-  - suspicious-package
 
 gem_packages:
   - nokogiri

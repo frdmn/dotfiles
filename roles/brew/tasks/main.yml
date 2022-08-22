@@ -13,8 +13,3 @@
   homebrew_cask:
     name: "{{ item }}"
   loop: "{{ cask_packages }}"
-
-- name: "[ homebrew] Install QuickLook plugins"
-  homebrew_cask:
-    name: "{{ item }}"
-  loop: "{{ cask_ql_packages }}"
