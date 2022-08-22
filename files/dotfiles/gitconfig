@@ -23,31 +23,12 @@
 [mergetool]
   prompt = false
 
-[filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-
 [alias]
   s = status
   ci = "commit -m"
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset (%GK) %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   pushup = "!gitbranchname() { git symbolic-ref --short HEAD; }; gitpushupstream() { git push --set-upstream origin `gitbranchname`; }; gitpushupstream"
   delete-merged-branches = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs echo git branch -d"
-
-[mergetool "sublime"]
-  cmd = subl -w $MERGED
-  trustExitCode = false
-
-[filter "hawser"]
-  clean = git hawser clean %f
-  smudge = git hawser smudge %f
-  required = true
-
-[filter "lfs"]
-  clean = git lfs clean %f
-  smudge = git lfs smudge %f
-  required = true
 
 [commit]
   gpgsign = true
