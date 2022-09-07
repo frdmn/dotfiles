@@ -13,9 +13,11 @@
   roles:
     - role: geerlingguy.mac.homebrew
       tags: ["brew"]
+      when: ansible_distribution == 'MacOSX'
 
     - role: brew
       tags: ["brew"]
+      when: ansible_distribution == 'MacOSX'
 
     - role: dotfiles
       tags: ["dotfiles"]
@@ -28,9 +30,11 @@
 
     - role: mas
       tags: ["mas"]
+      when: ansible_distribution == 'MacOSX'
 
     - role: macos
       tags: ["macos"]
+      when: ansible_distribution == 'MacOSX'
 
     - role: pip
       tags: ["pip"]
