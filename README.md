@@ -120,6 +120,10 @@ Explanation of the directories:
 ./hosts
 └── The inventory file for Ansible, for now it only contains the
     localhost machine
+
+./requirements.yml
+└── Ansible role and collection dependencies which are somehow in use by
+    this playbook.
 ```
 
 ### License
