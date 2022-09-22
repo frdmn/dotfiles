@@ -106,3 +106,4 @@ npm_packages:
 pip_packages:
   - beautifulsoup4
   - docker
+  - ffpb
