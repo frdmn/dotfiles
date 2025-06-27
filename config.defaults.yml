@@ -15,7 +15,6 @@ brew_packages:
   - coreutils
   - ddig
   - dev-search
-  - exa
   - exiftool
   - ffmpeg
   - git-extras
