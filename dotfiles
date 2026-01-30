@@ -5,8 +5,7 @@ set -e
 if ! [ -x "$(command -v ansible)" ]; then
   echo "Ansible missing - please install manually:"
   echo
-  echo "$ sudo pip3 install --upgrade pip"
-  echo "$ pip3 install ansible"
+  echo "$ pipx install ansible --include-deps"
   exit 1
 fi
 
