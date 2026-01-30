@@ -30,3 +30,6 @@ export GEM_HOME="$HOME/.gem"
 
 # Update locale
 export LANG="de_DE.UTF-8"
+
+# uv
+export PATH="${HOME}/.local/bin:$PATH"
