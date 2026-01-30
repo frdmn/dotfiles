@@ -13,9 +13,6 @@ fi
 ### Exports (php-fpm, maven and $PATH)
 ###
 
-# Yellow (temp) autosuggested string
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
-
 # Go
 export GOPATH=$HOME/.go
 

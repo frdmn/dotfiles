@@ -103,3 +103,6 @@ bindkey '^[[B' history-substring-search-down
 # Single line prompt
 prompt_newline='%666v'
 PROMPT=" $PROMPT"
+
+# Autosuggested strings in yellow, instead of default grey
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
