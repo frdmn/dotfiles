@@ -52,16 +52,14 @@ autoload -U colors && colors
 ### Plugins and prompt
 ###
 
+# Optional folder to load static zsh completions from
+fpath=(~/.zsh/completions $fpath)
+
 # Source antidote
 source ${HOMEBREW_PREFIX:-/opt/homebrew}/opt/antidote/share/antidote/antidote.zsh
 
 # Initialize plugins from .zsh_plugins.txt
 antidote load
-
-# ###
-# ### Auto/tab-completions
-# ###
-
 
 ###
 ### Aliases and functions

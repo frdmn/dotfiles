@@ -23,3 +23,14 @@
   ansible.builtin.command:
     cmd: docker builder prune -f
   changed_when: false
+
+- name: "[ docker] Ensure zsh completions directory exists"
+  ansible.builtin.file:
+    path: ~/.zsh/completions
+    state: directory
+    mode: '0755'
+
+- name: "[ docker] Generate zsh completion"
+  ansible.builtin.shell:
+    cmd: docker completion zsh > ~/.zsh/completions/_docker
+  changed_when: false
