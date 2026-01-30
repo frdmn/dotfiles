@@ -49,66 +49,19 @@ bindkey -e
 autoload -U colors && colors
 
 ###
-### Auto/tab-completions
-###
-
-# Enable bash completion
-# autoload bashcompinit && bashcompinit
-
-# Proper case insensitivity
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-# Use proper completion
-autoload -U compinit && compinit
-zstyle ':completion:*' menu select
-
-# Add autocomplete for git-extras
-source $HOMEBREW_PREFIX/opt/git-extras/share/git-extras/git-extras-completion.zsh
-
-# Don't complete uninteresting users
-zstyle ':completion:*:*:*:users' ignored-patterns \
-        adm amanda apache avahi beaglidx bin cacti canna clamav daemon \
-        dbus distcache dovecot fax ftp games gdm gkrellmd gopher \
-        hacluster haldaemon halt hsqldb ident junkbust ldap lp mail \
-        mailman mailnull mldonkey mysql nagios \
-        named netdump news nfsnobody nobody nscd ntp nut nx openvpn \
-        operator pcap postfix postgres privoxy pulse pvm quagga radvd \
-        rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs
-
-# Disable tab character insertion
-zstyle ':completion:*' insert-tab false
-
-###
 ### Plugins and prompt
 ###
 
-# zplug initalization
-export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
-source $ZPLUG_HOME/init.zsh
+# Source antidote
+source ${HOMEBREW_PREFIX:-/opt/homebrew}/opt/antidote/share/antidote/antidote.zsh
 
-# Load plugins
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "marzocchi/zsh-notify"
-zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
+# Initialize plugins from .zsh_plugins.txt
+antidote load
 
-# Load theme
-zplug mafredri/zsh-async, from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+# ###
+# ### Auto/tab-completions
+# ###
 
-# Completions
-zplug "docker/cli", use:contrib/completion/zsh
-zplug "docker/compose", use:contrib/completion/zsh
-zplug "lukechilds/zsh-better-npm-completion", defer:2
-
-# Install packages that have not been installed yet
-if ! zplug check --verbose; then
-    zplug install
-fi
-
-# Load all modules
-zplug load
 
 ###
 ### Aliases and functions

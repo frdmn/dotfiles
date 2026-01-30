@@ -1,0 +1,10 @@
+zsh-users/zsh-completions
+mattmc3/ez-compinit
+
+zsh-users/zsh-syntax-highlighting kind:defer
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+#marzocchi/zsh-notify # disabled since Ghostty is not yet supported as Terminal
+MichaelAquilina/zsh-autoswitch-virtualenv
+
+sindresorhus/pure
