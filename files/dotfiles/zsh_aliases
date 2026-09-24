@@ -81,5 +81,4 @@ alias hastebin="HASTE_SERVER=http://paste.frd.mn hastebin"
 alias haste="hastebin"
 alias paste="haste"
 
-alias pip="pip3 "
 alias python="python3 "

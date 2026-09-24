@@ -36,8 +36,8 @@
       tags: ["macos"]
       when: ansible_distribution == 'MacOSX'
 
-    - role: pip
-      tags: ["pip"]
+    - role: uv
+      tags: ["uv"]
 
     - role: docker
       tags: ["docker"]

@@ -1,0 +1,6 @@
+---
+- name: "[ uv] Install uv tools"
+  ansible.builtin.command:
+    cmd: "uv tool install {{ item }}"
+    creates: "~/.local/share/uv/tools/{{ item }}"
+  loop: "{{ uv_tools }}"

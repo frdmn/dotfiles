@@ -5,7 +5,7 @@ set -e
 if ! [ -x "$(command -v ansible)" ]; then
   echo "Ansible missing - please install manually:"
   echo
-  echo "$ pipx install ansible --include-deps"
+  echo "$ uv tool install ansible"
   exit 1
 fi
 
