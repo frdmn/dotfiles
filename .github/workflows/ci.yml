@@ -10,6 +10,7 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v5
@@ -31,7 +32,7 @@ jobs:
 
     steps:
       - name: Check out the codebase
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Uninstall GitHub Actions' built-in Homebrew
         run: |
@@ -39,6 +40,7 @@ jobs:
           chmod +x ./uninstall.sh
           sudo ./uninstall.sh --force
           sudo rm -rf /usr/local/Homebrew /usr/local/Caskroom /usr/local/bin/brew
+          sudo rm -rf /opt/homebrew
 
       - name: Uninstall GitHub Actions' built-in browser installs.
         run: |
