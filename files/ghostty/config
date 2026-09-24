@@ -1,0 +1,30 @@
+# Ghostty configuration
+#
+# Managed by the dotfiles playbook (roles/ghostty) and symlinked to
+# ~/.config/ghostty/config. Reload inside Ghostty with cmd+shift+, .
+#
+# Reference: https://ghostty.org/docs/config/reference
+
+macos-titlebar-style = tabs
+
+theme = light:Monokai Pro Light,dark:Dracula
+clipboard-trim-trailing-spaces = true
+
+adjust-cell-height = 5%
+adjust-cursor-thickness = 400%
+adjust-cursor-height = -10
+
+background-opacity = 0.85
+background-blur-radius = 40
+
+font-family = Operator Mono Book
+font-size = 16
+font-feature = -liga
+font-feature = -calt
+
+window-padding-x = 5
+
+keybind = global:cmd+opt+shift+t=toggle_quick_terminal
+keybind = shift+enter=text:\x1b\r
+
+shell-integration = zsh
