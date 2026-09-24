@@ -5,7 +5,7 @@ set -e
 if ! [ -x "$(command -v ansible)" ]; then
   echo "Ansible missing - please install manually:"
   echo
-  echo "$ uv tool install ansible"
+  echo "$ uv tool install ansible-core"
   exit 1
 fi
 

@@ -1,6 +1,6 @@
 ---
 - name: "[ gem] Install gem packages"
-  gem:
+  community.general.gem:
     name: "{{ item }}"
     state: present
   loop: "{{ gem_packages }}"

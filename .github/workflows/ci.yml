@@ -10,15 +10,16 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out the codebase
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Run yamllint
-        uses: karancode/yamllint-github-action@master
+        uses: karancode/yamllint-github-action@v2.1.1
 
       - name: Run ansible-lint
-        uses: ansible-community/ansible-lint-action@main
+        uses: ansible/ansible-lint@v26.9.0
 
   test:
     name: Test
@@ -26,12 +27,12 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-12
-          - macos-11
+          - macos-26 # Tahoe
+          - macos-15 # Sequoia
 
     steps:
       - name: Check out the codebase
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Uninstall GitHub Actions' built-in Homebrew
         run: |
@@ -39,21 +40,20 @@ jobs:
           chmod +x ./uninstall.sh
           sudo ./uninstall.sh --force
           sudo rm -rf /usr/local/Homebrew /usr/local/Caskroom /usr/local/bin/brew
+          sudo rm -rf /opt/homebrew
 
       - name: Uninstall GitHub Actions' built-in browser installs.
         run: |
           sudo rm -rf /Applications/Firefox.app
           sudo rm -rf /Applications/Google\ Chrome.app
 
-      - name: Install Ansible using pip
-        run: |
-          sudo pip3 install --upgrade pip
-          pip3 install ansible
+      - name: Install Ansible using uv
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: false
 
-      - name: Update PATH env
-        run: |
-          pythonversion=$(ls ~/Library/Python)
-          echo "${HOME}/Library/Python/${pythonversion}/bin" >> $GITHUB_PATH
+      - name: Install Ansible into uv tool environment
+        run: uv tool install ansible-core
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml

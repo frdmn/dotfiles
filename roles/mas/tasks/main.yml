@@ -1,6 +1,6 @@
 ---
 - name: "[ mas] Install Mac App Store packages"
-  mas:
+  community.general.mas:
     id: "{{ item }}"
     state: present
   loop: "{{ mas_packages }}"

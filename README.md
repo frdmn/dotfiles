@@ -40,7 +40,7 @@ iTerm | Visual Studio Code
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install uv
-    uv tool install ansible
+    uv tool install ansible-core
     ```
 
 2. Fork this repository:

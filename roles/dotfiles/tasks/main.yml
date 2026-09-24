@@ -1,19 +1,19 @@
 ---
 - name: "[﬒ dotfiles] Get list of files to symlink"
   ansible.builtin.shell: |
-    ls -1 {{ ansible_env.PWD }}/files/dotfiles > /tmp/dotfilesToLink
+    ls -1 {{ playbook_dir }}/files/dotfiles > /tmp/dotfilesToLink
   changed_when: false
 
-- name: "[﬒ dotfiles] Store list of files into variable"
+- name: "[ dotfiles] Store list of files into variable"
   ansible.builtin.command: "cat /tmp/dotfilesToLink"
   register: files_to_symlink
   changed_when: false
   tags:
     - skip_ansible_lint
 
-- name: "[﬒ dotfiles] Set symlinks"
+- name: "[ dotfiles] Set symlinks"
   ansible.builtin.file:
-    src: '{{ ansible_env.PWD }}/files/dotfiles/{{ item }}'
+    src: '{{ playbook_dir }}/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
   with_items:
@@ -28,5 +28,7 @@
 
 - name: "[﬒ dotfiles] Setup and install Vundle"
   ansible.builtin.shell:
-    cmd: echo | echo | vim +PluginInstall +qall &>/dev/null
+    cmd: set -o pipefail && echo | echo | vim +PluginInstall +qall &>/dev/null
+  args:
+    executable: /bin/bash
   changed_when: false
