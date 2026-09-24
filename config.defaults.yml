@@ -2,14 +2,10 @@
 brew_taps:
   - domt4/autoupdate
   - frdmn/formulas
-  - homebrew/cask-versions
-  - homebrew/cask-fonts
-  - yt-dlp/taps
 
 brew_packages:
   - ansible
   - asciinema
-  - bat
   - bitwarden-cli
   - composer
   - coreutils
@@ -44,36 +40,20 @@ brew_packages:
   - zsh
 
 cask_packages:
-  - 1password
   - aerial
-  - alfred
   - appcleaner
-  - atext
   - bartender
   - bitwarden
-  - carbon-copy-cloner
   - discord
-  - docker
-  - dropbox
   - dropshare
-  - font-hack-nerd-font
-  - gas-mask
   - gitup
-  - google-chrome
-  - hex-fiend
-  - iterm2
   - keka
-  - nordvpn
-  - nvalt
   - qlmarkdown
   - qlstephen
   - quicklook-json
-  - spotify
   - suspicious-package
   - telegram
-  - textual
   - transmit
-  - vagrant
   - visual-studio-code
   - vlc
   - wireshark
@@ -85,24 +65,17 @@ mas_packages:
   - 1451685025  # Wireguard
   - 411643860  # DaisyDisk
   - 1295203466  # Microsoft Remote Desktop
-  - 408981434  # iMovie
   - 430255202  # Mactracker
-  - 409183694  # Keynote
   - 1289583905  # Pixelmator Pro
 
 npm_packages:
   - bower
   - giracli
-  - grunt
-  - gulp
   - init.js
   - json
   - prettyjson
   - tlstools
-  - yarn
-  - yo
 
 pip_packages:
   - beautifulsoup4
-  - docker
   - ffpb
