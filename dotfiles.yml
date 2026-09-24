@@ -36,6 +36,10 @@
       tags: ["macos"]
       when: ansible_facts['distribution'] == 'MacOSX'
 
+    - role: ghostty
+      tags: ["ghostty"]
+      when: ansible_facts['distribution'] == 'MacOSX'
+
     - role: uv
       tags: ["uv"]
 
