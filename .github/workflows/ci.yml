@@ -53,7 +53,7 @@ jobs:
           enable-cache: false
 
       - name: Install Ansible into uv tool environment
-        run: uv tool install ansible
+        run: uv tool install ansible-core
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
