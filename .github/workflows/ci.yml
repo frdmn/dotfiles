@@ -47,11 +47,13 @@ jobs:
           sudo rm -rf /Applications/Firefox.app
           sudo rm -rf /Applications/Google\ Chrome.app
 
-      - name: Install Ansible using pip
-        run: pip3 install --user ansible
+      - name: Install Ansible using uv
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: false
 
-      - name: Update PATH env
-        run: echo "$(python3 -m site --user-base)/bin" >> $GITHUB_PATH
+      - name: Install Ansible into uv tool environment
+        run: uv tool install ansible
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
