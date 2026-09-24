@@ -1,21 +1,21 @@
 ---
-- name: "[ homebrew] Configure Homebrew taps"
+- name: "[ homebrew] Configure Homebrew taps"
   community.general.homebrew_tap:
     name: "{{ item }}"
   loop: "{{ brew_taps }}"
 
-- name: "[ homebrew] Trust configured Homebrew taps"
+- name: "[ homebrew] Trust configured Homebrew taps"
   ansible.builtin.command:
     cmd: "brew trust {{ item }}"
   changed_when: false
   loop: "{{ brew_taps }}"
 
-- name: "[ homebrew] Install Homebrew formulae"
+- name: "[ homebrew] Install Homebrew formulae"
   community.general.homebrew:
     name: "{{ item }}"
   loop: "{{ brew_packages }}"
 
-- name: "[ homebrew] Install Homebrew casks"
+- name: "[ homebrew] Install Homebrew casks"
   community.general.homebrew_cask:
     name: "{{ item }}"
   loop: "{{ cask_packages }}"

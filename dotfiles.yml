@@ -5,7 +5,7 @@
   vars_files: ["config.defaults.yml"]
 
   pre_tasks:
-    - name: "[﬒ dotfiles] Include config.yml overrides"
+    - name: "[󰆍 dotfiles] Include config.yml overrides"
       ansible.builtin.include_vars: "{{ item }}"
       with_fileglob: "{{ playbook_dir }}/config.yml"
       tags: ["always"]

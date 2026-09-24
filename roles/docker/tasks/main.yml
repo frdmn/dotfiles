@@ -1,36 +1,36 @@
 ---
-- name: "[ docker] Prune unused containers older >24h"
+- name: "[ docker] Prune unused containers older >24h"
   ansible.builtin.command:
     cmd: docker container prune -f --filter "until=24h"
   changed_when: false
 
-- name: "[ docker] Prune unused images"
+- name: "[ docker] Prune unused images"
   ansible.builtin.command:
     cmd: docker image prune -f
   changed_when: false
 
-- name: "[ docker] Prune unused networks"
+- name: "[ docker] Prune unused networks"
   ansible.builtin.command:
     cmd: docker network prune -f
   changed_when: false
 
-- name: "[ docker] Prune unused volumes"
+- name: "[ docker] Prune unused volumes"
   ansible.builtin.command:
     cmd: docker volume prune -f
   changed_when: false
 
-- name: "[ docker] Prune builder cache"
+- name: "[ docker] Prune builder cache"
   ansible.builtin.command:
     cmd: docker builder prune -f
   changed_when: false
 
-- name: "[ docker] Ensure zsh completions directory exists"
+- name: "[ docker] Ensure zsh completions directory exists"
   ansible.builtin.file:
     path: ~/.zsh/completions
     state: directory
     mode: '0755'
 
-- name: "[ docker] Generate zsh completion"
+- name: "[ docker] Generate zsh completion"
   ansible.builtin.shell:
     cmd: docker completion zsh > ~/.zsh/completions/_docker
   changed_when: false
