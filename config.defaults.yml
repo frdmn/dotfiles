@@ -5,6 +5,7 @@ brew_taps:
 
 brew_packages:
   - ansible
+  - antidote
   - asciinema
   - bitwarden-cli
   - composer
@@ -36,7 +37,6 @@ brew_packages:
   - uping
   - wget
   - yt-dlp
-  - zplug
   - zsh
 
 cask_packages:
@@ -52,6 +52,7 @@ cask_packages:
   - qlstephen
   - quicklook-json
   - suspicious-package
+  - spotify
   - telegram
   - transmit
   - visual-studio-code
