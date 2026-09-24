@@ -47,13 +47,14 @@ cask_packages:
   - bitwarden
   - discord
   - dropshare
+  - font-hack-nerd-font
   - gitup
   - keka
   - qlmarkdown
   - qlstephen
   - quickjson
-  - suspicious-package
   - spotify
+  - suspicious-package
   - telegram
   - transmit
   - visual-studio-code
