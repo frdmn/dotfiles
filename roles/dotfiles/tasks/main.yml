@@ -28,5 +28,7 @@
 
 - name: "[﬒ dotfiles] Setup and install Vundle"
   ansible.builtin.shell:
-    cmd: echo | echo | vim +PluginInstall +qall &>/dev/null
+    cmd: set -o pipefail && echo | echo | vim +PluginInstall +qall &>/dev/null
+  args:
+    executable: /bin/bash
   changed_when: false
