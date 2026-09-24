@@ -33,7 +33,9 @@
 
 - name: "[ dotfiles] Setup and install VIm plugins"
   ansible.builtin.shell:
-    cmd: set -o pipefail && echo | echo | vim '+PlugInstall --sync' +qall &>/dev/null
+    cmd: >-
+      set -o pipefail &&
+      echo | echo | vim '+PlugInstall --sync' +qall &>/dev/null
   args:
     executable: /bin/bash
   changed_when: false
