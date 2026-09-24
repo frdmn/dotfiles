@@ -51,7 +51,7 @@ cask_packages:
   - keka
   - qlmarkdown
   - qlstephen
-  - quicklook-json
+  - quickjson
   - suspicious-package
   - spotify
   - telegram
