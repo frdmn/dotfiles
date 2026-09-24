@@ -19,16 +19,21 @@
   with_items:
     - "{{ files_to_symlink.stdout_lines }}"
 
-- name: "[﬒ dotfiles] Download Vundle (vi bundle manager)"
-  ansible.builtin.git:
-    repo: https://github.com/VundleVim/Vundle.vim.git
-    dest: ~/.vim/bundle/Vundle.vim
-    version: v0.10.2
+- name: "[ dotfiles] Download vim-plug (VIm plugin manager)"
+  ansible.builtin.get_url:
+    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    dest: ~/.vim/autoload/plug.vim
+    mode: "0644"
   changed_when: false
 
-- name: "[﬒ dotfiles] Setup and install Vundle"
+- name: "[ dotfiles] Remove legacy Vundle installation"
+  ansible.builtin.file:
+    path: ~/.vim/bundle
+    state: absent
+
+- name: "[ dotfiles] Setup and install VIm plugins"
   ansible.builtin.shell:
-    cmd: set -o pipefail && echo | echo | vim +PluginInstall +qall &>/dev/null
+    cmd: set -o pipefail && echo | echo | vim '+PlugInstall --sync' +qall &>/dev/null
   args:
     executable: /bin/bash
   changed_when: false
