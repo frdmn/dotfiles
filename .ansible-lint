@@ -1,3 +1,5 @@
 ---
+exclude_paths:
+  - .ansible/  # installed by ansible-galaxy, not our code
 skip_list:
   - name[casing]
