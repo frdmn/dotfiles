@@ -1,0 +1,13 @@
+---
+- name: "[ uv] Gather list of installed uv tools"
+  ansible.builtin.command:
+    cmd: uv tool list
+  register: uv_tool_list
+  changed_when: false
+
+- name: "[ uv] Install uv tools"
+  ansible.builtin.command:
+    cmd: "uv tool install {{ item }}"
+  loop: "{{ uv_tools }}"
+  when: item not in uv_tool_list.stdout_lines
+  changed_when: true

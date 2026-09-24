@@ -35,6 +35,7 @@ brew_packages:
   - terminal-notifier
   - tmux
   - uping
+  - uv
   - wget
   - yt-dlp
   - zsh
@@ -77,6 +78,5 @@ npm_packages:
   - prettyjson
   - tlstools
 
-pip_packages:
-  - beautifulsoup4
+uv_tools:
   - ffpb
