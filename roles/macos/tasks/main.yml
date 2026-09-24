@@ -1,19 +1,4 @@
 ---
-- name: "[ macOS] Disable \"Are you sure to open this application?\" dialog"
-  community.general.osx_defaults:
-    domain: com.apple.LaunchServices
-    key: LSQuarantine
-    type: bool
-    value: false
-    state: present
-
-- name: "[ macOS] Check for software updates daily, not just once per week"
-  community.general.osx_defaults:
-    domain: com.apple.SoftwareUpdate
-    key: ScheduleFrequency
-    type: integer
-    value: 1
-    state: present
 
 - name: "[ macOS] Disable smart quotes as they’re annoying when typing code"
   community.general.osx_defaults:
