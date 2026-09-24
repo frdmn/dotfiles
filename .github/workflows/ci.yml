@@ -27,8 +27,8 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-15 # macOS 26
-          - macos-14
+          - macos-26 # Tahoe
+          - macos-15 # Sequoia
 
     steps:
       - name: Check out the codebase
