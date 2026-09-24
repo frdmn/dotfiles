@@ -19,7 +19,7 @@ iTerm | Visual Studio Code
     * Mac App Store apps
     * Node `npm` packages
     * Ruby `gem` packages
-    * Python `pip` packages
+    * Python tools using `uv`
     * macOS `defaults` (plist settings)
 * Docker host cleanup/prune
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
@@ -35,12 +35,12 @@ iTerm | Visual Studio Code
 
 ### Installation
 
-1. Make sure to install Homebrew and pipx before installing Ansible:
+1. Make sure to install Homebrew and uv before installing Ansible:
 
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install pipx
-    pipx install ansible
+    brew install uv
+    uv tool install ansible
     ```
 
 2. Fork this repository:
