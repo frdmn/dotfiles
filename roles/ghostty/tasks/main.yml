@@ -1,0 +1,17 @@
+---
+- name: "[󰊠 ghostty] Create config directory"
+  ansible.builtin.file:
+    path: ~/.config/ghostty
+    state: directory
+    mode: "0755"
+
+- name: "[󰊠 ghostty] Set config symlink"
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/files/ghostty/config"
+    path: ~/.config/ghostty/config
+    state: link
+
+- name: "[󰊠 ghostty] Remove legacy config in Application Support"
+  ansible.builtin.file:
+    path: ~/Library/Application Support/com.mitchellh.ghostty/config
+    state: absent
