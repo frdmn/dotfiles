@@ -46,14 +46,10 @@ jobs:
           sudo rm -rf /Applications/Google\ Chrome.app
 
       - name: Install Ansible using pip
-        run: |
-          sudo pip3 install --upgrade pip
-          pip3 install ansible
+        run: pip3 install --user ansible
 
       - name: Update PATH env
-        run: |
-          pythonversion=$(ls ~/Library/Python)
-          echo "${HOME}/Library/Python/${pythonversion}/bin" >> $GITHUB_PATH
+        run: echo "$(python3 -m site --user-base)/bin" >> $GITHUB_PATH
 
       - name: Install Ansible roles and collections
         run: ansible-galaxy install -r requirements.yml
