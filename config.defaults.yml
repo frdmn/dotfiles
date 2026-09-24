@@ -11,7 +11,7 @@ brew_packages:
   - composer
   - coreutils
   - ddig
-  # - dev-search  # TODO: broken caveats in frdmn/formulas tap
+  - dev-search
   - exiftool
   - ffmpeg
   - git-extras
