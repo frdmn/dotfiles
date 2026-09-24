@@ -18,7 +18,7 @@ jobs:
         uses: karancode/yamllint-github-action@master
 
       - name: Run ansible-lint
-        uses: ansible-community/ansible-lint-action@main
+        uses: ansible/ansible-lint@v26.9.0
 
   test:
     name: Test
