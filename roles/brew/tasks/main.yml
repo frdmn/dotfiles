@@ -4,6 +4,12 @@
     name: "{{ item }}"
   loop: "{{ brew_taps }}"
 
+- name: "[ homebrew] Trust configured Homebrew taps"
+  ansible.builtin.command:
+    cmd: "brew trust {{ item }}"
+  changed_when: false
+  loop: "{{ brew_taps }}"
+
 - name: "[ homebrew] Install Homebrew formulae"
   community.general.homebrew:
     name: "{{ item }}"
