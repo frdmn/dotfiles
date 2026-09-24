@@ -23,12 +23,14 @@ iTerm | Visual Studio Code
     * macOS `defaults` (plist settings)
 * Docker host cleanup/prune
 * [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
-* Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
-* Several additional, preconfigured ZSH plugins (using [zplug](https://github.com/zplug/zplug)):
-    * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
-    * [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
-    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-notify) plugin
-    * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
+* Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin)
+* Several additional, preconfigured ZSH plugins (using [antidote](https://github.com/mattmc3/antidote)):
+    * [zsh-completions](https://github.com/zsh-users/zsh-completions)
+    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+    * [zsh-autoswitch-virtualenv](https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv)
+    * [pure](https://github.com/sindresorhus/pure) prompt
 * Configured GnuPG including `gpg-agent` and enabled commit signatures in git
 * [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) themes for iTerm and VSCode (even though VSCode is _currently_ controlled by the [built-in sync](https://code.visualstudio.com/docs/editor/settings-sync))
 * ~~Commented code, so you know what is actually going on~~ (Not anymore, to be honest...)
