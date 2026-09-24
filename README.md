@@ -22,7 +22,7 @@ iTerm | Visual Studio Code
     * Python tools using `uv`
     * macOS `defaults` (plist settings)
 * Docker host cleanup/prune
-* [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
+* [vim-plug](https://github.com/junegunn/vim-plug) VIm plugin manager
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin)
 * Several additional, preconfigured ZSH plugins (using [antidote](https://github.com/mattmc3/antidote)):
     * [zsh-completions](https://github.com/zsh-users/zsh-completions)
