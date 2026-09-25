@@ -49,6 +49,7 @@ cask_packages:
   - dropshare
   - font-hack-nerd-font
   - gitup
+  - ghostty
   - keka
   - qlmarkdown
   - qlstephen

@@ -7,7 +7,7 @@ dotfiles
 
 [Ansible](https://www.ansible.com/)-based dotfile setup for macOS systems that is really simple and easy to understand.
 
-iTerm | Visual Studio Code
+Ghostty | Visual Studio Code
 --- | ---
 [![](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI.svg)](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI) <center></center> | ![](https://i.imgur.com/abpdBUY.png)
 
@@ -21,6 +21,7 @@ iTerm | Visual Studio Code
     * Ruby `gem` packages
     * Python tools using `uv`
     * macOS `defaults` (plist settings)
+    * Ghostty terminal configuration
 * Docker host cleanup/prune
 * [vim-plug](https://github.com/junegunn/vim-plug) VIm plugin manager
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin)
@@ -32,7 +33,7 @@ iTerm | Visual Studio Code
     * [zsh-autoswitch-virtualenv](https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv)
     * [pure](https://github.com/sindresorhus/pure) prompt
 * Configured GnuPG including `gpg-agent` and enabled commit signatures in git
-* [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) themes for iTerm and VSCode (even though VSCode is _currently_ controlled by the [built-in sync](https://code.visualstudio.com/docs/editor/settings-sync))
+* [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) themes for VSCode (_currently_ controlled by the [built-in sync](https://code.visualstudio.com/docs/editor/settings-sync))
 * ~~Commented code, so you know what is actually going on~~ (Not anymore, to be honest...)
 
 ### Installation
@@ -84,14 +85,15 @@ Explanation of the directories:
 ```
 ./files/
 └── This directory contains all optional files that are not related to
-    Ansible roles in specific. For example: dotfile source files, iTerm
+    Ansible roles in specific. For example: dotfile source files, Ghostty
     configuration files, etc.
 
 ./files/dotfiles/
 └── This folder contains all the source dotfiles.
 
-./files/iterm2/
-└── This folder contains the iTerm 2 plist configuration.
+./files/ghostty/
+└── This folder contains the Ghostty configuration, symlinked to
+    ~/.config/ghostty/config.
 
 ./roles/
 └── In this directory you will find all available Ansible roles that I
