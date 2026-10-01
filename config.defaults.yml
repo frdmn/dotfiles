@@ -1,7 +1,7 @@
 ---
 brew_taps:
-  - domt4/autoupdate
   - frdmn/formulas
+  - homebrew/autoupdate
 
 brew_packages:
   - ansible
