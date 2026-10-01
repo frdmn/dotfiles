@@ -51,6 +51,7 @@ cask_packages:
   - gitup
   - ghostty
   - keka
+  - orbstack
   - qlmarkdown
   - qlstephen
   - quickjson
