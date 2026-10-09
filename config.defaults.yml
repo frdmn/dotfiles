@@ -4,7 +4,6 @@ brew_taps:
   - homebrew/autoupdate
 
 brew_packages:
-  - ansible
   - antidote
   - asciinema
   - bitwarden-cli
