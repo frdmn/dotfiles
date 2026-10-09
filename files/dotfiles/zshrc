@@ -33,7 +33,6 @@ setopt hist_reduce_blanks      # Trim multiple blanks in history
 
 SAVEHIST=999999
 HISTSIZE=999999
-CASE_SENSITIVE="false"
 
 HISTFILE=~/.zsh_history
 
@@ -74,22 +73,17 @@ antidote load
 ###
 
 # Skip forward/back a word with opt-arrow
-bindkey '[D' backward-word
-bindkey '[C' forward-word
+bindkey '^[[1;3D' backward-word
+bindkey '^[[1;3C' forward-word
 
 # Make the delete key (or Fn + Delete on the Mac) work instead of outputting a ~
 bindkey '^?' backward-delete-char
 bindkey "^[[3~" delete-char
-bindkey "^[3;5~" delete-char
-bindkey "\e[3~" delete-char
+bindkey "^[[3;5~" delete-char
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
-
-# bind k and j for VI mode
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
 
 # OS X support
 bindkey '^[[A' history-substring-search-up
