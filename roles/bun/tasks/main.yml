@@ -1,0 +1,11 @@
+---
+- name: "[ bun] Install global bun packages"
+  ansible.builtin.command:
+    cmd: "bun add --global --trust {{ item }}"
+    creates: "~/.bun/install/global/node_modules/{{ item }}"
+  loop: "{{ bun_packages }}"
+
+- name: "[ bun] Upgrade global bun packages"
+  ansible.builtin.command:
+    cmd: "bun update --global"
+  changed_when: false

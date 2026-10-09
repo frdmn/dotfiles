@@ -17,7 +17,7 @@ Ghostty | Visual Studio Code
     * bash/zsh configuration files
     * Homebrew and Cask packages
     * Mac App Store apps
-    * Node `npm` packages
+    * Node packages using `bun`
     * Ruby `gem` packages
     * Python tools using `uv`
     * macOS `defaults` (plist settings)
