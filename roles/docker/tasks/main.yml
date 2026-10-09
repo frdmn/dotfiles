@@ -6,61 +6,41 @@
   failed_when: false
   changed_when: false
 
-- name: "[ docker] Start OrbStack engine"
-  ansible.builtin.command:
-    cmd: orb start
+- name: "[ docker] Clean up and configure Docker"
   when: docker_orb_binary.rc == 0
-  changed_when: false
+  block:
+    - name: "[ docker] Start OrbStack engine"
+      ansible.builtin.command:
+        cmd: orb start
+      changed_when: false
 
-- name: "[ docker] Wait for the Docker daemon to become ready"
-  ansible.builtin.command:
-    cmd: docker info
-  register: docker_info
-  until: docker_info.rc == 0
-  retries: 10
-  delay: 3
-  when: docker_orb_binary.rc == 0
-  changed_when: false
+    - name: "[ docker] Wait for the Docker daemon to become ready"
+      ansible.builtin.command:
+        cmd: docker info
+      register: docker_info
+      until: docker_info.rc == 0
+      retries: 10
+      delay: 3
+      changed_when: false
 
-- name: "[ docker] Prune unused containers older >24h"
-  ansible.builtin.command:
-    cmd: docker container prune -f --filter "until=24h"
-  when: docker_orb_binary.rc == 0
-  changed_when: false
+    - name: "[ docker] Prune unused Docker resources"
+      ansible.builtin.command:
+        cmd: "docker {{ item }}"
+      loop:
+        - container prune -f --filter "until=24h"
+        - image prune -f
+        - network prune -f
+        - volume prune -f
+        - builder prune -f
+      changed_when: false
 
-- name: "[ docker] Prune unused images"
-  ansible.builtin.command:
-    cmd: docker image prune -f
-  when: docker_orb_binary.rc == 0
-  changed_when: false
+    - name: "[ docker] Ensure zsh completions directory exists"
+      ansible.builtin.file:
+        path: ~/.zsh/completions
+        state: directory
+        mode: '0755'
 
-- name: "[ docker] Prune unused networks"
-  ansible.builtin.command:
-    cmd: docker network prune -f
-  when: docker_orb_binary.rc == 0
-  changed_when: false
-
-- name: "[ docker] Prune unused volumes"
-  ansible.builtin.command:
-    cmd: docker volume prune -f
-  when: docker_orb_binary.rc == 0
-  changed_when: false
-
-- name: "[ docker] Prune builder cache"
-  ansible.builtin.command:
-    cmd: docker builder prune -f
-  when: docker_orb_binary.rc == 0
-  changed_when: false
-
-- name: "[ docker] Ensure zsh completions directory exists"
-  ansible.builtin.file:
-    path: ~/.zsh/completions
-    state: directory
-    mode: '0755'
-  when: docker_orb_binary.rc == 0
-
-- name: "[ docker] Generate zsh completion"
-  ansible.builtin.shell:
-    cmd: docker completion zsh > ~/.zsh/completions/_docker
-  when: docker_orb_binary.rc == 0
-  changed_when: false
+    - name: "[ docker] Generate zsh completion"
+      ansible.builtin.shell:
+        cmd: docker completion zsh > ~/.zsh/completions/_docker
+      changed_when: false
