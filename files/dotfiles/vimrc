@@ -26,27 +26,3 @@ set tabstop=2                     " Soft tabs, 2 characters
 set softtabstop=2                 " "
 set shiftwidth=2                  " "
 set expandtab                     " "
-
-"""
-" vim-plug
-"""
-
-call plug#begin()
-
-" Let vim-plug manage itself
-Plug 'junegunn/vim-plug'
-
-" vim-markdown (https://github.com/tpope/vim-markdown)
-Plug 'tpope/vim-markdown'
-
-" Initialize plugin system
-call plug#end()
-
-"""
-" Plugin settings
-"""
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*

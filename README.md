@@ -14,7 +14,7 @@ Ghostty | Visual Studio Code
 ### Features
 
 * Dotfile wrapper based on [Ansible](https://www.ansible.com/), that takes care of...
-    * bash/zsh configuration files
+    * zsh configuration files
     * Homebrew and Cask packages
     * Mac App Store apps
     * Node packages using `bun`
@@ -23,7 +23,6 @@ Ghostty | Visual Studio Code
     * macOS `defaults` (plist settings)
     * Ghostty terminal configuration
 * Docker host cleanup/prune
-* [vim-plug](https://github.com/junegunn/vim-plug) VIm plugin manager
 * Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin)
 * Several additional, preconfigured ZSH plugins (using [antidote](https://github.com/mattmc3/antidote)):
     * [zsh-completions](https://github.com/zsh-users/zsh-completions)
@@ -46,7 +45,7 @@ Ghostty | Visual Studio Code
     uv tool install ansible-core
     ```
 
-2. Fork this repository:
+2. Clone this repository:
 
     ```bash
     git clone https://github.com/frdmn/dotfiles ~/.dotfiles
@@ -71,7 +70,7 @@ Ghostty | Visual Studio Code
 # (Re-)apply dotfile related tasks
 $ dotfiles
 
-# (Re-)apply dotfile and bootstrap related tasks (by default only "dotfiles" will be execated when not specifying --botstrap)
+# (Re-)apply dotfile and bootstrap related tasks (by default only "dotfiles" will be executed when not specifying --bootstrap)
 $ dotfiles --bootstrap
 
 # Apply a specific tag/task
@@ -113,7 +112,7 @@ Explanation of the directories:
 
 ./config.yml
 └── This (optional) file can be used to override the defaults (above)
-    as as desired, not tracked by git.
+    as desired, not tracked by git.
 
 ./dotfiles
 └── Basically the base wrapper that I use to install and update the

@@ -10,8 +10,3 @@
     src: "{{ playbook_dir }}/files/ghostty/config"
     path: ~/.config/ghostty/config
     state: link
-
-- name: "[󰊠 ghostty] Remove legacy config in Application Support"
-  ansible.builtin.file:
-    path: ~/Library/Application Support/com.mitchellh.ghostty/config
-    state: absent

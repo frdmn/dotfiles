@@ -1,65 +1,41 @@
 ---
-
-- name: "[ macOS] Disable smart quotes as they’re annoying when typing code"
+- name: "[ macOS] Set macOS defaults"
   community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: NSAutomaticQuoteSubstitutionEnabled
-    type: bool
-    value: false
+    domain: "{{ item.domain | default('NSGlobalDomain') }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
     state: present
-
-- name: "[ macOS] Disable smart dashes as they’re annoying when typing code"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: NSAutomaticDashSubstitutionEnabled
-    type: bool
-    value: false
-    state: present
-
-- name: "[ macOS] Trackpad - enable tap to click for user and login screen"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: com.apple.mouse.tapBehavior
-    type: integer
-    value: 1
-    state: present
-
-- name: "[ macOS] Trackpad - enable tap to click for user and login screen"
-  community.general.osx_defaults:
-    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
-    key: Clicking
-    type: integer
-    value: 1
-    state: present
-
-- name: "[ macOS] Disable press-and-hold for keys in favor of key repeat"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: ApplePressAndHoldEnabled
-    type: bool
-    value: false
-    state: present
-
-- name: "[ macOS] Set a blazingly fast keyboard repeat rate"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: KeyRepeat
-    type: integer
-    value: 2
-    state: present
-
-- name: "[ macOS] Set a short keyboard repeat rate delay"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: InitialKeyRepeat
-    type: integer
-    value: 15
-    state: present
-
-- name: "[ macOS] Increase speed of trackpad cursor movement"
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: com.apple.trackpad.scaling
-    type: float
-    value: 3
-    state: present
+  loop_control:
+    label: "{{ item.key }}"
+  loop:
+    # Disable smart quotes/dashes as they're annoying when typing code
+    - key: NSAutomaticQuoteSubstitutionEnabled
+      type: bool
+      value: false
+    - key: NSAutomaticDashSubstitutionEnabled
+      type: bool
+      value: false
+    # Trackpad: enable tap to click for user and login screen
+    - key: com.apple.mouse.tapBehavior
+      type: integer
+      value: 1
+    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      key: Clicking
+      type: integer
+      value: 1
+    # Disable press-and-hold for keys in favor of key repeat
+    - key: ApplePressAndHoldEnabled
+      type: bool
+      value: false
+    # Blazingly fast keyboard repeat rate with a short delay
+    - key: KeyRepeat
+      type: integer
+      value: 2
+    - key: InitialKeyRepeat
+      type: integer
+      value: 15
+    # Increase speed of trackpad cursor movement
+    - key: com.apple.trackpad.scaling
+      type: float
+      value: 3

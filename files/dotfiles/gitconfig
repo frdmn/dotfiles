@@ -8,13 +8,10 @@
 [user]
   name = Jonas Friedmann
   email = j@frd.mn
-  signingkey = D713FC95
+  signingkey = 592054EFEE01155264764EC9B6E314FBD713FC95
 
 [merge]
   log = true
-
-[push]
-  default = simple
 
 [difftool]
   prompt = false
@@ -27,7 +24,7 @@
   s = status
   ci = "commit -m"
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset (%GK) %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  pushup = "!gitbranchname() { git symbolic-ref --short HEAD; }; gitpushupstream() { git push --set-upstream origin `gitbranchname`; }; gitpushupstream"
+  pushup = push --set-upstream origin HEAD
   delete-merged-branches = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs echo git branch -d"
 
 [commit]
@@ -37,4 +34,4 @@
   user = frdmn
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
