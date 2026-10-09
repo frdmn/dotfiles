@@ -1,17 +1,9 @@
-## set tab title to cwd
-# $1 = type; 0 - both, 1 - tab, 2 - title
-precmd () {
-  tab_label=${PWD/${HOME}/\~} # use 'relative' path
-  echo -ne "\e]2;${tab_label}\a" # set window title to full string
-  echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
-}
-
 ## Load dev.sh (https://github.com/frdmn/dev-sh) search tool
 . $HOMEBREW_PREFIX/opt/dev-search/dev
 
 # Recursive search using grep
 search () {
-    grep -R "${*}" . | grep -v "/.git/"
+    grep -R --exclude-dir=.git "${*}" .
 }
 
 # Function to unlock Bitwarden vault and export session into current shell
@@ -47,8 +39,5 @@ ffmpeg-optimize() {
 }
 
 ffmpeg-optimize-and-replace() {
-    ffmpeg-optimize "$1"
-    if [ $? -eq 0 ]; then
-        rm "$1"
-    fi
+    ffmpeg-optimize "$1" && rm "$1"
 }
